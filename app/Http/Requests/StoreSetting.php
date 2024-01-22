@@ -43,6 +43,21 @@ class StoreSetting extends FormRequest
             'linkedin' => 'nullable',
             'profile' => 'nullable|mimes:pdf|max:10000',
             'licenese' => 'nullable|image:png',
+            'logo_vision' => 'image:png|nullable',
+            'logo_mission' => 'image:png|nullable',
+            'logo_values' => 'image:png|nullable',
+            'title_vision_ar' => 'nullable',
+            'title_vision_en' => 'nullable',
+            'desc_vision_ar' => 'nullable',
+            'desc_vision_en' => 'nullable',
+            'title_mission_ar' => 'nullable',
+            'title_mission_en' => 'nullable',
+            'desc_mission_ar' => 'nullable',
+            'desc_mission_en' => 'nullable',
+            'title_values_ar' => 'nullable',
+            'title_values_en' => 'nullable',
+            'desc_values_ar' => 'nullable',
+            'desc_values_en' => 'nullable',
         ];
     }
 
@@ -60,6 +75,9 @@ class StoreSetting extends FormRequest
             'phone.required' => 'المكان بالانجليزي مطلوب',
             'email.required' => 'الايميل مطلوب',
             'email.email' => 'الايميل يجب ان يكون صحيح',
+            'logo_vision.png' => 'يجب ان تكون PNG',
+            'logo_mission.png' => 'يجب ان تكون PNG',
+            'logo_values.png' => 'يجب ان تكون PNG',
         ];
     }
 }

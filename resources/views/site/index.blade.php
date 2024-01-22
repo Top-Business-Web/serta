@@ -84,57 +84,16 @@
                                 <div class="col-12 col-lg-12">
                                     <div class="about-content-left">
                                         <p class="highlight">
-                                            {{ trans('site.enviro_group_is') }}
+                                            {{ app()->getLocale() == 'ar' ? $aboutUs->top_desc_ar : $aboutUs->top_desc_en }}
                                         </p>
 
-                                        <p>
-                                            {{ trans('site.enviro_group_aims') }}
-                                        </p>
+                                        <!--<p>-->
+                                        <!--    {{ trans('site.enviro_group_aims') }}-->
+                                        <!--</p>-->
 
                                         <button
                                                 class="main-btn bg-brown mb-3"
                                                 onclick="profDownload('{{ asset($setting->profile) }}', 'profile Company')">{{ trans('site.Profile_company') }}</button>
-
-                                        <!-- <div class="row mt-20">
-                                            <div class="col-lg-4 col-md-4 col-12">
-                                                <div class="featured-area">
-                                                    <div class="featured-icon">
-                                                        <i class="fas fa-business-time"></i>
-                                                    </div>
-                                                    <div class="featured-content">
-                                                        <div class="featured-title">
-                                                            <h5>{{ trans('site.ontime_at') }}
-                                                                <br>{{ trans('site.services') }}</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-12">
-                                                <div class="featured-area">
-                                                    <div class="featured-icon">
-                                                        <i class="fas fa-stopwatch"></i>
-                                                    </div>
-                                                    <div class="featured-content">
-                                                        <div class="featured-title">
-                                                            <h5>24/7 <br>{{ trans('site.services') }}</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-12">
-                                                <div class="featured-area">
-                                                    <div class="featured-icon">
-                                                        <i class="fas fa-money-check-alt"></i>
-                                                    </div>
-                                                    <div class="featured-content">
-                                                        <div class="featured-title">
-                                                            <h5>{{ trans('site.affordable') }}
-                                                                <br>{{ trans('site.cost') }}</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -185,12 +144,12 @@
                             </h4>
                             <hr>
                             <p>{{ app()->getLocale() == 'ar' ? $service->desc_ar : $service->desc_en }}</p>
-                            <ul class="list-unstyled service-list">
+                            {{-- <ul class="list-unstyled service-list">
                                 <li><i class="fas fa-check"></i>{{ trans('site.collect_separate_materials')}}</li>
                                 <li><i class="fas fa-check"></i>{{ trans('site.reduce_recycling_into_raw_material') }}
                                 </li>
                                 <li><i class="fas fa-check"></i>{{ trans('site.turn_raw_material_into_product') }}</li>
-                            </ul>
+                            </ul> --}}
                             <a class="main-btn primary"
                                href="{{ route('service') }}">{{ trans('site.find_out_more') }}</a>
                         </div>
@@ -230,14 +189,14 @@
                 <div class="col-lg-4 col-12">
                     <div class="process-single">
                         <div class="process-icon">
-                            <img src="{{ asset('assets/front') }}/assets/img/vision.svg" alt="" style="width: 60px;">
+                            <img src="{{ asset($setting->logo_vision) }}" alt="" style="width: 60px;">
                         </div>
                         <div class="process-title">
-                            <h5>{{ trans('site.our_vision') }}</h5>
+                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_vision_ar : $setting->title_vision_en }}</h5>
                         </div>
                         <div class="process-desc">
                             <p style="text-align: justify;">
-                                {{ app()->getLocale() == 'ar' ? $aboutUs->desc_ar : $aboutUs->desc_en }}
+                                {{ app()->getLocale() == 'ar' ? $setting->desc_vision_ar : $setting->desc_vision_en }}
                             </p>
                         </div>
                     </div>
@@ -245,14 +204,14 @@
                 <div class="col-lg-4 col-12">
                     <div class="process-single two">
                         <div class="process-icon">
-                            <img src="{{ asset('assets/front') }}/assets/img/mission.svg" alt="" style="width: 60px;">
+                            <img src="{{ asset($setting->logo_mission) }}" alt="" style="width: 60px;">
                         </div>
                         <div class="process-title">
-                            <h5>{{ trans('site.our_mission') }}</h5>
+                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_mission_ar : $setting->title_mission_en }}</h5>
                         </div>
                         <div class="process-desc">
                             <p style="text-align: justify;">
-                                {{ app()->getLocale() == 'ar' ? $aboutUs->top_desc_ar : $aboutUs->top_desc_en }}
+                                {{ app()->getLocale() == 'ar' ? $setting->desc_mission_ar : $setting->desc_mission_en }}
                             </p>
                         </div>
                     </div>
@@ -260,10 +219,10 @@
                 <div class="col-lg-4 col-12">
                     <div class="process-single three">
                         <div class="process-icon">
-                            <img src="{{ asset('assets/front') }}/assets/img/process/4.png" alt="" style="width: 60px;">
+                            <img src="{{ asset($setting->logo_values) }}" alt="" style="width: 60px;">
                         </div>
                         <div class="process-title">
-                            <h5>{{ trans('site.our_values') }} </h5>
+                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_values_ar : $setting->title_values_en }} </h5>
                         </div>
                         <!-- <div class="process-desc text-start"> -->
                         <ul class="list-unstyled service-list mt-0">

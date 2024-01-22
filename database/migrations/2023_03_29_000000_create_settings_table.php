@@ -40,6 +40,21 @@ class CreateSettingsTable extends Migration
             $table->text('twitter')->nullable();
             $table->text('instagram')->nullable();
             $table->text('linkedin')->nullable();
+            $table->text('logo_vision')->nullable();
+            $table->text('title_vision_ar')->nullable();
+            $table->text('title_vision_en')->nullable();
+            $table->text('desc_vision_ar')->nullable();
+            $table->text('desc_vision_en')->nullable();
+            $table->text('logo_mission')->nullable();
+            $table->text('title_mission_ar')->nullable();
+            $table->text('title_mission_en')->nullable();
+            $table->text('desc_mission_ar')->nullable();
+            $table->text('desc_mission_en')->nullable();
+            $table->text('logo_values')->nullable();
+            $table->text('title_values_ar')->nullable();
+            $table->text('title_values_en')->nullable();
+            $table->text('desc_values_ar')->nullable();
+            $table->text('desc_values_en')->nullable();
             $table->nullableTimestamps();
         });
     }
