@@ -1,14 +1,13 @@
 @extends('site.layouts.master')
 
 @section('content')
-
     <!-- Hero Area -->
 
 
     <div class="homepage-slides owl-carousel owl-theme">
-        @foreach($data['sliders'] as $slider)
+        @foreach ($data['sliders'] as $slider)
             <div class="single-slide-item"
-                 style="background-image: url({{ asset('assets/admin/sliders/images/'. $slider->image) }});">
+                style="background-image: url({{ asset('assets/admin/sliders/images/' . $slider->image) }});">
                 <div class="image-layer">
                     <div class="overlay"></div>
                 </div>
@@ -17,13 +16,14 @@
                         <div class="row">
                             <div class="col-lg-10 wow fadeInUp animated" data-wow-delay=".2s">
                                 <div class="section-title">
-                                    <h6>{{ app()->getLocale() == 'ar' ? $slider->sub_title_ar : $slider->sub_title_en }}</h6>
+                                    <h6>{{ app()->getLocale() == 'ar' ? $slider->sub_title_ar : $slider->sub_title_en }}
+                                    </h6>
                                     <h1>{{ app()->getLocale() == 'ar' ? $slider->title_ar : $slider->title_en }}</h1>
                                 </div>
-                               <div class="right-btn">
-                               <a href="{{ route('about') }}"
-                                   class="main-btn primary">{{ trans('site.learn_more') }}</a>
-                               </div>
+                                <div class="right-btn">
+                                    <a href="{{ route('about') }}"
+                                        class="main-btn primary">{{ trans('site.learn_more') }}</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -47,11 +47,13 @@
                             <div class="col-lg-8 col-md-8 col-12">
                                 <div class="promo-content">
                                     <h5> {{ trans('site.we_are_top') }}
-                                        <b> {{ trans('site.recycling') }} </b> {{ trans('site.organization_to_create_best') }}
-                                        <b> {{ trans('site.environment') }} </b></h5>
-                                    {{--                                    aya--}}
+                                        <b> {{ trans('site.recycling') }} </b>
+                                        {{ trans('site.organization_to_create_best') }}
+                                        <b> {{ trans('site.environment') }} </b>
+                                    </h5>
+                                    {{--                                    aya --}}
                                     <!-- <button class="main-btn bg-brown mt-3" type="button" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal">{{ trans('site.liceneses') }}</button> -->
+                                                data-bs-target="#exampleModal">{{ trans('site.liceneses') }}</button> -->
                                 </div>
                             </div>
                         </div>
@@ -59,7 +61,8 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-12 wow fadeInUp" data-wow-delay=".4s">
                     <div class="promo-founder">
-                        <img src="{{ asset('assets/front') }}/assets/img/icon/ecology.png" style="width: 50px;" alt="">
+                        <img src="{{ asset('assets/front') }}/assets/img/icon/ecology.png" style="width: 50px;"
+                            alt="">
                         <p class="highlight">{{ $aboutUs->year_ex }}+</p>
                         <p>{{ trans('site.years') }} <br>{{ trans('site.experience') }}</p>
                     </div>
@@ -91,9 +94,8 @@
                                         <!--    {{ trans('site.enviro_group_aims') }}-->
                                         <!--</p>-->
 
-                                        <button
-                                                class="main-btn bg-brown mb-3"
-                                                onclick="profDownload('{{ asset($setting->profile) }}', 'profile Company')">{{ trans('site.Profile_company') }}</button>
+                                        <button class="main-btn bg-brown mb-3"
+                                            onclick="profDownload('{{ asset($setting->profile) }}', 'profile Company')">{{ trans('site.Profile_company') }}</button>
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +108,7 @@
                         <div class="about-counter">
                             <div class="counter-icon">
                                 <img src="{{ asset('assets/front') }}/assets/img/icon/customer-service.png"
-                                     style="width: 50px;" alt="">
+                                    style="width: 50px;" alt="">
                             </div>
                             <div class="counter-number">
                                 <span class="counting" data-counterup-nums="">{{ $aboutUs->happy_clients }}</span>
@@ -140,7 +142,8 @@
                         </div>
                         <div class="service-content">
                             <h4>
-                                <a href="{{ route('singleService', $service->id) }}">{{ app()->getLocale() == 'ar' ? $service->title_ar : $service->title_en }} </a>
+                                <a href="{{ route('singleService', $service->id) }}">{{ app()->getLocale() == 'ar' ? $service->title_ar : $service->title_en }}
+                                </a>
                             </h4>
                             <hr>
                             <p>{{ app()->getLocale() == 'ar' ? $service->desc_ar : $service->desc_en }}</p>
@@ -151,7 +154,7 @@
                                 <li><i class="fas fa-check"></i>{{ trans('site.turn_raw_material_into_product') }}</li>
                             </ul> --}}
                             <a class="main-btn primary"
-                               href="{{ route('service') }}">{{ trans('site.find_out_more') }}</a>
+                                href="{{ route('service') }}">{{ trans('site.find_out_more') }}</a>
                         </div>
                     </div>
                 @endforeach
@@ -164,25 +167,25 @@
     <div class="process-area dark-bg section-padding">
         <div class="container">
             <!-- <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="section-title">
-                        <h6>{{ trans('site.recycling_wastage_save_environment') }}</h6>
-                        <h2 class="text-white">{{ trans('site.simple_steps_wastage') }}
-                            <br> {{ trans('site.to_recycling_item_processing') }}</h2>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="process-right-content">
-                        <p class="text-white">{{ trans('site.recycling_is_the_process_of_converting') }}</p>
-                        <p class="text-white">{{ trans('site.this_waste_management_video') }}</p>
-                        <div class="process-btn">
-                            <a href="{{ route('contact') }}" class="main-btn">{{ trans('site.get_started') }}</a>
-                            <a href="{{ route('service') }}"
-                               class="main-btn white">{{ trans('site.view_our_services') }}</a>
+                    <div class="col-12 col-lg-6">
+                        <div class="section-title">
+                            <h6>{{ trans('site.recycling_wastage_save_environment') }}</h6>
+                            <h2 class="text-white">{{ trans('site.simple_steps_wastage') }}
+                                <br> {{ trans('site.to_recycling_item_processing') }}</h2>
                         </div>
                     </div>
-                </div>
-            </div> -->
+                    <div class="col-lg-6">
+                        <div class="process-right-content">
+                            <p class="text-white">{{ trans('site.recycling_is_the_process_of_converting') }}</p>
+                            <p class="text-white">{{ trans('site.this_waste_management_video') }}</p>
+                            <div class="process-btn">
+                                <a href="{{ route('contact') }}" class="main-btn">{{ trans('site.get_started') }}</a>
+                                <a href="{{ route('service') }}"
+                                   class="main-btn white">{{ trans('site.view_our_services') }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
 
 
             <div class="process-item-wrap">
@@ -192,7 +195,8 @@
                             <img src="{{ asset($setting->logo_vision) }}" alt="" style="width: 60px;">
                         </div>
                         <div class="process-title">
-                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_vision_ar : $setting->title_vision_en }}</h5>
+                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_vision_ar : $setting->title_vision_en }}
+                            </h5>
                         </div>
                         <div class="process-desc">
                             <p style="text-align: justify;">
@@ -207,7 +211,8 @@
                             <img src="{{ asset($setting->logo_mission) }}" alt="" style="width: 60px;">
                         </div>
                         <div class="process-title">
-                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_mission_ar : $setting->title_mission_en }}</h5>
+                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_mission_ar : $setting->title_mission_en }}
+                            </h5>
                         </div>
                         <div class="process-desc">
                             <p style="text-align: justify;">
@@ -222,16 +227,20 @@
                             <img src="{{ asset($setting->logo_values) }}" alt="" style="width: 60px;">
                         </div>
                         <div class="process-title">
-                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_values_ar : $setting->title_values_en }} </h5>
+                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_values_ar : $setting->title_values_en }}
+                            </h5>
                         </div>
+                        <p style="text-align: justify;">
+                            {{ app()->getLocale() == 'ar' ? $setting->desc_values_ar : $setting->desc_values_en }}
+                        </p>
                         <!-- <div class="process-desc text-start"> -->
-                        <ul class="list-unstyled service-list mt-0">
+                        {{-- <ul class="list-unstyled service-list mt-0">
                             <li><i class="fas fa-check"></i>{{ trans('site.build_relations') }}</li>
                             <li><i class="fas fa-check"></i>{{ trans('site.Integrity') }}</li>
                             <li><i class="fas fa-check"></i>{{ trans('site.accountabilit') }}</li>
                             <li><i class="fas fa-check"></i>{{ trans('site.excellence') }}</li>
                             <li><i class="fas fa-check"></i>{{ trans('site.innovation') }}</li>
-                        </ul>
+                        </ul> --}}
                         <!-- </div>                         -->
                     </div>
                 </div>
@@ -250,171 +259,124 @@
             </div>
             <div class="mt-5">
                 <div class="row">
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                        <div class="feature-card">
-                            <div class="feature-icon mb-3">
-                                <img src="{{ asset('assets/front') }}/assets/img/icon/customer-service.png" alt="no-image">
-                            </div>
-                            <div class="feature-title">
-                                <h3>Qualified Competents</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                        <div class="feature-card">
-                            <div class="feature-icon mb-3">
-                                <img src="{{ asset('assets/front') }}/assets/img/icon/customer-service.png" alt="no-image">
-                            </div>
-                            <div class="feature-title">
-                                <h3>International Quality</h3>
+                    @foreach ($data['benefits'] as $benefit)
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                            <div class="feature-card">
+                                <div class="feature-icon mb-3">
+                                    <img src="{{ asset('assets/admin/sliders/images/' .$benefit->image) }}"
+                                        alt="no-image">
+                                </div>
+                                <div class="feature-title">
+                                    <h3>{{ app()->getLocale() == 'ar' ? $benefit->title_ar : $benefit->title_en }}</h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                        <div class="feature-card">
-                            <div class="feature-icon mb-3">
-                                <img src="{{ asset('assets/front') }}/assets/img/icon/customer-service.png" alt="no-image">
-                            </div>
-                            <div class="feature-title">
-                                <h3>Permanent development</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                        <div class="feature-card">
-                            <div class="feature-icon mb-3">
-                                <img src="{{ asset('assets/front') }}/assets/img/icon/customer-service.png" alt="no-image">
-                            </div>
-                            <div class="feature-title">
-                                <h3> Customer first</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                        <div class="feature-card">
-                            <div class="feature-icon mb-3">
-                                <img src="{{ asset('assets/front') }}/assets/img/icon/customer-service.png" alt="no-image">
-                            </div>
-                            <div class="feature-title">
-                                <h3>Credibility</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                        <div class="feature-card">
-                            <div class="feature-icon mb-3">
-                                <img src="{{ asset('assets/front') }}/assets/img/icon/customer-service.png" alt="no-image">
-                            </div>
-                            <div class="feature-title">
-                                <h3>Five stars service</h3>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <!-- <div class="image-all-egypt">
-                <img src="{{ asset('assets/front/') }}/assets/img/img-all-egypt.jpg">
-            </div> -->
+                    <img src="{{ asset('assets/front/') }}/assets/img/img-all-egypt.jpg">
+                </div> -->
         </div>
     </div>
 
     <!-- Contact Section  -->
 
     <!-- <div class="contact-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-lg-6">
-                    <div class="contact-wrap">
-                        <div class="section-title">
-                            <h2 class="text-white">{{ trans('site.time_is_the_best_way_to_thin_About_recycling') }}</h2>
-                        </div>
-                        <div class="contact-desc">
-                            <p class="text-white">
-                                {{ trans('site.we_offer_product') }}
-                            </p>
-                        </div>
-                        <div class="contact-list-wrap">
-                            <div class="row">
-                                <div class="col-12 col-md-6 col-sm-6 col-lg-6">
-                                    <ul class="list-unstyled contact-list">
-                                        <li><i class="fas fa-check"></i> {{ trans('site.reduce_greenhouse_effect') }}
-                                        </li>
-                                        <li><i class="fas fa-check"></i>{{ trans('site.conserv_natural_resources') }}
-                                        </li>
-                                        <li><i class="fas fa-check"></i>{{ trans('site.reduces_carbon_emissions') }}
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-12 col-md-6 col-sm-6 col-lg-6">
-                                    <ul class="list-unstyled contact-list">
-                                        <li><i class="fas fa-check"></i>{{ trans('site.protects_ecosystems') }}</li>
-                                        <li><i class="fas fa-check"></i>{{ trans('site.economic_Benefits') }}</li>
-                                    </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="contact-wrap">
+                            <div class="section-title">
+                                <h2 class="text-white">{{ trans('site.time_is_the_best_way_to_thin_About_recycling') }}</h2>
+                            </div>
+                            <div class="contact-desc">
+                                <p class="text-white">
+                                    {{ trans('site.we_offer_product') }}
+                                </p>
+                            </div>
+                            <div class="contact-list-wrap">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-sm-6 col-lg-6">
+                                        <ul class="list-unstyled contact-list">
+                                            <li><i class="fas fa-check"></i> {{ trans('site.reduce_greenhouse_effect') }}
+                                            </li>
+                                            <li><i class="fas fa-check"></i>{{ trans('site.conserv_natural_resources') }}
+                                            </li>
+                                            <li><i class="fas fa-check"></i>{{ trans('site.reduces_carbon_emissions') }}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-sm-6 col-lg-6">
+                                        <ul class="list-unstyled contact-list">
+                                            <li><i class="fas fa-check"></i>{{ trans('site.protects_ecosystems') }}</li>
+                                            <li><i class="fas fa-check"></i>{{ trans('site.economic_Benefits') }}</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="contact-btn">
-                            <a class="main-btn" href="{{ trans('about') }}">{{ trans('site.learn_more') }}</a>
-                            <a class="main-btn white" href="{{ trans('faqs') }}">{{ trans('site.our_core_values') }}</a>
-                        </div>
+                            <div class="contact-btn">
+                                <a class="main-btn" href="{{ trans('about') }}">{{ trans('site.learn_more') }}</a>
+                                <a class="main-btn white" href="{{ trans('faqs') }}">{{ trans('site.our_core_values') }}</a>
+                            </div>
 
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 offset-xl-1">
-                    <div class="quotation-wrap">
-                        <div class="quotation-inner">
-                            <h5 class="quotation-heading">{{ trans('site.get_a_quote') }}</h5>
-                            <p class="quotation-desc">
-                                {{ trans('site.we_take_great_pride') }}
-                            </p>
-                            <form class="quoteForm" id="quoteForm">
-                                @csrf
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <label class="form-label" for="contact-usage">{{ trans('site.first_name') }}
-                                        </label>
-                                        <input class="form-control" type="text" name="first_name"
-                                               placeholder="{{ trans('site.first_name') }}" required=""/>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <label class="form-label" for="contact-usage">{{ trans('site.last_name') }}
-                                        </label>
-                                        <input class="form-control" type="text" name="last_name"
-                                               placeholder="{{ trans('site.last_name') }}" required=""/>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <label class="form-label" for="contact-usage">{{ trans('site.name_company') }}
-                                        </label>
-                                        <input class="form-control" type="text" name="company"
-                                               placeholder="{{ trans('site.name_company') }}"
-                                               required=""/>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <label class="form-label" for="contact-usage">{{ trans('site.phone') }}
-                                        </label>
-                                        <input class="form-control" type="number" name="phone"
-                                               placeholder="{{ trans('site.phone') }}"
-                                               required=""/>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <label class="form-label" for="contact-usage">{{ trans('site.email') }}
-                                        </label>
-                                        <input class="form-control" type="email" name="email"
-                                               placeholder="{{ trans('site.email') }}" required=""/>
-                                    </div>
+                    <div class="col-xl-6 col-lg-6 offset-xl-1">
+                        <div class="quotation-wrap">
+                            <div class="quotation-inner">
+                                <h5 class="quotation-heading">{{ trans('site.get_a_quote') }}</h5>
+                                <p class="quotation-desc">
+                                    {{ trans('site.we_take_great_pride') }}
+                                </p>
+                                <form class="quoteForm" id="quoteForm">
+                                    @csrf
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="contact-usage">{{ trans('site.first_name') }}
+                                            </label>
+                                            <input class="form-control" type="text" name="first_name"
+                                                   placeholder="{{ trans('site.first_name') }}" required=""/>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="contact-usage">{{ trans('site.last_name') }}
+                                            </label>
+                                            <input class="form-control" type="text" name="last_name"
+                                                   placeholder="{{ trans('site.last_name') }}" required=""/>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="contact-usage">{{ trans('site.name_company') }}
+                                            </label>
+                                            <input class="form-control" type="text" name="company"
+                                                   placeholder="{{ trans('site.name_company') }}"
+                                                   required=""/>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="contact-usage">{{ trans('site.phone') }}
+                                            </label>
+                                            <input class="form-control" type="number" name="phone"
+                                                   placeholder="{{ trans('site.phone') }}"
+                                                   required=""/>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="contact-usage">{{ trans('site.email') }}
+                                            </label>
+                                            <input class="form-control" type="email" name="email"
+                                                   placeholder="{{ trans('site.email') }}" required=""/>
+                                        </div>
 
-                                    <div class="col-12">
-                                        <button type="button" id="quote-btn"
-                                                class="main-btn primary">{{ trans('site.submit') }}</button>
+                                        <div class="col-12">
+                                            <button type="button" id="quote-btn"
+                                                    class="main-btn primary">{{ trans('site.submit') }}</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div> -->
+        </div> -->
 
     <!-- product Section  -->
 
@@ -430,7 +392,7 @@
             </div>
             <div class="product">
                 <div class="owl-carousel owl-theme">
-                    @foreach($data['products'] as $product)
+                    @foreach ($data['products'] as $product)
                         <div class="project-single ms-2 me-2">
                             <div class="project-img">
                                 <img src="{{ asset($product->images[0]) }}" alt="">
@@ -438,7 +400,7 @@
                             <div class="project-content">
                                 <div class="project-title text-center">
                                     <a href="{{ route('singleProduct', $product->id) }}"
-                                       class="fs-5">{{ app()->getLocale() == 'ar' ? $product->title_ar : $product->title_en }}</a>
+                                        class="fs-5">{{ app()->getLocale() == 'ar' ? $product->title_ar : $product->title_en }}</a>
                                 </div>
                             </div>
                         </div>
@@ -457,7 +419,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img class="rounded" src="{{  asset($setting->licenese) }}" style="height: 550px" alt="licenses">
+                    <img class="rounded" src="{{ asset($setting->licenese) }}" style="height: 550px" alt="licenses">
                 </div>
             </div>
         </div>
@@ -467,7 +429,7 @@
 
 
     <script>
-        $('#quote-btn').on('click', function (e) {
+        $('#quote-btn').on('click', function(e) {
             e.preventDefault();
             var formData = new FormData(document.getElementById("quoteForm"));
             $.ajax({
@@ -476,29 +438,29 @@
                 'data': formData,
                 '_token': "{{ csrf_token() }}",
                 'url': "{{ route('quote.store') }}",
-                beforeSend: function (formData) {
+                beforeSend: function(formData) {
                     $('#quote-btn').html('Loading ... ');
                 },
-                success: function (data) {
+                success: function(data) {
                     if (data.status === 200) {
                         toastr.success('سنتواصل معك في اقرب وقت');
                         $('#quoteForm input').val('');
                         $('#quote-btn').html('سنتواصل معك في اقرب وقت');
                         $('#quote-btn').prop('disabled', true);
-                        setTimeout(function () {
+                        setTimeout(function() {
                             window.location.reload();
                         }, 2000)
                     }
                 },
-                error: function (data) {
+                error: function(data) {
                     if (data.status === 500) {
                         toastr.error('error sending message !!');
                     } else if (data.status === 422) {
                         var errors = $.parseJSON(data.responseText);
-                        $.each(errors, function (key, value) {
+                        $.each(errors, function(key, value) {
                             // alert(value);
                             if ($.isPlainObject(value)) {
-                                $.each(value, function (key, value) {
+                                $.each(value, function(key, value) {
                                     toastr.error('' + value);
                                     // alert(value);
                                 });
@@ -506,8 +468,7 @@
                         });
                         $('#quote-btn').html('error');
                     }
-                }
-                ,
+                },
                 cache: false,
                 processData: false,
                 contentType: false
@@ -520,6 +481,4 @@
             link.download = 'profile Company.pdf'
         }
     </script>
-
 @endsection
-

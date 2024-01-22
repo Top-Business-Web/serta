@@ -38,6 +38,13 @@
         </li>
 
         <li class="slide">
+            <a class="side-menu__item" href="{{route('benefits.index')}}">
+                <i class="fa fa-bars side-menu__icon"></i>
+                <span class="side-menu__label">فوائدنا</span>
+            </a>
+        </li>
+
+        <li class="slide">
             <a class="side-menu__item" href="{{route('subcategories.index')}}">
                 <i class="fa fa-list side-menu__icon"></i>
                 <span class="side-menu__label">فئات فرعية</span>

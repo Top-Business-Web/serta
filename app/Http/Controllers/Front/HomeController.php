@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\NewsStore;
+use App\Models\Benefits;
 use App\Models\NewsLetter;
 use App\Models\Product;
 use App\Models\Slider;
@@ -16,6 +17,7 @@ class HomeController extends Controller
         $data['sliders'] = Slider::all();
         $data['services'] = Service::all();
         $data['products'] = Product::all();
+        $data['benefits'] = Benefits::all();
         return view('site.index', compact('data'));
     }
 
