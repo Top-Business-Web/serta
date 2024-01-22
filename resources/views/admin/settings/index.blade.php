@@ -162,6 +162,111 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="desc_ar">لوجو الرؤية</label>
+                                <input type="file" class="dropify" name="logo_vision"
+                                       data-default-file="{{ asset($settings->logo_vision) }}"/
+                                       accept="png"/>
+                                <span class="form-text text-danger text-center">مسموح فقط PNG</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="licenese">لوجو الاهداف</label>
+                                <input type="file" class="dropify" name="logo_mission"
+                                       data-default-file="{{ asset($settings->logo_mission) }}"
+                                       accept="png"/>
+                                <span class="form-text text-danger text-center">مسموح فقط PNG</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="licenese">لوجو القيم</label>
+                                <input type="file" class="dropify" name="logo_values"
+                                       data-default-file="{{ asset($settings->logo_values) }}"
+                                       accept="png"/>
+                                <span class="form-text text-danger text-center">مسموح فقط PNG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">عنوان الرؤية بالعربي</label>
+                                <input type="text" value="{{ $settings->title_vision_ar }}" class="form-control" name="title_vision_ar">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">عنوان الرؤية بالاجنبي</label>
+                                <input type="text" value="{{ $settings->title_vision_en }}" class="form-control" name="title_vision_en">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">عنوان الاهداف بالعربي</label>
+                                <input type="text" class="form-control" value="{{ $settings->title_mission_ar }}" name="title_mission_ar">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">عنوان الاهداف بالاجنبي</label>
+                                <input type="text" class="form-control" value="{{ $settings->title_mission_en }}" name="title_mission_en">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">عنوان القيم بالعربي</label>
+                                <input type="text" class="form-control" value="{{ $settings->title_values_ar }}" name="title_values_ar">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">عنوان القيم بالاجنبي</label>
+                                <input type="text" class="form-control" value="{{ $settings->title_values_en }}" name="title_values_en">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">وصف الرؤية بالعربي</label>
+                                <textarea name="desc_vision_ar" class="form-control" rows="8">{{ $settings->desc_vision_ar }}</textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">وصف الرؤية بالاجنبي</label>
+                                <textarea name="desc_vision_en" class="form-control" rows="8">{{ $settings->desc_vision_en }}</textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">وصف الاهداف بالعربي</label>
+                                <textarea name="desc_mission_ar" class="form-control" rows="8">{{ $settings->desc_mission_ar }}</textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">وصف الاهداف بالاجنبي</label>
+                                <textarea name="desc_mission_en" class="form-control" rows="8">{{ $settings->desc_mission_en }}</textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">وصف القيم بالعربي</label>
+                                <textarea name="desc_values_ar" class="form-control" rows="8">{{ $settings->desc_values_ar }}</textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">وصف القيم بالاجنبي</label>
+                                <textarea name="desc_values_en" class="form-control" rows="8">{{ $settings->desc_values_en }}</textarea>
+                            </div>
+                        </div>
+                    </div>
                     <div>
                         <button type="submit" class="btn btn-primary" id="updateButton">تحديث</button>
                     </div>

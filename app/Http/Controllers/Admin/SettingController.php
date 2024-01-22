@@ -47,6 +47,30 @@ class SettingController extends Controller
             $inputs['licenese'] =  $request->licenese != null ? $this->saveImage($request->licenese, 'assets/uploads/admins/images' , 'photo') : $inputs['licenese'];
         }
 
+        if ($request->has('logo_vision'))
+        {
+            if (file_exists(public_path('assets/uploads/admins/images/') .$settings->logo_vision)) {
+                unlink(('assets/uploads/admins/images/') .$settings->logo_vision);
+            }
+            $inputs['logo_vision'] =  $request->logo_vision != null ? $this->saveImage($request->logo_vision, 'assets/uploads/admins/images' , 'photo') : $inputs['logo_vision'];
+        }
+
+        if ($request->has('logo_mission'))
+        {
+            if (file_exists(public_path('assets/uploads/admins/images/') .$settings->logo_mission)) {
+                unlink(('assets/uploads/admins/images/') .$settings->logo_mission);
+            }
+            $inputs['logo_mission'] =  $request->logo_mission != null ? $this->saveImage($request->logo_mission, 'assets/uploads/admins/images' , 'photo') : $inputs['logo_mission'];
+        }
+
+        if ($request->has('logo_values'))
+        {
+            if (file_exists(public_path('assets/uploads/admins/images/') .$settings->logo_values)) {
+                unlink(('assets/uploads/admins/images/') .$settings->logo_values);
+            }
+            $inputs['logo_values'] =  $request->logo_values != null ? $this->saveImage($request->logo_values, 'assets/uploads/admins/images' , 'photo') : $inputs['logo_values'];
+        }
+
 
         if ($settings->update($inputs))
             return response()->json(['status' => 200]);

@@ -47,44 +47,6 @@
                                         <button class="main-btn bg-brown mb-3" onclick="profDownload()">
                                             {{ trans('site.Profile_company') }}
                                         </button>
-                                        <!-- <div class="row mt-20">
-                                            <div class="col-lg-4 col-md-4 col-12">
-                                                <div class="featured-area">
-                                                    <div class="featured-icon">
-                                                        <i class="fas fa-business-time"></i>
-                                                    </div>
-                                                    <div class="featured-content">
-                                                        <div class="featured-title">
-                                                            <h5>{{ trans('site.ontime_at') }} <br>{{ trans('site.services') }}</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-12">
-                                                <div class="featured-area">
-                                                    <div class="featured-icon">
-                                                        <i class="fas fa-stopwatch"></i>
-                                                    </div>
-                                                    <div class="featured-content">
-                                                        <div class="featured-title">
-                                                            <h5>24/7 <br>{{ trans('site.services') }}</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-12">
-                                                <div class="featured-area">
-                                                    <div class="featured-icon">
-                                                        <i class="fas fa-money-check-alt"></i>
-                                                    </div>
-                                                    <div class="featured-content">
-                                                        <div class="featured-title">
-                                                            <h5>{{ trans('site.affordable') }} <br>{{ trans('site.cost') }}</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
