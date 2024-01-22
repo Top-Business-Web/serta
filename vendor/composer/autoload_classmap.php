@@ -77,6 +77,7 @@ return array(
     'App\\Http\\Requests\\UpdateSubCategory' => $baseDir . '/app/Http/Requests/UpdateSubCategory.php',
     'App\\Models\\About' => $baseDir . '/app/Models/About.php',
     'App\\Models\\Admin' => $baseDir . '/app/Models/Admin.php',
+    'App\\Models\\Benefits' => $baseDir . '/app/Models/Benefits.php',
     'App\\Models\\BgImage' => $baseDir . '/app/Models/BgImage.php',
     'App\\Models\\Blog' => $baseDir . '/app/Models/Blog.php',
     'App\\Models\\Career' => $baseDir . '/app/Models/Career.php',
