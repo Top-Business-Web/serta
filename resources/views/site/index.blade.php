@@ -154,7 +154,7 @@
                                 <li><i class="fas fa-check"></i>{{ trans('site.turn_raw_material_into_product') }}</li>
                             </ul> --}}
                             <a class="main-btn primary"
-                                href="{{ route('service') }}">{{ trans('site.find_out_more') }}</a>
+                                href="{{ route('singleService', $service->id) }}">{{ trans('site.find_out_more') }}</a>
                         </div>
                     </div>
                 @endforeach

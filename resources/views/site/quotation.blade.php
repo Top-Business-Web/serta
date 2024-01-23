@@ -7,7 +7,7 @@
 
     <!-- Breadcroumb Area -->
 
-    <div class="breadcroumb-area pickup-bg" style="background-image: url('{{ asset($bgImages->quote_img) }}')">
+    <div class="breadcroumb-area pickup-bg" style="background-image: url('{{ asset($bgImages->qoute_img) }}')">
         <div class="overlay-2"></div>
         <div class="container">
             <div class="row">
