@@ -7,7 +7,7 @@
 
 
     <!--Favicon-->
-    <link rel="icon" href="{{ asset('assets/front/') }}/assets/img/favicon.png" type="image/jpg"/>
+    <link rel="icon" href="{{ asset('assets/uploads/fav.jpg') }}" type="image/jpg"/>
     <!-- Bootstrap CSS -->
     <link href="{{ asset('assets/front/') }}/assets/css/bootstrap.min.css" rel="stylesheet"/>
     <!-- Line Awesome CSS -->

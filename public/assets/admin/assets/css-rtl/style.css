@@ -20020,13 +20020,13 @@ object, embed, video {
     border-color: rgba(136, 183, 213, 0);
     border-width: 6px;
     margin-top: -6px;
-    border-right-color: #525ce5;
+    border-right-color: #e55252;
     border-left-color: transparent !important; }
   .chat .msg_cotainer_send:after {
     border-color: rgba(194, 225, 245, 0);
     border-width: 6px;
     margin-top: -6px;
-    border-right-color: #525ce5;
+    border-right-color: #e55252;
     border-left-color: transparent !important; }
 
 .chat .msg_cotainer:before, .chat .msg_cotainer:after {

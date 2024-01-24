@@ -254,7 +254,7 @@
   -webkit-transition: border-left-color 0.3s ease, background-color 0.3s ease;
   -o-transition: border-left-color 0.3s ease, background-color 0.3s ease;
   transition: border-left-color 0.3s ease, background-color 0.3s ease;
-  color: #606d94; }
+  color: #e55252 !important; }
   .side-menu__item.active, .side-menu__item:hover, .side-menu__item:focus {
     text-decoration: none;
     color: #8499c4; }
@@ -284,7 +284,7 @@
   text-decoration: none; }
 
 .side-menu .side-menu__icon {
-  color: #677ca7;
+  color: #e55252 !important;
   font-size: 18px;
   height: 22px;
   width: 22px;
@@ -646,7 +646,7 @@
   content: '';
   width: 3px;
   height: 38px;
-  background: #525ce5;
+  background: #e55252;
   position: absolute;
   left: 0;
   top: 0; }

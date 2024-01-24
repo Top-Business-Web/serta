@@ -4,10 +4,12 @@
     <!-- Hero Area -->
 
 
-    <div class="homepage-slides owl-carousel owl-theme">
+    {{-- <div class="homepage-slides owl-carousel owl-theme"> --}}
         @foreach ($data['sliders'] as $slider)
-            <div class="single-slide-item"
-                style="background-image: url({{ asset('assets/admin/sliders/images/' . $slider->image) }});">
+            <div class="single-slide-item">
+                <video autoplay muted loop playsinline>
+                    <source src="{{ asset('assets/admin/videos/1.mp4') }}" type="video/mp4">
+                </video>
                 <div class="image-layer">
                     <div class="overlay"></div>
                 </div>
@@ -30,7 +32,8 @@
                 </div>
             </div>
         @endforeach
-    </div>
+    {{-- </div> --}}
+
 
     <!-- Promo Secton -->
 
@@ -53,7 +56,7 @@
                                     </h5>
                                     {{--                                    aya --}}
                                     <!-- <button class="main-btn bg-brown mt-3" type="button" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">{{ trans('site.liceneses') }}</button> -->
+                                                    data-bs-target="#exampleModal">{{ trans('site.liceneses') }}</button> -->
                                 </div>
                             </div>
                         </div>
@@ -107,7 +110,7 @@
                         <img src="{{ $aboutUs->image }}" alt="">
                         <div class="about-counter">
                             <div class="counter-icon">
-                                <img src="{{ asset('assets/front') }}/assets/img/icon/customer-service.png"
+                                <img src="{{ asset('assets/uploads/happy_customers.jpg') }}"
                                     style="width: 50px;" alt="">
                             </div>
                             <div class="counter-number">
@@ -167,25 +170,25 @@
     <div class="process-area dark-bg section-padding">
         <div class="container">
             <!-- <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <div class="section-title">
-                            <h6>{{ trans('site.recycling_wastage_save_environment') }}</h6>
-                            <h2 class="text-white">{{ trans('site.simple_steps_wastage') }}
-                                <br> {{ trans('site.to_recycling_item_processing') }}</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="process-right-content">
-                            <p class="text-white">{{ trans('site.recycling_is_the_process_of_converting') }}</p>
-                            <p class="text-white">{{ trans('site.this_waste_management_video') }}</p>
-                            <div class="process-btn">
-                                <a href="{{ route('contact') }}" class="main-btn">{{ trans('site.get_started') }}</a>
-                                <a href="{{ route('service') }}"
-                                   class="main-btn white">{{ trans('site.view_our_services') }}</a>
+                        <div class="col-12 col-lg-6">
+                            <div class="section-title">
+                                <h6>{{ trans('site.recycling_wastage_save_environment') }}</h6>
+                                <h2 class="text-white">{{ trans('site.simple_steps_wastage') }}
+                                    <br> {{ trans('site.to_recycling_item_processing') }}</h2>
                             </div>
                         </div>
-                    </div>
-                </div> -->
+                        <div class="col-lg-6">
+                            <div class="process-right-content">
+                                <p class="text-white">{{ trans('site.recycling_is_the_process_of_converting') }}</p>
+                                <p class="text-white">{{ trans('site.this_waste_management_video') }}</p>
+                                <div class="process-btn">
+                                    <a href="{{ route('contact') }}" class="main-btn">{{ trans('site.get_started') }}</a>
+                                    <a href="{{ route('service') }}"
+                                       class="main-btn white">{{ trans('site.view_our_services') }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
 
 
             <div class="process-item-wrap">
@@ -263,7 +266,7 @@
                         <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                             <div class="feature-card">
                                 <div class="feature-icon mb-3">
-                                    <img src="{{ asset('assets/admin/sliders/images/' .$benefit->image) }}"
+                                    <img src="{{ asset('assets/admin/sliders/images/' . $benefit->image) }}"
                                         alt="no-image">
                                 </div>
                                 <div class="feature-title">
@@ -275,108 +278,108 @@
                 </div>
             </div>
             <!-- <div class="image-all-egypt">
-                    <img src="{{ asset('assets/front/') }}/assets/img/img-all-egypt.jpg">
-                </div> -->
+                        <img src="{{ asset('assets/front/') }}/assets/img/img-all-egypt.jpg">
+                    </div> -->
         </div>
     </div>
 
     <!-- Contact Section  -->
 
     <!-- <div class="contact-area section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 col-lg-6">
-                        <div class="contact-wrap">
-                            <div class="section-title">
-                                <h2 class="text-white">{{ trans('site.time_is_the_best_way_to_thin_About_recycling') }}</h2>
-                            </div>
-                            <div class="contact-desc">
-                                <p class="text-white">
-                                    {{ trans('site.we_offer_product') }}
-                                </p>
-                            </div>
-                            <div class="contact-list-wrap">
-                                <div class="row">
-                                    <div class="col-12 col-md-6 col-sm-6 col-lg-6">
-                                        <ul class="list-unstyled contact-list">
-                                            <li><i class="fas fa-check"></i> {{ trans('site.reduce_greenhouse_effect') }}
-                                            </li>
-                                            <li><i class="fas fa-check"></i>{{ trans('site.conserv_natural_resources') }}
-                                            </li>
-                                            <li><i class="fas fa-check"></i>{{ trans('site.reduces_carbon_emissions') }}
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-12 col-md-6 col-sm-6 col-lg-6">
-                                        <ul class="list-unstyled contact-list">
-                                            <li><i class="fas fa-check"></i>{{ trans('site.protects_ecosystems') }}</li>
-                                            <li><i class="fas fa-check"></i>{{ trans('site.economic_Benefits') }}</li>
-                                        </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-6">
+                            <div class="contact-wrap">
+                                <div class="section-title">
+                                    <h2 class="text-white">{{ trans('site.time_is_the_best_way_to_thin_About_recycling') }}</h2>
+                                </div>
+                                <div class="contact-desc">
+                                    <p class="text-white">
+                                        {{ trans('site.we_offer_product') }}
+                                    </p>
+                                </div>
+                                <div class="contact-list-wrap">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-sm-6 col-lg-6">
+                                            <ul class="list-unstyled contact-list">
+                                                <li><i class="fas fa-check"></i> {{ trans('site.reduce_greenhouse_effect') }}
+                                                </li>
+                                                <li><i class="fas fa-check"></i>{{ trans('site.conserv_natural_resources') }}
+                                                </li>
+                                                <li><i class="fas fa-check"></i>{{ trans('site.reduces_carbon_emissions') }}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-sm-6 col-lg-6">
+                                            <ul class="list-unstyled contact-list">
+                                                <li><i class="fas fa-check"></i>{{ trans('site.protects_ecosystems') }}</li>
+                                                <li><i class="fas fa-check"></i>{{ trans('site.economic_Benefits') }}</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="contact-btn">
-                                <a class="main-btn" href="{{ trans('about') }}">{{ trans('site.learn_more') }}</a>
-                                <a class="main-btn white" href="{{ trans('faqs') }}">{{ trans('site.our_core_values') }}</a>
-                            </div>
+                                <div class="contact-btn">
+                                    <a class="main-btn" href="{{ trans('about') }}">{{ trans('site.learn_more') }}</a>
+                                    <a class="main-btn white" href="{{ trans('faqs') }}">{{ trans('site.our_core_values') }}</a>
+                                </div>
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 offset-xl-1">
-                        <div class="quotation-wrap">
-                            <div class="quotation-inner">
-                                <h5 class="quotation-heading">{{ trans('site.get_a_quote') }}</h5>
-                                <p class="quotation-desc">
-                                    {{ trans('site.we_take_great_pride') }}
-                                </p>
-                                <form class="quoteForm" id="quoteForm">
-                                    @csrf
-                                    <div class="row">
-                                        <div class="col-12 col-md-6">
-                                            <label class="form-label" for="contact-usage">{{ trans('site.first_name') }}
-                                            </label>
-                                            <input class="form-control" type="text" name="first_name"
-                                                   placeholder="{{ trans('site.first_name') }}" required=""/>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <label class="form-label" for="contact-usage">{{ trans('site.last_name') }}
-                                            </label>
-                                            <input class="form-control" type="text" name="last_name"
-                                                   placeholder="{{ trans('site.last_name') }}" required=""/>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <label class="form-label" for="contact-usage">{{ trans('site.name_company') }}
-                                            </label>
-                                            <input class="form-control" type="text" name="company"
-                                                   placeholder="{{ trans('site.name_company') }}"
-                                                   required=""/>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <label class="form-label" for="contact-usage">{{ trans('site.phone') }}
-                                            </label>
-                                            <input class="form-control" type="number" name="phone"
-                                                   placeholder="{{ trans('site.phone') }}"
-                                                   required=""/>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <label class="form-label" for="contact-usage">{{ trans('site.email') }}
-                                            </label>
-                                            <input class="form-control" type="email" name="email"
-                                                   placeholder="{{ trans('site.email') }}" required=""/>
-                                        </div>
+                        <div class="col-xl-6 col-lg-6 offset-xl-1">
+                            <div class="quotation-wrap">
+                                <div class="quotation-inner">
+                                    <h5 class="quotation-heading">{{ trans('site.get_a_quote') }}</h5>
+                                    <p class="quotation-desc">
+                                        {{ trans('site.we_take_great_pride') }}
+                                    </p>
+                                    <form class="quoteForm" id="quoteForm">
+                                        @csrf
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <label class="form-label" for="contact-usage">{{ trans('site.first_name') }}
+                                                </label>
+                                                <input class="form-control" type="text" name="first_name"
+                                                       placeholder="{{ trans('site.first_name') }}" required=""/>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label class="form-label" for="contact-usage">{{ trans('site.last_name') }}
+                                                </label>
+                                                <input class="form-control" type="text" name="last_name"
+                                                       placeholder="{{ trans('site.last_name') }}" required=""/>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label class="form-label" for="contact-usage">{{ trans('site.name_company') }}
+                                                </label>
+                                                <input class="form-control" type="text" name="company"
+                                                       placeholder="{{ trans('site.name_company') }}"
+                                                       required=""/>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label class="form-label" for="contact-usage">{{ trans('site.phone') }}
+                                                </label>
+                                                <input class="form-control" type="number" name="phone"
+                                                       placeholder="{{ trans('site.phone') }}"
+                                                       required=""/>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label class="form-label" for="contact-usage">{{ trans('site.email') }}
+                                                </label>
+                                                <input class="form-control" type="email" name="email"
+                                                       placeholder="{{ trans('site.email') }}" required=""/>
+                                            </div>
 
-                                        <div class="col-12">
-                                            <button type="button" id="quote-btn"
-                                                    class="main-btn primary">{{ trans('site.submit') }}</button>
+                                            <div class="col-12">
+                                                <button type="button" id="quote-btn"
+                                                        class="main-btn primary">{{ trans('site.submit') }}</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div> -->
+            </div> -->
 
     <!-- product Section  -->
 
