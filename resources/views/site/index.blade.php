@@ -4,7 +4,7 @@
     <!-- Hero Area -->
 
 
-    <div class="homepage-slides owl-carousel owl-theme">
+    {{-- <div class="homepage-slides owl-carousel owl-theme"> --}}
         @foreach ($data['sliders'] as $slider)
             <div class="single-slide-item">
                 <video autoplay muted loop playsinline>
@@ -32,7 +32,7 @@
                 </div>
             </div>
         @endforeach
-    </div>
+    {{-- </div> --}}
 
 
     <!-- Promo Secton -->
@@ -110,7 +110,7 @@
                         <img src="{{ $aboutUs->image }}" alt="">
                         <div class="about-counter">
                             <div class="counter-icon">
-                                <img src="{{ asset('assets/front') }}/assets/img/icon/customer-service.png"
+                                <img src="{{ asset('assets/uploads/happy_customers.jpg') }}"
                                     style="width: 50px;" alt="">
                             </div>
                             <div class="counter-number">
