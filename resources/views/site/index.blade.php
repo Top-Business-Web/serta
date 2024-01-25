@@ -1,7 +1,7 @@
 @extends('site.layouts.master')
 
 @section('content')
-    <!-- Hero Area -->
+    <!-- Hero Area hi -->
 
 
     {{-- <div class="homepage-slides owl-carousel owl-theme"> --}}
