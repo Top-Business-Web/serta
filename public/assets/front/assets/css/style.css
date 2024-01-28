@@ -2914,7 +2914,7 @@ ul.service-list li i {
 .why-choose-two_left {
   position: relative;
   display: block;
-  margin-left: -364px;
+  /* margin-left: -364px; */
   margin-right: 80px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
