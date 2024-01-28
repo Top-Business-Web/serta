@@ -2,8 +2,7 @@
 
 @section('content')
 
-    <!-- Pre-Loader -->
-    <div class="preloader"></div>
+
 
     <!-- Breadcroumb Area -->
 

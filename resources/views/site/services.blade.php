@@ -2,8 +2,7 @@
 
 @section('content')
 
-    <!-- Pre-Loader -->
-    <div class="preloader"></div>
+ 
 
     <!-- Breadcroumb Area -->
 
@@ -38,7 +37,9 @@
                         <div class="services-two_single">
                             <div class="services-two_img-box">
                                 <div class="services-two_img">
+                                    <a href="{{ route('singleService', $service->id) }}">
                                     <img src="{{ asset($service->images[0]) }}" alt="">
+                                    </a>
                                 </div>
                                 <div class="services-two_icon">
                                     <img src="{{ asset($service->image_logo) }}" alt="">

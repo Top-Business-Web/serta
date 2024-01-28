@@ -3,7 +3,9 @@
 @include('site.layouts.head')
 <body>
 <!-- Pre-Loader -->
-<div class="preloader"></div>
+<div class="preloader">
+<span class="loader"></span>
+</div>
 
 @include('site.layouts.header')
 
@@ -13,18 +15,18 @@
 <!-- Scroll Top Area -->
 <a href="#top" class="go-top"><i class="fas fa-angle-up"></i></a>
 
-<button class="message" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+<!-- <button class="message" data-bs-toggle="modal" data-bs-target="#exampleModal1">
 <a data-bs-toggle="tooltip" data-bs-placement="right" title="سجل اهتمامك">
 <i class="fa-solid fa-comment-sms"></i>
 </a>
-</button>
+</button> -->
 
 <a href="https://wa.me/920033007" target="_blank" class="whatsapp">
 <i class="fa-brands fa-whatsapp"></i>
 </a>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -40,7 +42,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- font awesome JS -->
 <script src="{{ asset('assets/front/') }}/assets/js/all.min.js"></script>
