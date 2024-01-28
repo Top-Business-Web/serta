@@ -1,7 +1,7 @@
 @extends('site.layouts.master')
 
 @section('content')
-    <!-- Pre-Loader test -->
+    <!-- Pre-Loader -->
     <div class="preloader"></div>
 
 
