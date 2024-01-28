@@ -2,8 +2,7 @@
 
 @section('content')
 
-    <!-- Pre-Loader -->
-    <div class="preloader"></div>
+
 
     <!-- Breadcroumb Area -->
 
@@ -29,7 +28,9 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay=".2s">
                         <div class="single-blog-item">
                             <div class="blog-bg">
+                                <a href="{{ route('career') }}">
                                 <img src="{{ asset('assets/admin/posts/images/'.$blog->image) }}" alt="">
+                                </a>
                                     <?php
                                     $created_at = $blog->created_at;
 

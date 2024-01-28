@@ -1,8 +1,7 @@
 @extends('site.layouts.master')
 
 @section('content')
-    <!-- Pre-Loader -->
-    <div class="preloader"></div>
+
 
 
     <!-- Breadcroumb Area -->
@@ -37,7 +36,7 @@
                             <div class="row">
                                 <div class="col-12 col-lg-12">
                                     <div class="about-content-left">
-                                        <p class="highlight">{{ app()->getLocale() == 'ar' ? $about->top_desc_ar : $about->top_desc_en }}
+                                        <p class="highlight mb-5">{{ app()->getLocale() == 'ar' ? $about->top_desc_ar : $about->top_desc_en }}
                                         </p>
 
 {{--                                        <p>--}}

@@ -83,9 +83,9 @@
                                             <!-- <span class="sub-nav-toggler"> </span> -->
                                         </a>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a class="nav-link {{ $name_url == 'team-work' ? 'active' : '' }}" href="{{ route('teamWork') }}">{{ trans('site.team_work') }}</a>
-                                    </li>
+                                    </li> -->
                                     <li class="nav-item">
                                         <a class="nav-link {{ $name_url == 'partner-success' ? 'active' : '' }}" href="{{ route('partnerSuccess') }}">{{ trans('site.partner_success') }}</a>
                                     </li>

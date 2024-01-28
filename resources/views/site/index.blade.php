@@ -89,7 +89,7 @@
                             <div class="row">
                                 <div class="col-12 col-lg-12">
                                     <div class="about-content-left">
-                                        <p class="highlight">
+                                        <p class="highlight mb-5">
                                             {{ app()->getLocale() == 'ar' ? $aboutUs->top_desc_ar : $aboutUs->top_desc_en }}
                                         </p>
 
@@ -398,7 +398,9 @@
                     @foreach ($data['products'] as $product)
                         <div class="project-single ms-2 me-2">
                             <div class="project-img">
+                                <a href="{{ route('singleProduct', $product->id) }}">
                                 <img src="{{ asset($product->images[0]) }}" alt="">
+                                </a>
                             </div>
                             <div class="project-content">
                                 <div class="project-title text-center">

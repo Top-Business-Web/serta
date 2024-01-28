@@ -1,8 +1,7 @@
 @extends('site.layouts.master')
 
 @section('content')
-    <!-- Pre-Loader -->
-    <div class="preloader"></div>
+
 
 
     <!-- Breadcroumb Area -->
@@ -20,6 +19,23 @@
             </div>
         </div>
     </div>
+
+    <!-- paretner -->
+    <div class="partner-area section-padding">
+        <div class="container">
+    <div class="section-title">
+        <h6>شركاء النجاح</h6>
+        <h2>نقدم خدمات متميزة وفريدة من نوعها في مجال الانشاءات باستخدام التقنيات المتقدمة</h2>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card-image">
+                <img src="{{ asset('assets/front') }}/assets/img/icon/ecology.png" class="img-partner">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 
 
