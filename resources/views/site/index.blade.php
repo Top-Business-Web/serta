@@ -7,13 +7,13 @@
     {{-- <div class="homepage-slides owl-carousel owl-theme"> --}}
         @foreach ($data['sliders'] as $slider)
             <div class="single-slide-item">
-                <video autoplay muted loop playsinline>
+                <video autoplay muted loop playsinline style="width: 100%;">
                     <source src="{{ asset('assets/admin/videos/1.mp4') }}" type="video/mp4">
                 </video>
                 <div class="image-layer">
                     <div class="overlay"></div>
                 </div>
-                <div class="hero-area-content">
+                <!-- <div class="hero-area-content">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-10 wow fadeInUp animated" data-wow-delay=".2s">
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         @endforeach
     {{-- </div> --}}
