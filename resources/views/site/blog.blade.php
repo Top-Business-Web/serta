@@ -28,7 +28,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay=".2s">
                         <div class="single-blog-item">
                             <div class="blog-bg">
-                                <a href="{{ route('career') }}">
+                                <a href="{{ route('career') }}" class="w-100">
                                 <img src="{{ asset('assets/admin/posts/images/'.$blog->image) }}" alt="">
                                 </a>
                                     <?php

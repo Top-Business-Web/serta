@@ -49,7 +49,7 @@
                             </div>
                             <div class="col-lg-8 col-md-8 col-12">
                                 <div class="promo-content">
-                                    <h5> {{ trans('site.we_are_top') }}
+                                    <h5> {{ trans('site.we_are_top') }} 
                                         <b> {{ trans('site.recycling') }} </b>
                                         {{ trans('site.organization_to_create_best') }}
                                         <b> {{ trans('site.environment') }} </b>
@@ -398,7 +398,7 @@
                     @foreach ($data['products'] as $product)
                         <div class="project-single ms-2 me-2">
                             <div class="project-img">
-                                <a href="{{ route('singleProduct', $product->id) }}">
+                                <a href="{{ route('singleProduct', $product->id) }}" class="w-100">
                                 <img src="{{ asset($product->images[0]) }}" alt="">
                                 </a>
                             </div>

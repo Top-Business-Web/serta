@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="logo">
-                        <img src="{{ asset($setting->logo) }}" alt="no-logo"/>
+                        <img src="{{ asset('assets/front') }}/assets/img/white png logo.png" alt="no-logo"/>
                     </div>
                     <div class="contact-info">
                         <p><b>{{ trans('site.location') }}
@@ -46,7 +46,10 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <div class="subscribe-form">
+                <div class="image-footer mt-3">
+                    <img src="{{ asset('assets/front') }}/assets/img/footer1.png" class="w-100">
+                </div>
+                    <!-- <div class="subscribe-form">
                         <h6>{{ trans('site.news_letter') }}</h6>
                         <form class="newsForm" id="newsForm">
                             @csrf
@@ -55,7 +58,7 @@
                                     class="fas fa-envelope submitIcon"></i></button>
                         </form>
                         <p>{{ trans('site.Stay_tuned_for_our_latest_news') }}</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
