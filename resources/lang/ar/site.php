@@ -35,7 +35,7 @@ return [
     'services' => 'خدمات',
     'products' => 'منتجات',
     'projects' => 'مشاريع',
-    'jobs' => 'اعمال',
+    'jobs' => 'الوظائف',
     'career' => 'حياة مهنية',
     'news' => 'الاخبار',
     'contact' => 'تواصل',

@@ -662,10 +662,10 @@ input.form-control {
   width: 100%;
   height: 100%;
   background-color: #000;
-  opacity: 0.6;
+  opacity: 0.3;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 999;
 }
 
 .overlay-1 {
@@ -1352,9 +1352,9 @@ input.form-control {
 /* Slider CSS
 ==================*/
 .single-slide-item {
-  background-image: url("../img/slider/slide-1.jpg");
+  /* background-image: url("../img/slider/slide-1.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   background-color: #ddd;
   color: #fff;
   width: 100%;
@@ -6447,11 +6447,12 @@ body{
    .feature-icon{
     width: 100px;
     height: 100px;
-    background-color: #c93831;
+    /* background-color: #c93831; */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s ease;
    }
    .feature-card{
     display: flex;
@@ -6465,6 +6466,9 @@ body{
    }
    .feature-card:hover .feature-icon img{
     transform: rotate(360deg);
+   }
+   .feature-card:hover .feature-icon{
+    background-color: #e9afad;
    }
 
    .projects-filter {
