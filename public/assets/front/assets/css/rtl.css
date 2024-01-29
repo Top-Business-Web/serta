@@ -13,10 +13,7 @@ Version: 1.0
 /*--
     - Common CSS
 -----------------------------------------*/
-@font-face {
-    font-family: url("../fonts/JF\ Flat\ regular.ttf");
-    src: url();
-}
+
 html,
 body {
   height: 100%;
@@ -5891,7 +5888,7 @@ label.form-label {
 }
 
 .promo-bg {
-  background-image: url("../img/info-bg.jpg");
+  background-image: url("../img/Untitled-1.jpg");
 }
 
 .promo-bg.bg-cover {
