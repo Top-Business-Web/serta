@@ -49,7 +49,7 @@
                             </div>
                             <div class="col-lg-8 col-md-8 col-12">
                                 <div class="promo-content">
-                                    <h5> {{ trans('site.we_are_top') }} 
+                                    <h5> {{ trans('site.we_are_top') }}
                                         <b> {{ trans('site.recycling') }} </b>
                                         {{ trans('site.organization_to_create_best') }}
                                         <b> {{ trans('site.environment') }} </b>
@@ -64,7 +64,7 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-12 wow fadeInUp" data-wow-delay=".4s">
                     <div class="promo-founder">
-                        <img src="{{ asset('assets/front') }}/assets/img/icon/ecology.png" style="width: 50px;"
+                        <img src="{{ asset('assets/front') }}/assets/img/5.png" style="width: 50px;"
                             alt="">
                         <p class="highlight">{{ $aboutUs->year_ex }}+</p>
                         <p>{{ trans('site.years') }} <br>{{ trans('site.experience') }}</p>
@@ -96,7 +96,6 @@
                                         <!--<p>-->
                                         <!--    {{ trans('site.enviro_group_aims') }}-->
                                         <!--</p>-->
-
                                         <button class="main-btn bg-brown mb-3"
                                             onclick="profDownload('{{ asset($setting->profile) }}', 'profile Company')">{{ trans('site.Profile_company') }}</button>
                                     </div>
