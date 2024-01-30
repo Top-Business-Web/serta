@@ -5,10 +5,12 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\NewsStore;
 use App\Models\Benefits;
+use App\Models\Category;
 use App\Models\NewsLetter;
 use App\Models\Product;
 use App\Models\Slider;
 use App\Models\Service;
+use App\Models\SubCategory;
 
 class HomeController extends Controller
 {
@@ -25,13 +27,25 @@ class HomeController extends Controller
     {
         $inputs = $request->all();
 
-        if(NewsLetter::create($inputs))
-        {
+        if (NewsLetter::create($inputs)) {
             return response()->json(['status' => 200]);
-        }
-        else
-        {
+        } else {
             return response()->json(['status' => 405]);
         }
+    }
+
+    public function getSubCategory($categoryId)
+    {
+        $sub_categories = SubCategory::query()
+            ->select('id', 'title_ar', 'title_en', 'category_id')
+            ->where('category_id', $categoryId)
+            ->get();
+
+        $subCategoryIds = $sub_categories->pluck('id')->toArray();
+
+        $products = Product::whereIn('sub_categories_id', $subCategoryIds)
+            ->get();
+
+        return view('site.products', compact('sub_categories', 'products'));
     }
 }
