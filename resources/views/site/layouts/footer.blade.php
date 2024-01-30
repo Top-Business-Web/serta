@@ -13,7 +13,8 @@
                                 :</b> {{ app()->getLocale() == 'ar' ? $setting->address_ar : $setting->address_en }}</p>
                         <p><b>{{ trans('site.phone') }}:</b> {{ $setting->phone }}</p>
                         <p><b>{{ trans('site.email') }}:</b> {{ $setting->email }}</p>
-                        <p><b>{{ trans('site.opening_hour') }}:</b> {{ $setting->open }}</p>
+                        <a href="{{ route('quote') }}" class="main-btn primary text-decoration-none mt-3">{{ trans('site.get_a_quote') }}</a>
+                        <!-- <p><b>{{ trans('site.opening_hour') }}:</b> {{ $setting->open }}</p> -->
                     </div>
 
                 </div>
@@ -27,6 +28,7 @@
                                     <a href="{{ route('about') }}">{{ trans('site.about_us') }}</a>
                                     <a href="{{ route('product') }}">{{ trans('site.our_projects') }}</a>
                                     <a href="{{ route('contact') }}">{{ trans('site.contact') }}</a>
+                                    <a href="{{ route('faqs') }}">{{ trans('site.faqs') }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -78,11 +80,11 @@
 
             <div class="col-lg-6 col-12 text-end">
                 <div class="social-area">
-                    <a href="{{ $setting->facebook }}"><i class="fab fa-facebook-f ms-2 me-2"></i></a>
-                    <a href="{{ $setting->youtube }}"><i class="fab fa-youtube ms-2 me-2"></i></a>
-                    <a href="{{ $setting->twitter }}"><i class="fab fa-twitter ms-2 me-2"></i></a>
-                    <a href="{{ $setting->instagram }}"><i class="fab fa-instagram ms-2 me-2"></i></a>
-                    <a href="{{ $setting->linkedin }}"><i class="fab fa-linkedin ms-2 me-2"></i></a>
+                    <a href="{{ $setting->facebook }}" target="_blank"><i class="fab fa-facebook-f ms-2 me-2"></i></a>
+                    <a href="{{ $setting->youtube }}" target="_blank"><i class="fab fa-youtube ms-2 me-2"></i></a>
+                    <a href="{{ $setting->twitter }}" target="_blank"><i class="fab fa-twitter ms-2 me-2"></i></a>
+                    <a href="{{ $setting->instagram }}" target="_blank"><i class="fab fa-instagram ms-2 me-2"></i></a>
+                    <a href="{{ $setting->linkedin }}" target="_blank"><i class="fab fa-linkedin ms-2 me-2"></i></a>
                 </div>
             </div>
         </div>

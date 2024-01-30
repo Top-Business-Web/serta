@@ -5890,7 +5890,7 @@ label.form-label {
 }
 
 .promo-bg {
-  background-image: url("../img/Untitled-1.jpg");
+  background-image: url("../img/Untitled-2.jpg");
 }
 
 .promo-bg.bg-cover {
@@ -6164,3 +6164,12 @@ label.form-label {
 .image-footer img{
     height: 240px;
 }
+.btn-sm{
+    font-weight: bold;
+    color: #c93831;
+}
+.btn-sm:hover{
+    border: 1px solid #c93831;
+    color: #c93831;
+}
+
