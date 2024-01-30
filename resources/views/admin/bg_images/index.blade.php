@@ -40,7 +40,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="name" class="form-control-label">منتج</label>
+                                    <label for="name" class="form-control-label">مشروع</label>
                                     <input type="file" class="dropify" name="product_img"
                                            data-default-file="{{asset($image->product_img)}}"
                                            accept="image/png,image/webp , image/gif, image/jpeg,image/jpg"/>

@@ -35,7 +35,7 @@
                                 >All</a
                                 >
                             </li>
-                            @foreach($data['sub_categories'] as $sub_category)
+                            @foreach($sub_categories as $sub_category)
                                 <li>
                                     <a href="" data-filter="{{ $sub_category->id }}" id="filter_project"
                                     >{{ app()->getLocale() == 'ar' ? $sub_category->title_ar : $sub_category->title_en }}</a
@@ -50,7 +50,7 @@
             <div class="row mt-5">
                 <div class="col-12">
                     <div class="row productSearch">
-                        @foreach($data['products'] as $product)
+                        @foreach($products as $product)
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="project-single">
                                     <div class="project-img">
@@ -86,7 +86,7 @@
                                 <li class="CategorySort">
                                     <a class="CategorySort" data-id="all" href="#">{{ trans('site.all') }}</a>
                                 </li>
-                                @foreach ($data['categories'] as $category)
+                                @foreach ($categories as $category)
                     <li data-bs-toggle="collapse" href="#collapseExample{{ $category->id }}"
                                         role="button"
                                         aria-expanded="false" aria-controls="collapseExample">
