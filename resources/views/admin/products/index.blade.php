@@ -26,7 +26,6 @@
                                 <th>#</th>
                                 <th>الصورة</th>
                                 <th>عنوان</th>
-                                <th>عنوان الفرعي</th>
                                 <th>الفئة</th>
                                 <th class="rounded-end">العمليات</th>
                             </tr>
@@ -94,7 +93,6 @@
             {data: 'id', name: 'id'},
             {data: 'images', name: 'images'},
             {data: 'title_ar', name: 'title_ar'},
-            {data: 'sub_title_ar', name: 'sub_title_ar'},
             {data: 'sub_categories_id', name: 'sub_categories_id'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]

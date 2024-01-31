@@ -13,7 +13,7 @@
                 <div class="col-lg-12">
                     <div class="breadcroumb-title text-center">
                         <h1>{{ trans('site.projects') }}</h1>
-                        <h6><a href="{{ route('home') }}">{{ trans('site.home') }}</a> / {{ trans('site.projects') }}</h6>
+                        <h6><a href="{{ route('home') }}">{{ trans('site.home') }}</a> / <a href="{{ route('getSubCategory', $data['product']->subCategory->category->id) }}">{{ app()->getLocale() == 'ar' ? $data['product']->subCategory->category->title_ar : $data['product']->subCategory->category->title_en }}</a> / {{ app()->getLocale() == 'ar' ? $data['product']->subCategory->title_ar : $data['product']->subCategory->title_en }}</h6>
                     </div>
                 </div>
             </div>
