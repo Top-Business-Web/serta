@@ -13,6 +13,7 @@ Version: 1.0
 /*--
     - Common CSS
 -----------------------------------------*/
+
 html,
 body {
   height: 100%;
@@ -662,7 +663,7 @@ input.form-control {
   width: 100%;
   height: 100%;
   background-color: #000;
-  opacity: 0.3;
+  opacity: 0.5;
   top: 0;
   left: 0;
   z-index: 999;
@@ -5887,7 +5888,7 @@ label.form-label {
 }
 
 .promo-bg {
-  background-image: url("../img/info-bg.jpg");
+  background-image: url("../img/Untitled-2.jpg");
 }
 
 .promo-bg.bg-cover {
@@ -6557,17 +6558,30 @@ body{
 }
 
 .img-partner{
-    height: 150px;
+    height: 250px;
+    border-radius: 10px;
 }
 .partner-area .card-image{
     transition: all 0.5s ease;
     box-shadow: 0px 0px 10px rgb(1 1 1 / 10%);
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
 .partner-area .card-image .img-partner{
     transition: all 0.5s ease;
 }
 .partner-area .card-image:hover .img-partner{
     transform: scale(1.1);
+}
+.image-footer img{
+    height: 240px;
+}
+.btn-sm{
+    font-weight: bold;
+    color: #c93831;
+}
+.btn-sm:hover{
+    border: 1px solid #c93831;
+    color: #c93831;
 }

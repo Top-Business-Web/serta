@@ -111,8 +111,9 @@
                             </li>
                         </ul>
                         <div class="contact-page-details_social">
-                            <a href="{{ $setting->twitter }}"><i class="fab fa-twitter"></i></a>
-                            <a href="{{ $setting->facebook }}"><i class="fab fa-facebook"></i></a>
+                            <a href="{{ $setting->twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="{{ $setting->instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="{{ $setting->linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>

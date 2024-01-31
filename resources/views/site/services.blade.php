@@ -2,7 +2,7 @@
 
 @section('content')
 
- 
+
 
     <!-- Breadcroumb Area -->
 
@@ -37,7 +37,7 @@
                         <div class="services-two_single">
                             <div class="services-two_img-box">
                                 <div class="services-two_img">
-                                    <a href="{{ route('singleService', $service->id) }}">
+                                    <a href="{{ route('singleService', $service->id) }}" class="w-100">
                                     <img src="{{ asset($service->images[0]) }}" alt="">
                                     </a>
                                 </div>
