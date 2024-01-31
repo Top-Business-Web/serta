@@ -14,7 +14,7 @@ class ProductController extends Controller
     {
         $data['products'] = Product::all();
         $data['categories'] = Category::with('subCategory')->withCount('subCategory')->get();
-//        return $data['categories'];
+        //        return $data['categories'];
         $data['sub_categories'] = SubCategory::all();
         return view('site.products', compact('data'));
     }
@@ -24,7 +24,7 @@ class ProductController extends Controller
         $data['products'] = Product::all();
         $data['product'] = Product::find($id);
         $data['related'] = Product::where('sub_categories_id', $id)->get();
-         return view('site.single-products', compact('data'));
+        return view('site.single-products', compact('data'));
     }
 
     public function productSearch(Request $request)
@@ -32,9 +32,10 @@ class ProductController extends Controller
         if ($request->ajax()) {
             $output = '';
 
-            if ($request->categoryId != ''){
-            $products = Product::where('sub_categories_id', $request->categoryId )
-                ->get();
+            if ($request->categoryId != '') {
+                $products = Product::where('sub_categories_id', $request->categoryId)
+                    ->orderBy('created_at', 'desc')
+                    ->get();
             } else {
                 $products = Product::get();
             }
@@ -45,12 +46,12 @@ class ProductController extends Controller
                         '<div class="col-12 col-md-6 col-lg-4">
                                 <div class="project-single">
                                     <div class="project-img">
-                                        <img src="'. asset($product->images[0]) .'" alt="">
+                                        <img src="' . asset($product->images[0]) . '" alt="">
                                     </div>
                                     <div class="project-content">
                                         <div class="project-title text-center">
-                                            <a href="'. route('singleProduct', $product->id) .'"
-                                               class="fs-5">'. $product->title_ar .'</a>
+                                            <a href="' . route('singleProduct', $product->id) . '"
+                                               class="fs-5">' . $product->title_ar . '</a>
                                         </div>
                                     </div>
                                 </div>
@@ -69,8 +70,8 @@ class ProductController extends Controller
         if ($request->ajax()) {
             $output = '';
 
-            if ($request->categoryId != 'all'){
-                $products = Product::where('sub_categories_id','=', $request->categoryId)
+            if ($request->categoryId != 'all') {
+                $products = Product::where('sub_categories_id', '=', $request->categoryId)
                     ->get();
             } else {
                 $products = Product::get();
@@ -82,12 +83,12 @@ class ProductController extends Controller
                         '<div class="col-12 col-md-6 col-lg-4">
                                 <div class="project-single">
                                     <div class="project-img">
-                                        <img src="'. asset($product->images[0]) .'" alt="">
+                                        <img src="' . asset($product->images[0]) . '" alt="">
                                     </div>
                                     <div class="project-content">
                                         <div class="project-title text-center">
-                                            <a href="'. route('singleProduct', $product->id) .'"
-                                               class="fs-5">'. $product->title_ar .'</a>
+                                            <a href="' . route('singleProduct', $product->id) . '"
+                                               class="fs-5">' . $product->title_ar . '</a>
                                         </div>
                                     </div>
                                 </div>
