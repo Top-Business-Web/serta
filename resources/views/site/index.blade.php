@@ -5,6 +5,7 @@
 
 
     {{-- <div class="homepage-slides owl-carousel owl-theme"> --}}
+
     @foreach ($data['sliders'] as $slider)
         <div class="single-slide-item">
             <video autoplay loop playsinline style="width: 100%;">
