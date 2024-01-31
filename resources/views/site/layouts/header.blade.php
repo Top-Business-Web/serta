@@ -84,8 +84,9 @@
                                     </li>
 
 
+                                    
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle {{ $name_url == 'product' ? 'active' : '' }}"
+                                        <a class="nav-link dropdown-toggle {{ Route::currentRouteName() == 'getSubCategory' ? 'active' : ''}}"
                                             href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
                                             {{ trans('site.projects') }}
