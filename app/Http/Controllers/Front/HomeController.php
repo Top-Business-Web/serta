@@ -36,6 +36,7 @@ class HomeController extends Controller
 
     public function getSubCategory($categoryId)
     {
+        $category = Category::where('id', $categoryId)->first();
         $sub_categories = SubCategory::query()
             ->select('id', 'title_ar', 'title_en', 'category_id')
             ->where('category_id', $categoryId)
@@ -46,6 +47,6 @@ class HomeController extends Controller
         $products = Product::whereIn('sub_categories_id', $subCategoryIds)
             ->get();
 
-        return view('site.products', compact('sub_categories', 'products'));
+        return view('site.products', compact('sub_categories', 'products', 'category'));
     }
 }

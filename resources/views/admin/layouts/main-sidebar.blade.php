@@ -31,16 +31,16 @@
         </li>
 
         <li class="slide">
-            <a class="side-menu__item" href="{{route('categories.index')}}">
+            <a class="side-menu__item" href="{{route('benefits.index')}}">
                 <i class="fa fa-bars side-menu__icon"></i>
-                <span class="side-menu__label">فئات</span>
+                <span class="side-menu__label">فوائدنا</span>
             </a>
         </li>
 
         <li class="slide">
-            <a class="side-menu__item" href="{{route('benefits.index')}}">
+            <a class="side-menu__item" href="{{route('categories.index')}}">
                 <i class="fa fa-bars side-menu__icon"></i>
-                <span class="side-menu__label">فوائدنا</span>
+                <span class="side-menu__label">فئات</span>
             </a>
         </li>
 
@@ -83,7 +83,7 @@
         <li class="slide">
             <a class="side-menu__item" href="{{route('post.index')}}">
                 <i class="fa fa-blog side-menu__icon"></i>
-                <span class="side-menu__label">المنشورات</span>
+                <span class="side-menu__label">وظائف</span>
             </a>
         </li>
 
