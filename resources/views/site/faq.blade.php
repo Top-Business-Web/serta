@@ -1,7 +1,7 @@
 @extends('site.layouts.master')
 
 @section('content')
-  
+
 
     <!-- Breadcroumb Area -->
 
@@ -36,7 +36,7 @@
                                     <h5 class="mb-0 subtitle">
                                         <button class="btn btn-link collapsed" type="button"
                                                 data-bs-toggle="collapse"
-                                                data-bs-target="#collapse-{{ $faq->id }}" aria-expanded="false"
+                                                data-bs-target="#collapse-{{$faq->id}}" aria-expanded="false"
                                                 aria-controls="collapse">
                                             {{ app()->getLocale() == 'ar' ? $faq->question_ar : $faq->question }}
                                         </button>

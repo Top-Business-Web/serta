@@ -67,7 +67,7 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-12 wow fadeInUp" data-wow-delay=".4s">
                     <div class="promo-founder">
-                        <img src="{{ asset('assets/front') }}/assets/img/icon/ecology.png" style="width: 50px;"
+                        <img src="{{ asset('assets/front') }}/assets/img/5.png" style="width: 50px;"
                             alt="">
                         <p class="highlight">{{ $aboutUs->year_ex }}+</p>
                         <p>{{ trans('site.years') }} <br>{{ trans('site.experience') }}</p>
@@ -99,7 +99,6 @@
                                         <!--<p>-->
                                         <!--    {{ trans('site.enviro_group_aims') }}-->
                                         <!--</p>-->
-
                                         <button class="main-btn bg-brown mb-3"
                                             onclick="profDownload('{{ asset($setting->profile) }}', 'profile Company')">{{ trans('site.Profile_company') }}</button>
                                     </div>
@@ -401,8 +400,8 @@
                     @foreach ($data['products'] as $product)
                         <div class="project-single ms-2 me-2">
                             <div class="project-img">
-                                <a href="{{ route('singleProduct', $product->id) }}">
-                                    <img src="{{ asset($product->images[0]) }}" alt="">
+                                <a href="{{ route('singleProduct', $product->id) }}" class="w-100">
+                                <img src="{{ asset($product->images[0]) }}" alt="">
                                 </a>
                             </div>
                             <div class="project-content">
