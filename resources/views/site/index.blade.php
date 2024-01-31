@@ -12,6 +12,7 @@
                 </video>
                 <div class="image-layer">
                     <div class="overlay"></div>
+                    <!-- test -->
                 </div>
                 <!-- <div class="hero-area-content">
                     <div class="container">
