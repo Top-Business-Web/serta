@@ -7,7 +7,7 @@
     {{-- <div class="homepage-slides owl-carousel owl-theme"> --}}
     @foreach ($data['sliders'] as $slider)
         <div class="single-slide-item">
-            <video autoplay muted loop playsinline style="width: 100%;">
+            <video autoplay loop playsinline style="width: 100%;">
                 <source src="{{ asset('assets/admin/videos/1.mp4') }}" type="video/mp4">
             </video>
             <div class="image-layer">

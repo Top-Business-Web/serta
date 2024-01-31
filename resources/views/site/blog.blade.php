@@ -37,7 +37,7 @@
                                     $month_name = date("F", strtotime($created_at));
 
                                     ?>
-                                <span class="blog-date">{{ $month_name }} {{ $blog->created_at->format('m Y') }}</span>
+                                <span class="blog-date">{{ $month_name }} {{ $blog->created_at->format('d Y') }}</span>
                             </div>
                             <div class="blog-content">
                                 <h5><a href="{{ route('career') }}">{{ app()->getLocale() == 'ar' ? $blog->title_ar : $blog->title_en }}</a></h5>
