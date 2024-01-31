@@ -44,8 +44,12 @@ class HomeController extends Controller
 
         $subCategoryIds = $sub_categories->pluck('id')->toArray();
 
+        // Assuming you have an Eloquent model named 'Product' and a variable $subCategoryIds containing an array of sub-category IDs
+
         $products = Product::whereIn('sub_categories_id', $subCategoryIds)
+            ->orderBy('created_at', 'desc')
             ->get();
+
 
         return view('site.products', compact('sub_categories', 'products', 'category'));
     }
