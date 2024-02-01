@@ -1,14 +1,14 @@
 @extends('admin/layouts/master')
 @section('title')
-     المنتجات
+    شركاء النجاح
 @endsection
-@section('page_name')   المشاريع @endsection
+@section('page_name')  شركاء النجاح @endsection
 @section('content')
     <div class="row">
         <div class="col-md-12 col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">قائمة المشاريع</h3>
+                    <h3 class="card-title">قائمة شركاء النجاح</h3>
                     <div class="">
                         <button class="btn btn-secondary btn-icon text-white addBtn">
 									<span>
@@ -25,8 +25,6 @@
                             <tr class="fw-bolder text-muted bg-light">
                                 <th>#</th>
                                 <th>الصورة</th>
-                                <th>عنوان</th>
-                                <th>الفئة</th>
                                 <th class="rounded-end">العمليات</th>
                             </tr>
                             </thead>
@@ -70,7 +68,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="example-Modal3">المشروع</h5>
+                        <h5 class="modal-title" id="example-Modal3">شريك النجاح</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -91,24 +89,22 @@
     <script>
         var columns = [
             {data: 'id', name: 'id'},
-            {data: 'images', name: 'images'},
-            {data: 'title_ar', name: 'title_ar'},
-            {data: 'sub_categories_id', name: 'sub_categories_id'},
+            {data: 'image', name: 'image'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]
-        showData('{{route('product.index')}}', columns);
+        showData('{{route('partners_success.index')}}', columns);
         // Delete Using Ajax
 
-        deleteAny('{{route('product.destroy', ':id')}}');
+        deleteAny('{{route('partners_success.destroy', ':id')}}');
 
         // Add Using Ajax
-        showAddModal('{{route('product.create')}}');
+        showAddModal('{{route('partners_success.create')}}');
         addScript();
 
 
 
         // Edit Using Ajax
-        showEditModal('{{route('product.edit',':id')}}');
+        showEditModal('{{route('partners_success.edit',':id')}}');
         editScript();
     </script>
 @endsection

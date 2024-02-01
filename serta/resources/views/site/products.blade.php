@@ -52,7 +52,7 @@
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="project-single">
                                     <div class="project-img">
-                                        <a href="{{ route('singleProduct', $product->id) }}">
+                                        <a href="{{ route('singleProduct', $product->id) }}" class="w-100">
                                             <img src="{{ asset($product->images[0]) }}" alt="">
                                         </a>
                                     </div>

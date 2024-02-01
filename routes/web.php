@@ -14,7 +14,7 @@ use App\Http\Controllers\Front\{
     QuoteController,
     ServiceController
 };
-
+use App\Http\Controllers\Site\CategoryController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
@@ -31,47 +31,52 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
-        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
-    ], function(){
-    #### Home ####
-    Route::get('/', [HomeController::class, 'index'])->name('home');
-    Route::post('/news/store', [HomeController::class, 'storeNews'])->name('news.store');
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+    ],
+    function () {
+        #### Home ####
+        Route::get('/', [HomeController::class, 'index'])->name('home');
+        Route::post('/news/store', [HomeController::class, 'storeNews'])->name('news.store');
 
-#### About ####
-    Route::get('/about', [AboutController::class, 'index'])->name('about');
+        #### About ####
+        Route::get('/about', [AboutController::class, 'index'])->name('about');
 
-#### Blog ####
-    Route::get('/blog', [BlogController::class, 'index'])->name('blog');
-    Route::get('/blog/{id}', [BlogController::class, 'singleBlog'])->name('singleBlog');
+        #### Blog ####
+        Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+        Route::get('/blog/{id}', [BlogController::class, 'singleBlog'])->name('singleBlog');
 
-#### Career ####
-    Route::get('/career', [CareerController::class, 'index'])->name('career');
-    Route::post('/career/store', [CareerController::class, 'storeCareer'])->name('career.store');
+        #### Career ####
+        Route::get('/career', [CareerController::class, 'index'])->name('career');
+        Route::post('/career/store', [CareerController::class, 'storeCareer'])->name('career.store');
 
-#### Contact ####
-    Route::get('/contact', [ContactController::class, 'index'])->name('contact');
-    Route::post('/contact/store', [ContactController::class, 'storeContact'])->name('contact.store');
+        #### Category ####
+        Route::get('/category/{categoryId}', [HomeController::class, 'getSubCategory'])->name('getSubCategory');
 
-#### Faqs ####
-    Route::get('/faqs', [FaqsController::class, 'index'])->name('faqs');
+        #### Contact ####
+        Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+        Route::post('/contact/store', [ContactController::class, 'storeContact'])->name('contact.store');
 
-#### Product ####
-    Route::get('/product', [ProductController::class, 'index'])->name('product');
-    Route::get('/singleProduct/{id}', [ProductController::class, 'singleProduct'])->name('singleProduct');
-    Route::get('/productSearch/', [ProductController::class, 'productSearch'])->name('product-search');
-    Route::get('/productSort/', [ProductController::class, 'productSort'])->name('productSort');
+        #### Faqs ####
+        Route::get('/faqs', [FaqsController::class, 'index'])->name('faqs');
 
-#### Quote ####
-    Route::get('/quote', [QuoteController::class, 'index'])->name('quote');
-    Route::post('/quote/store', [QuoteController::class, 'storeQuote'])->name('quote.store');
+        #### Product ####
+        Route::get('/product', [ProductController::class, 'index'])->name('product');
+        Route::get('/singleProduct/{id}', [ProductController::class, 'singleProduct'])->name('singleProduct');
+        Route::get('/productSearch/', [ProductController::class, 'productSearch'])->name('product-search');
+        Route::get('/productSort/', [ProductController::class, 'productSort'])->name('productSort');
 
-### Service ####
-    Route::get('/service', [ServiceController::class, 'index'])->name('service');
-    Route::get('/singleService/{id}', [ServiceController::class, 'singleService'])->name('singleService');
+        #### Quote ####
+        Route::get('/quote', [QuoteController::class, 'index'])->name('quote');
+        Route::post('/quote/store', [QuoteController::class, 'storeQuote'])->name('quote.store');
 
-    ### Team Work ####
-    Route::get('/team-work', [TeamWorkController::class, 'index'])->name('teamWork');
+        ### Service ####
+        Route::get('/service', [ServiceController::class, 'index'])->name('service');
+        Route::get('/singleService/{id}', [ServiceController::class, 'singleService'])->name('singleService');
 
-    ### Partner Success ####
-    Route::get('/partner-success', [PartnerSuccessController::class, 'index'])->name('partnerSuccess');
-});
+        ### Team Work ####
+        Route::get('/team-work', [TeamWorkController::class, 'index'])->name('teamWork');
+
+        ### Partner Success ####
+        Route::get('/partner-success', [PartnerSuccessController::class, 'index'])->name('partnerSuccess');
+    }
+);

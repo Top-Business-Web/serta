@@ -2,19 +2,20 @@
 
 @section('content')
     <!-- Hero Area hi -->
+    
 
 
     {{-- <div class="homepage-slides owl-carousel owl-theme"> --}}
-
-    @foreach ($data['sliders'] as $slider)
-        <div class="single-slide-item">
-            <video autoplay loop playsinline style="width: 100%;">
-                <source src="{{ asset('assets/admin/videos/1.mp4') }}" type="video/mp4">
-            </video>
-            <div class="image-layer">
-                <div class="overlay"></div>
-                <div class="title-container" style="position: absolute; bottom: 150px; left: 10px;">
-                    <h2 class="video-title">{{ app()->getLocale() == 'ar' ? $slider->title_ar : $slider->title_en }}</h2>
+        @foreach ($data['sliders'] as $slider)
+            <div class="single-slide-item">
+                <video autoplay muted loop playsinline style="width: 100%;">
+                    <source src="{{ asset('assets/admin/sliders/images/'.$slider->image) }}" type="video/mp4">
+                </video>
+                <div class="image-layer">
+                    <div class="overlay"></div>
+                    <div class="title-container" style="position: absolute; bottom: 150px; left: 10px;">
+                        <h2 class="video-title">{{ app()->getLocale() == 'ar' ? $slider->title_ar : $slider->title_en }}</h2>
+                    </div>
                 </div>
             </div>
             <!-- <div class="hero-area-content">

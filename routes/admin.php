@@ -45,6 +45,9 @@ Route::group(['prefix'=>'admin','middleware'=>'auth:admin'],function (){
     #### Benefits ####
     Route::resource('benefits','BenefitsController');
 
+    #### Partner Success ####
+    Route::resource('partners_success','PartnerSuccessController');
+
     #### Contact ####
     Route::resource('contact','ContactController')->except('store');
 

@@ -84,7 +84,6 @@
                                     </li>
 
 
-                                    
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle {{ Route::currentRouteName() == 'getSubCategory' ? 'active' : ''}}"
                                             href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -112,20 +111,12 @@
                                         <a class="nav-link {{ $name_url == 'contact' ? 'active' : '' }}"
                                             href="{{ route('contact') }}">{{ trans('site.contact') }}</a>
                                     </li>
-                                    <li class="nav-item">
-                                            <a class="nav-link active" href="#">English</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">العربية</a></li>
-                                            </ul>
-                                        </li>
                                 </ul>
-                                <ul class="navbar-nav m-auto"></ul>
-
                             </div>
                         </nav>
                     </div>
 
-                    <!-- <div class="lang-list">
+                    <div class="lang-list">
                         <div class="dropdown">
 
                             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
@@ -135,7 +126,7 @@
                             @endforeach
 
                         </div>
-                    </div> -->
+                    </div>
 
                     <!-- <div class="header-btn">
                         <a href="{{ route('quote') }}" class="main-btn primary">{{ trans('site.get_a_quote') }}</a>
