@@ -50,17 +50,7 @@
                         <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset($setting->logo) }}"
                                 alt="" /></a>
                     </div>
-
-                    {{-- <div class="DemoBS2">
-                        <!-- Toogle Buttons -->
-                        <button type="button" class="btn btn-warning" id="toggle-btn" data-toggle="collapse"
-                            data-target="#toggle-example">Click to Toogle</button>
-
-                        <div id="toggle-example" class="collapse in">
-                            <p>If you don't like something, <b>change it</b>.
-                                If you can't change it, change your <b>attitude</b>.</p>
-                        </div>
-                    </div> --}}
+<!-- hi -->
                     <div class="main-menu">
                         <nav class="navbar navbar-expand-lg">
                             <button class="navbar-toggler" id="toggle-btn" type="button" data-toggle="collapse"
