@@ -60,10 +60,9 @@
                     </div>
                     <hr>
                     <div class="blog-details_social-list mt-4">
-                        <a href="{{ $setting->twitter }}"><i class="fab fa-twitter"></i></a>
-                        <a href="{{ $setting->facebook }}"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="{{ $setting->instagram }}"><i class="fab fa-instagram"></i></a>
+                        <a href="{{ $setting->twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="{{ $setting->linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="{{ $setting->instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
