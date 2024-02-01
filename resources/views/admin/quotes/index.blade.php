@@ -1,14 +1,14 @@
 @extends('admin/layouts/master')
 @section('title')
-     اقتباسات
+     طلبات العملاء
 @endsection
-@section('page_name')  اقتباسات  @endsection
+@section('page_name')  طلبات العملاء  @endsection
 @section('content')
     <div class="row">
         <div class="col-md-12 col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">قائمة اقتباسات</h3>
+                    <h3 class="card-title">قائمة طلبات</h3>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
