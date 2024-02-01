@@ -24,20 +24,6 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="sub_title_ar" class="form-control-label">العنوان الفرعي بالعربي</label>
-                <input type="text" class="form-control" value="{{ $slider->sub_title_ar }}" name="sub_title_ar" id="sub_title_ar">
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="sub_title_en" class="form-control-label">العنوان الفرعي بالانجليزي</label>
-                <input type="text" class="form-control" value="{{ $slider->sub_title_en }}" name="sub_title_en" id="sub_title_en">
-            </div>
-        </div>
-    </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
         <button type="submit" class="btn btn-success" id="updateButton">تعديل</button>
