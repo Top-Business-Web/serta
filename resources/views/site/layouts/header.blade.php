@@ -24,11 +24,11 @@
                         <div class="dropdown">
 
                             @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                                <a class="btn btn-sm dropdown-toggle" rel="alternate" hreflang="{{ $localeCode }}"
+<a class="btn btn-sm dropdown-toggle" rel="alternate" hreflang="{{ $localeCode }}"
                                     href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
                                     {{ $properties['native'] }}
                                 </a>
-                            @endforeach
+@endforeach
 
                         </div>
                     </div>
@@ -84,16 +84,17 @@
                                     </li>
 
 
-                                    
+
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle {{ Route::currentRouteName() == 'getSubCategory' ? 'active' : ''}}"
+                                        <a class="nav-link dropdown-toggle {{ Route::currentRouteName() == 'getSubCategory' ? 'active' : '' }}"
                                             href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
                                             {{ trans('site.projects') }}
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             @foreach ($categories as $category)
-                                                <a class="dropdown-item" href="{{ route('getSubCategory', $category->id) }}">{{ app()->getLocale() == 'ar' ? $category->title_ar : $category->title_en }}</a>
+                                                <a class="dropdown-item"
+                                                    href="{{ route('getSubCategory', $category->id) }}">{{ app()->getLocale() == 'ar' ? $category->title_ar : $category->title_en }}</a>
                                             @endforeach
                                         </div>
                                     </li>
@@ -113,11 +114,28 @@
                                             href="{{ route('contact') }}">{{ trans('site.contact') }}</a>
                                     </li>
                                     <li class="nav-item">
+                                        @php
+                                            $currentLocale = LaravelLocalization::getCurrentLocale();
+                                        @endphp
+                                        @if ($currentLocale == 'ar')
+                                            <a class="nav-link active" href="#">العربية</a>
+                                        @else()
                                             <a class="nav-link active" href="#">English</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">العربية</a></li>
-                                            </ul>
-                                        </li>
+                                        @endif
+                                        <ul class="sub-menu">
+                                            <li>
+                                                @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                                    @if ($localeCode !== $currentLocale)
+                                                        <a class="btn btn-sm dropdown-toggle" rel="alternate"
+                                                            hreflang="{{ $localeCode }}"
+                                                            href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                                            {{ $properties['native'] }}
+                                                        </a>
+                                                    @endif
+                                                @endforeach
+                                            </li>
+                                        </ul>
+                                    </li>
                                 </ul>
                                 <ul class="navbar-nav m-auto"></ul>
 
@@ -128,11 +146,11 @@
                     <!-- <div class="lang-list">
                         <div class="dropdown">
 
-                            @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                                <a class="btn btn-sm dropdown-toggle" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                            @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+<a class="btn btn-sm dropdown-toggle" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
                                     {{ $properties['native'] }}
                                 </a>
-                            @endforeach
+@endforeach
 
                         </div>
                     </div> -->
@@ -145,4 +163,4 @@
         </div>
     </div>
 </div>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
