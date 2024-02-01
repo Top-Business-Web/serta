@@ -52,7 +52,7 @@ class ProductController extends Controller
                                     <div class="project-content">
                                         <div class="project-title text-center">
                                             <a href="' . route('singleProduct', $product->id) . '"
-                                               class="fs-5">' . $product->title_ar . '</a>
+                                               class="fs-5">' .  trans_model($product, 'title') . '</a>
                                         </div>
                                     </div>
                                 </div>

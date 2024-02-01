@@ -40,14 +40,14 @@
         <li class="slide">
             <a class="side-menu__item" href="{{route('categories.index')}}">
                 <i class="fa fa-bars side-menu__icon"></i>
-                <span class="side-menu__label">فئات الرئيسية للمشاريع</span>
+                <span class="side-menu__label">الفئات الرئيسية للمشريع</span>
             </a>
         </li>
 
         <li class="slide">
             <a class="side-menu__item" href="{{route('subcategories.index')}}">
                 <i class="fa fa-list side-menu__icon"></i>
-                <span class="side-menu__label">فئات فرعية للمشاريع</span>
+                <span class="side-menu__label">فئات فرعية للمشريع</span>
             </a>
         </li>
 
