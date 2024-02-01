@@ -2,8 +2,6 @@
 
 @section('content')
     <!-- Hero Area hi -->
-
-
     {{-- <div class="homepage-slides owl-carousel owl-theme"> --}}
 
     @foreach ($data['sliders'] as $slider)
