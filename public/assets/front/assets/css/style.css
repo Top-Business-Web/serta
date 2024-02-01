@@ -6179,3 +6179,14 @@ label.form-label {
     left: 10%;
     z-index: 9999;
 }
+/* faqs */
+.btn-faq{
+    width: 100%;
+    background-color: white;
+    border: none;
+    text-align: left;
+    padding: 10px;
+}
+.accordion.faqs .card .subtitle > button[aria-expanded=true]::after{
+    display: none;
+}
