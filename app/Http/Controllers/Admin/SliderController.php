@@ -42,7 +42,7 @@ class SliderController extends Controller
         return view('admin/sliders/parts/create');
     }
 
-    public function store(StoreSlider $request)
+    public function store(Request $request)
     {
         try {
             $inputs = $request->all();

@@ -27,8 +27,6 @@ class UpdateSlider extends FormRequest
             'image' => 'nullable|image',
             'title_ar' => 'required',
             'title_en' => 'required',
-            'sub_title_ar' => 'required',
-            'sub_title_en' => 'required',
         ];
     }
 
@@ -38,8 +36,6 @@ class UpdateSlider extends FormRequest
             'image.image' => 'يجب ان تكون صورة',
             'title_ar.required' => 'العنوان بالعربي مطلوب',
             'title_en.required' => 'العنوان بالانجليزي مطلوب',
-            'sub_title_ar.required' => 'العنوان الفرعي بالعربي مطلوب',
-            'sub_title_en.required' => 'العنوان الفرعي بالانجليزي مطلوب',
         ];
     }
 }
