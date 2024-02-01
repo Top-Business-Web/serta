@@ -6603,3 +6603,13 @@ body{
     right: 10%;
     z-index: 9999;
 }
+.btn-faq{
+    width: 100%;
+    background-color: white;
+    border: none;
+    text-align: right;
+    padding: 10px;
+}
+.accordion.faqs .card .subtitle > button[aria-expanded=true]::after{
+    display: none;
+}

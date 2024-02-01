@@ -33,7 +33,7 @@
                             <div class="card">
                                 <div class="card-header" id="heading{{ $faq->id }}">
                                     <h5 class="mb-0 subtitle">
-                                        <button class="btn btn-warning" id="toggle-btn" type="button"
+                                        <button class="btn-faq" id="toggle-btn" type="button"
                                             data-toggle="collapse" data-target="#toggle-example-{{ $faq->id }}">
                                             {{ app()->getLocale() == 'ar' ? $faq->question_ar : $faq->question }}
                                         </button>
