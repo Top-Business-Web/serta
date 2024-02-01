@@ -9,7 +9,7 @@
     @foreach ($data['sliders'] as $slider)
         <div class="single-slide-item">
             <video autoplay muted loop playsinline style="width: 100%;">
-                <source src="{{ asset($slider->image) }}" type="video/mp4">
+                <source src="{{ asset('assets/admin/sliders/images/' .$slider->image) }}" type="video/mp4">
             </video>
             <div class="image-layer">
                 <div class="overlay"></div>
