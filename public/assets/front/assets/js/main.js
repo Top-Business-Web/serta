@@ -326,7 +326,7 @@
 		);
 	});
 
-	// Active & Remove Class 
+	// Active & Remove Class
 
 	$(".sub-menu ul li").on("click", function () {
 		$(".sub-menu").removeAttribute("style");
