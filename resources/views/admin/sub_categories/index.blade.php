@@ -1,8 +1,8 @@
 @extends('admin/layouts/master')
 @section('title')
-    الفئات
+    الفئات الفرعية للمشاريع
 @endsection
-@section('page_name')  فئات @endsection
+@section('page_name')  الفئات الفرعية للمشاريع @endsection
 @section('content')
     <div class="row">
         <div class="col-md-12 col-lg-12">

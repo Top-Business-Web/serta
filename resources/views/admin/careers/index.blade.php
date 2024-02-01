@@ -1,16 +1,16 @@
 @extends('admin/layouts/master')
 @section('title')
-    حياة مهنية
+    رسائل الوظائف
 @endsection
 @section('page_name')
-    حياة مهنية
+رسائل الوظائف
 @endsection
 @section('content')
     <div class="row">
         <div class="col-md-12 col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">قائمة المهن</h3>
+                    <h3 class="card-title">قائمة رسائل الوظائف</h3>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">

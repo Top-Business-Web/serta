@@ -1,14 +1,14 @@
 @extends('admin/layouts/master')
 @section('title')
-     المنشورات
+     وظائف
 @endsection
-@section('page_name')   المنشورات @endsection
+@section('page_name')   وظائف @endsection
 @section('content')
     <div class="row">
         <div class="col-md-12 col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">قائمة المنشورات</h3>
+                    <h3 class="card-title">قائمة وظائف</h3>
                     <div class="">
                         <button class="btn btn-secondary btn-icon text-white addBtn">
 									<span>
@@ -25,7 +25,7 @@
                             <tr class="fw-bolder text-muted bg-light">
                                 <th>#</th>
                                 <th>الصورة</th>
-                                <th>عنوان المنشور</th>
+                                <th>عنوان الوظيفة</th>
                                 <th>الوصف</th>
                                 <th class="rounded-end">العمليات</th>
                             </tr>

@@ -1,6 +1,6 @@
 @extends('admin/layouts/master')
 @section('title')
-     المنتجات
+المشاريع
 @endsection
 @section('page_name')   المشاريع @endsection
 @section('content')

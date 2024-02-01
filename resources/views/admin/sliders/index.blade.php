@@ -1,14 +1,14 @@
 @extends('admin/layouts/master')
 @section('title')
-    سلايدر
+    فيديو الرئيسية
 @endsection
-@section('page_name')  سلايدر @endsection
+@section('page_name')  فيديو الرئيسية @endsection
 @section('content')
     <div class="row">
         <div class="col-md-12 col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">قائمة سلايدر</h3>
+                    <h3 class="card-title">قائمة الفيديو</h3>
                     <div class="">
                         <button class="btn btn-secondary btn-icon text-white addBtn">
 									<span>
