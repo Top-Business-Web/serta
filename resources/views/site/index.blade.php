@@ -11,8 +11,8 @@
             </video>
             <div class="image-layer">
                 <div class="overlay"></div>
-                <div class="title-container" style="position: absolute; bottom: 150px; left: 10px;">
-                    <h2 class="video-title">{{ app()->getLocale() == 'ar' ? $slider->title_ar : $slider->title_en }}</h2>
+                <div class="title-container">
+                    <h2 class="video-title text-white">{{ app()->getLocale() == 'ar' ? $slider->title_ar : $slider->title_en }}</h2>
                 </div>
             </div>
             <!-- <div class="hero-area-content">
