@@ -24,7 +24,7 @@ class StoreSlider extends FormRequest
     public function rules()
     {
         return [
-            'image' => 'nullable|image',
+            'image' => 'nullable',
             'title_ar' => 'required',
             'title_en' => 'required',
             'sub_title_ar' => 'required',
