@@ -66,10 +66,10 @@
                                                    placeholder="{{ trans('site.phone') }}">
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-12 mb-20">
+                                    <div class="col-lg-12 col-md-12 mb-20">
                                         <div class="quotation-item">
-                                            <input type="text" class="form-control" name="company"
-                                                   placeholder="{{ trans('site.company_name_if_applicable') }}">
+                                            <textarea class="form-control" name="company" rows="8"
+                                                  ">{{ trans('site.company_name_if_applicable') }}</textarea>
                                         </div>
                                     </div>
                                 </div>
