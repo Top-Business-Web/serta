@@ -26,7 +26,6 @@
                                 <th>#</th>
                                 <th>الصورة</th>
                                 <th>العنوان</th>
-                                <th>العنوان الفرعي</th>
                                 <th class="rounded-end">العمليات</th>
                             </tr>
                             </thead>
@@ -70,7 +69,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="example-Modal3">سلايدر</h5>
+                        <h5 class="modal-title" id="example-Modal3">فيديو</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -93,7 +92,6 @@
             {data: 'id', name: 'id'},
             {data: 'image', name: 'image'},
             {data: 'title_ar', name: 'title_ar'},
-            {data: 'sub_title_ar', name: 'sub_title_ar'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]
         showData('{{route('sliders.index')}}', columns);
