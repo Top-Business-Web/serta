@@ -1256,7 +1256,7 @@ input.form-control {
 /*Dropdown Menu */
 .sub-menu {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 120px;
   width: 190px;
   background-color: #fff;
