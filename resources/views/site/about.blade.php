@@ -95,7 +95,7 @@
 {{--                        <p class="why-choose-two_right-text">--}}
 {{--                            {{ trans('site.in_2022_enviro_group_starts') }}--}}
 {{--                        </p>--}}
-                        <ul class="list-unstyled why-choose-two_points">
+                        <!-- <ul class="list-unstyled why-choose-two_points">
                             <li>
                                 <div class="icon">
                                     <i class="fas fa-check"></i>
@@ -112,7 +112,7 @@
                                     <p>{{ trans('site.reducing_waste') }}</p>
                                 </div>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
