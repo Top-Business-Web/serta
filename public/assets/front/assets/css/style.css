@@ -6191,3 +6191,9 @@ label.form-label {
 .accordion.faqs .card .subtitle > button[aria-expanded=true]::after{
     display: none;
 }
+.about-area{
+    background-image: url("../img/400.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
