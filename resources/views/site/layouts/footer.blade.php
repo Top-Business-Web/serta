@@ -73,12 +73,12 @@
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-6 col-12">
-                <div class="copyright-area">
+                <!-- <div class="copyright-area">
                     <p class="copyright-line">© {{ date('Y') }} <a href="https://topbusiness.io/index.php/contact/">Top Business</a> All rights reserved.</p>
-                </div>
+                </div> -->
             </div>
 
-            <div class="col-lg-6 col-12 text-end">
+            <div class="col-12 d-flex justify-content-center">
                 <div class="social-area">
                     <a href="{{ $setting->twitter }}" target="_blank"><i class="fab fa-twitter ms-2 me-2"></i></a>
                     <a href="{{ $setting->instagram }}" target="_blank"><i class="fab fa-instagram ms-2 me-2"></i></a>

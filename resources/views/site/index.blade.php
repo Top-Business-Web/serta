@@ -66,7 +66,7 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-12 wow fadeInUp" data-wow-delay=".4s">
                     <div class="promo-founder">
-                        <img src="{{ asset('assets/front') }}/assets/img/5.png" style="width: 50px;"
+                        <img src="{{ asset('assets/front') }}/assets/img/5.png" style="width: 70px;"
                             alt="">
                         <p class="highlight">{{ $aboutUs->year_ex }}+</p>
                         <p>{{ trans('site.years') }} <br>{{ trans('site.experience') }}</p>
