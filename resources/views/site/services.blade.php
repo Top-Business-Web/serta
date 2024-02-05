@@ -23,7 +23,7 @@
 
     <!--Service Area-->
 
-    <div class="service-area section-padding">
+    <div class="service-area section-padding serv-bg">
         <div class="container">
             <div class="section-title">
                 <h6>{{ trans('site.What_we’re_doing') }}</h6>
