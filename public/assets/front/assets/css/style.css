@@ -6212,5 +6212,9 @@ label.form-label {
     background-image: url("../img/400.jpg");
     background-size: contain;
     background-repeat: no-repeat;
+<<<<<<< HEAD
     background-position: bottom left;
+=======
+    background-position: bottom right;
+>>>>>>> master
   }
