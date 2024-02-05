@@ -3,7 +3,7 @@
 @section('content')
     <!-- Breadcroumb Area -->
 
-    <div class="breadcroumb-area bread-bg" style="background-image: url('{{ asset($bgImages->product_img) }}')">
+    <div class="breadcroumb-area bread-bg" style="background-image: url('{{ asset($bgImages->career_img) }}')">
         <div class="overlay-2"></div>
         <div class="container">
             <div class="row">

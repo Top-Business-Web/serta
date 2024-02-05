@@ -18,7 +18,7 @@ class HomeController extends Controller
     {
         $data['sliders'] = Slider::all();
         $data['services'] = Service::all();
-        $data['products'] = Product::all();
+        $data['products'] = Product::latest()->take(9)->get();
         $data['benefits'] = Benefits::all();
         return view('site.index', compact('data'));
     }

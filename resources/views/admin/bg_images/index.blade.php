@@ -58,7 +58,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="name" class="form-control-label">الاخبار</label>
+                                    <label for="name" class="form-control-label">الوظائف</label>
                                     <input type="file" class="dropify" name="news_img"
                                            data-default-file="{{asset($image->news_img)}}"
                                            accept="image/png,image/webp , image/gif, image/jpeg,image/jpg"/>

@@ -56,6 +56,8 @@ return array(
     'App\\Http\\Requests\\BenefitStoreRequest' => $baseDir . '/app/Http/Requests/BenefitStoreRequest.php',
     'App\\Http\\Requests\\BenefitUpdateRequest' => $baseDir . '/app/Http/Requests/BenefitUpdateRequest.php',
     'App\\Http\\Requests\\NewsStore' => $baseDir . '/app/Http/Requests/NewsStore.php',
+    'App\\Http\\Requests\\PartnerSuccessStoreRequest' => $baseDir . '/app/Http/Requests/PartnerSuccessStoreRequest.php',
+    'App\\Http\\Requests\\PartnerSuccessUpdateRequest' => $baseDir . '/app/Http/Requests/PartnerSuccessUpdateRequest.php',
     'App\\Http\\Requests\\StoreAdmin' => $baseDir . '/app/Http/Requests/StoreAdmin.php',
     'App\\Http\\Requests\\StoreCareer' => $baseDir . '/app/Http/Requests/StoreCareer.php',
     'App\\Http\\Requests\\StoreCategory' => $baseDir . '/app/Http/Requests/StoreCategory.php',

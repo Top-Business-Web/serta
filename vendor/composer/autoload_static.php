@@ -775,6 +775,8 @@ class ComposerStaticInit6ce9619399792969cf2a523b289ea469
         'App\\Http\\Requests\\BenefitStoreRequest' => __DIR__ . '/../..' . '/app/Http/Requests/BenefitStoreRequest.php',
         'App\\Http\\Requests\\BenefitUpdateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/BenefitUpdateRequest.php',
         'App\\Http\\Requests\\NewsStore' => __DIR__ . '/../..' . '/app/Http/Requests/NewsStore.php',
+        'App\\Http\\Requests\\PartnerSuccessStoreRequest' => __DIR__ . '/../..' . '/app/Http/Requests/PartnerSuccessStoreRequest.php',
+        'App\\Http\\Requests\\PartnerSuccessUpdateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/PartnerSuccessUpdateRequest.php',
         'App\\Http\\Requests\\StoreAdmin' => __DIR__ . '/../..' . '/app/Http/Requests/StoreAdmin.php',
         'App\\Http\\Requests\\StoreCareer' => __DIR__ . '/../..' . '/app/Http/Requests/StoreCareer.php',
         'App\\Http\\Requests\\StoreCategory' => __DIR__ . '/../..' . '/app/Http/Requests/StoreCategory.php',
