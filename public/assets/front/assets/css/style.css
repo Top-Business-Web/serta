@@ -1247,11 +1247,11 @@ input.form-control {
 }
 
 .main-menu .navbar-nav .nav-item .nav-link.active {
-  color: #b58517;
+  color: black;
 }
 
 .main-menu li.nav-item:hover > a {
-  color: #b58517;
+  color: black;
 }
 
 /*Dropdown Menu */
@@ -2113,6 +2113,11 @@ p.text-black:before {
 .service-area {
   position: relative;
 }
+.serv-bg{
+    background-image: url("../img/400.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 .service-item-wrap {
   margin-top: 30;
@@ -2413,6 +2418,10 @@ ul.service-list li i {
   border-radius: 7px;
   position: relative;
   margin-right: 30px;
+  background-image: url("../img/400.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .process-single {
@@ -3809,6 +3818,10 @@ p.privacy a:not(:last-of-type)::after {
   position: relative;
   display: block;
   padding: 120px 0 60px;
+  background-image: url("../img/400.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 @media (max-width: 767px) {
   .service-details {
@@ -5458,6 +5471,10 @@ label.form-label {
   position: relative;
   display: block;
   padding-bottom: 100px;
+  background-image: url("../img/400.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 @media (max-width: 767px) {
   .contact-page-details {
@@ -6191,3 +6208,9 @@ label.form-label {
 .accordion.faqs .card .subtitle > button[aria-expanded=true]::after{
     display: none;
 }
+.about-area{
+    background-image: url("../img/400.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
