@@ -6638,3 +6638,7 @@ body{
   background-repeat: no-repeat;
   background-position: bottom right;
 }
+.menu-drop{
+    border-radius: 0px;
+    border-top: 2px solid #FCC300;
+  }
