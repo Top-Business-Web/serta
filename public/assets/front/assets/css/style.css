@@ -6215,3 +6215,8 @@ label.form-label {
     background-repeat: no-repeat;
     background-position: bottom left;
   }
+
+  .menu-drop{
+    border-radius: 0px;
+    border-top: 2px solid #FCC300;
+  }
