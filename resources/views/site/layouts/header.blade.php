@@ -50,7 +50,7 @@
                         <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset($setting->logo) }}"
                                 alt="" /></a>
                     </div>
-<!-- hi -->
+                    <!-- hi -->
                     <div class="main-menu">
                         <nav class="navbar navbar-expand-lg">
                             <button class="navbar-toggler" id="toggle-btn" type="button" data-toggle="collapse"
@@ -112,12 +112,33 @@
                                         <a class="nav-link {{ $name_url == 'contact' ? 'active' : '' }}"
                                             href="{{ route('contact') }}">{{ trans('site.contact') }}</a>
                                     </li>
+                                    @php
+                                        $currentLocale = LaravelLocalization::getCurrentLocale();
+                                    @endphp
+
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            English
-                                        </a>
+                                        @if ($currentLocale == 'en')
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                English
+                                            </a>
+                                        @else
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                العربية
+                                            </a>
+                                        @endif
+
                                         <div class="dropdown-menu menu-drop" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="#">العربية</a>
+                                            @if ($currentLocale == 'ar')
+                                                <a class="dropdown-item"
+                                                    href="{{ LaravelLocalization::getLocalizedURL('en') }}">English</a>
+                                            @else
+                                                <a class="dropdown-item"
+                                                    href="{{ LaravelLocalization::getLocalizedURL('ar') }}">العربية</a>
+                                            @endif
                                         </div>
                                     </li>
                                     <!-- <li class="nav-item">
@@ -125,21 +146,21 @@
                                             $currentLocale = LaravelLocalization::getCurrentLocale();
                                         @endphp
                                         @if ($currentLocale == 'ar')
-                                            <a class="nav-link active" href="#">العربية</a>
-                                        @else()
-                                            <a class="nav-link active" href="#">English</a>
-                                        @endif
+<a class="nav-link active" href="#">العربية</a>
+@else()
+<a class="nav-link active" href="#">English</a>
+@endif
                                         <ul class="sub-menu">
                                             <li>
                                                 @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                                                    @if ($localeCode !== $currentLocale)
-                                                        <a class="btn btn-sm dropdown-toggle" rel="alternate"
+@if ($localeCode !== $currentLocale)
+<a class="btn btn-sm dropdown-toggle" rel="alternate"
                                                             hreflang="{{ $localeCode }}"
                                                             href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
                                                             {{ $properties['native'] }}
                                                         </a>
-                                                    @endif
-                                                @endforeach
+@endif
+@endforeach
                                             </li>
                                         </ul>
                                     </li> -->
@@ -169,4 +190,3 @@
     </div>
 </div>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-

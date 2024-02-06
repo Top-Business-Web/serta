@@ -31,13 +31,12 @@
                                 <a href="{{ route('career') }}" class="w-100">
                                 <img src="{{ asset('assets/admin/posts/images/'.$blog->image) }}" alt="">
                                 </a>
-                                    <?php
-                                    $created_at = $blog->created_at;
-
-                                    $month_name = date("F", strtotime($created_at));
-
-                                    ?>
-                                <span class="blog-date">{{ $month_name }} {{ $blog->created_at->format('d Y') }}</span>
+                                <?php
+                                $created_at = $blog->created_at;
+                                $month_shortcut = date("M", strtotime($created_at));
+                                ?>
+                                
+                                <span class="blog-date">{{ $month_shortcut }} {{ $blog->created_at->format('d Y') }}</span>
                             </div>
                             <div class="blog-content">
                                 <h5><a href="{{ route('career') }}">{{ app()->getLocale() == 'ar' ? $blog->title_ar : $blog->title_en }}</a></h5>
