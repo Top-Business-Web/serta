@@ -112,7 +112,15 @@
                                         <a class="nav-link {{ $name_url == 'contact' ? 'active' : '' }}"
                                             href="{{ route('contact') }}">{{ trans('site.contact') }}</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            English
+                                        </a>
+                                        <div class="dropdown-menu menu-drop" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">العربية</a>
+                                        </div>
+                                    </li>
+                                    <!-- <li class="nav-item">
                                         @php
                                             $currentLocale = LaravelLocalization::getCurrentLocale();
                                         @endphp
@@ -134,10 +142,8 @@
                                                 @endforeach
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                 </ul>
-                                <ul class="navbar-nav m-auto"></ul>
-
                             </div>
                         </nav>
                     </div>
