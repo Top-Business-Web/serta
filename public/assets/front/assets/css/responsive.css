@@ -9,6 +9,9 @@
 /* Tablet Layout: 768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .video-title{
+        font-size: 60px;
+    }
 
     /*	responsive menu start */
 

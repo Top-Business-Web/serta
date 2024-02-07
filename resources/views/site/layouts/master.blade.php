@@ -4,7 +4,7 @@
 <body>
 <!-- Pre-Loader -->
 <div class="preloader">
-<span class="loader"></span>
+<!-- <span class="loader"></span> -->
 </div>
 
 @include('site.layouts.header')
