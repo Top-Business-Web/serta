@@ -786,6 +786,10 @@ input.form-control {
   width: 100%;
   z-index: 999999;
   background-color: white;
+  background-image: url("../img/400.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5914,7 +5918,7 @@ label.form-label {
 
 .promo-bg.bg-cover {
   width: 286px;
-  height: 300px;
+  height: 100%;
   background-position: top center;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -6224,3 +6228,23 @@ label.form-label {
   .video-title{
     font-size: 80px;
   }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .video-title{
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .video-title{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .video-title{
+        font-size: 25px;
+    }
+    .about-img > img {
+        height: 400px;
+    }
+}
+
