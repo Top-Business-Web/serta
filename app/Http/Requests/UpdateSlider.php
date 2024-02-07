@@ -24,7 +24,7 @@ class UpdateSlider extends FormRequest
     public function rules()
     {
         return [
-            'image' => 'nullable|image',
+            'image' => 'nullable',
             'title_ar' => 'required',
             'title_en' => 'required',
         ];
@@ -33,7 +33,6 @@ class UpdateSlider extends FormRequest
     public function messages()
     {
         return [
-            'image.image' => 'يجب ان تكون صورة',
             'title_ar.required' => 'العنوان بالعربي مطلوب',
             'title_en.required' => 'العنوان بالانجليزي مطلوب',
         ];

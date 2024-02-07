@@ -33,7 +33,6 @@ class StoreSlider extends FormRequest
     public function messages()
     {
         return [
-            'image.image' => 'يجب ان تكون صورة',
             'title_ar.required' => 'العنوان بالعربي مطلوب',
             'title_en.required' => 'العنوان بالانجليزي مطلوب',
         ];
