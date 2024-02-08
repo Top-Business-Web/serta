@@ -23,7 +23,7 @@
         <div class="container">
             <div class="section-title">
                 <h6>{{ trans('site.partner_success') }}</h6>
-                <h2></h2>
+                <h2>{{ trans('site.partner_head')}}</h2>
             </div>
             <div class="row">
                 @foreach ($partners_success as $partner_success)
