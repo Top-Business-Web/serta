@@ -22,8 +22,8 @@
     <div class="partner-area section-padding">
         <div class="container">
             <div class="section-title">
-                <h6>شركاء النجاح</h6>
-                <h2>نقدم خدمات متميزة وفريدة من نوعها في مجال الانشاءات باستخدام التقنيات المتقدمة</h2>
+                <h6>{{ trans('site.partner_success') }}</h6>
+                <h2></h2>
             </div>
             <div class="row">
                 @foreach ($partners_success as $partner_success)
