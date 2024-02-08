@@ -785,6 +785,10 @@ input.form-control {
     width: 100%;
     z-index: 999999;
     background-color: white;
+    background-image: url("../img/400.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
