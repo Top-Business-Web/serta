@@ -2560,6 +2560,12 @@ ul.service-list li i {
 .project-single {
   background: #fff;
   margin-bottom: 40px;
+  position: relative;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.project-single:hover .project-content{
+    bottom: 0;
 }
 
 .project-single:hover {
@@ -2571,14 +2577,20 @@ ul.service-list li i {
 }
 
 .project-img img {
-  border-radius: 12px;
+  /* border-radius: 12px; */
   transition: 0.5s ease-in-out;
 }
 
 .project-content {
   padding: 30px 40px 40px;
   background-color: #C03627;
+  position: absolute;
+  bottom: -30%;
+  right: 0;
+  left: 0;
+  transition: all 0.5s ease;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .project-content {
     padding: 30px 32px 40px;
@@ -2593,7 +2605,7 @@ ul.service-list li i {
   position: relative;
 }
 
-.project-title{
+.project-title a{
     color: white ;
 }
 
