@@ -47,8 +47,7 @@
             <div class="container-fluid">
                 <div class="header-inner-box">
                     <div class="logo">
-                        <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset($setting->logo) }}"
-                                alt="" /></a>
+                        <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset($setting->logo) }}"alt="" /></a>
                     </div>
                     <!-- hi -->
                     <div class="main-menu">

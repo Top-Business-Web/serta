@@ -9,8 +9,8 @@ Version: 1.0
 /*--
     - Google Font Import
 -----------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;900&family=Barlow:wght@300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;900&family=Barlow:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&display=swap"); */
 /*--
     - Common CSS
 -----------------------------------------*/
@@ -23,7 +23,7 @@ body {
 
 body {
   /* font-family: Arial, Helvetica, sans-serif; */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
@@ -40,7 +40,7 @@ h4,
 h5,
 h6 {
   position: relative;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   margin: 0;
   color: #C03627;
@@ -69,7 +69,7 @@ a {
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -642,9 +642,9 @@ input.form-control {
   background: #fff;
 }
 
-.dark-bg {
+/* .dark-bg {
   background: #C03627;
-}
+} */
 
 .sky-bg {
   background: #EBF1ED;
@@ -786,10 +786,10 @@ input.form-control {
   width: 100%;
   z-index: 999999;
   background-color: white;
-  background-image: url("../img/400.jpg");
+  /* background-image: url("../img/400.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: center; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1075,7 +1075,7 @@ input.form-control {
 ============== */
 .header-area .navigation {
   padding: 0px 30px;
-  background: #C03627;
+  background: white;
   height: 90px;
   position: relative;
   z-index: 9;
@@ -1245,18 +1245,18 @@ input.form-control {
 
 .main-menu .navbar-nav .nav-link {
   font-size: 15px;
-  font-weight: 600;
+  /* font-weight: 600; */
   display: block;
-  color: white;
+  color: #858585;
   /* padding: 35px 0; */
 }
 
 .main-menu .navbar-nav .nav-item .nav-link.active {
-  color: black;
+  color: #C03627;
 }
 
 .main-menu li.nav-item:hover > a {
-  color: black;
+  color: #C03627;
 }
 
 /*Dropdown Menu */
@@ -2089,7 +2089,7 @@ p.text-black:before {
 .service-note p {
   font-size: 17px;
   font-weight: 500;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #333;
 }
 
@@ -2118,11 +2118,11 @@ p.text-black:before {
 .service-area {
   position: relative;
 }
-.serv-bg{
+/* .serv-bg{
     background-image: url("../img/400.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-}
+} */
 
 .service-item-wrap {
   margin-top: 30;
@@ -2373,7 +2373,7 @@ ul.service-list li i {
   }
 }
 
-.process-area {
+/* .process-area {
   background-image: url("../img/process/process-bg.jpeg");
   background-size: cover;
   background-position: center center;
@@ -2391,7 +2391,7 @@ ul.service-list li i {
   height: 100%;
   background-image: linear-gradient(290deg, #842D2C 40%, rgba(125, 25, 22, 0.9019607843) 100%);
   z-index: -1;
-}
+} */
 
 .process-btn .main-btn {
   margin-right: 20px;
@@ -2423,10 +2423,11 @@ ul.service-list li i {
   border-radius: 7px;
   position: relative;
   margin-right: 30px;
-  background-image: url("../img/400.jpg");
+  border: 1px solid #e8e8e9;
+  /* background-image: url("../img/400.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: bottom; */
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .process-single {
@@ -2532,7 +2533,7 @@ ul.service-list li i {
   margin-top: 30px;
 }
 
-.process-single:after {
+/* .process-single:after {
   position: absolute;
   content: "01";
   top: 0;
@@ -2554,7 +2555,7 @@ ul.service-list li i {
 
 .process-single.four::after {
   content: "04";
-}
+} */
 
 .project-single {
   background: #fff;
@@ -2576,6 +2577,7 @@ ul.service-list li i {
 
 .project-content {
   padding: 30px 40px 40px;
+  background-color: #C03627;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .project-content {
@@ -2590,6 +2592,11 @@ ul.service-list li i {
   line-height: 28px;
   position: relative;
 }
+
+.project-title{
+    color: white ;
+}
+
 
 .project-title h4 {
   color: #C03627;
@@ -3137,7 +3144,7 @@ ul.service-list li i {
   margin-top: 50px;
 }
 .single-counter-box p {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
   font-size: 40px;
   color: #fff;
 }
@@ -3269,12 +3276,12 @@ i.las.la-comments {
 }
 
 .footer-area {
-  background: #842D2C;
+  background: #202020;
   color: #fff;
 }
 .footer-area h6 {
   font-size: 20px;
-  color:  #b58517;
+  color:  #C03627;
   margin: 20px 0;
 }
 .footer-area p {
@@ -3291,7 +3298,7 @@ i.las.la-comments {
   padding: 7px 0;
 }
 .footer-area ul li a:hover {
-  color:  #b58517;
+  color:  #C03627;
 }
 @media (max-width: 767px) {
   .footer-area {
@@ -3349,8 +3356,9 @@ i.las.la-comments {
 }
 
 .footer-bottom {
-  background: #55121C;
-  padding: 20px 0;
+  background: #202020;
+  /* padding: 20px 0; */
+  border-top: 1px solid #444444;
 }
 .footer-bottom p {
   font-size: 16px;
@@ -3823,10 +3831,10 @@ p.privacy a:not(:last-of-type)::after {
   position: relative;
   display: block;
   padding: 120px 0 60px;
-  background-image: url("../img/400.jpg");
+  /* background-image: url("../img/400.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom right; */
 }
 @media (max-width: 767px) {
   .service-details {
@@ -5449,7 +5457,7 @@ label.form-label {
   font-size: 15px;
   line-height: 24px;
   color: #fff;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .contact-info a {
@@ -5476,10 +5484,10 @@ label.form-label {
   position: relative;
   display: block;
   padding-bottom: 100px;
-  background-image: url("../img/400.jpg");
+  /* background-image: url("../img/400.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom right; */
 }
 @media (max-width: 767px) {
   .contact-page-details {
@@ -6120,7 +6128,7 @@ label.form-label {
   line-height: 1;
   margin-right: 35px;
   text-transform: capitalize;
-  font-family: var(--global--font-body);
+  font-family: "Montserrat", sans-serif;
   color: var(--global--color-heading);
 }
 @media screen and (max-width: 767.98px) {
@@ -6187,7 +6195,7 @@ label.form-label {
     transform: scale(1.1);
 }
 .image-footer img{
-    height: 240px;
+    height: 155px;
 }
 .btn-sm{
     font-weight: bold;
@@ -6215,13 +6223,13 @@ label.form-label {
 .accordion.faqs .card .subtitle > button[aria-expanded=true]::after{
     display: none;
 }
-.about-area{
+/* .about-area{
     background-image: url("../img/400.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
     background-position: bottom left;
-  }
+  } */
 
   .menu-drop{
     border-radius: 0px;

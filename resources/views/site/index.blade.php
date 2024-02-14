@@ -36,46 +36,6 @@
     @endforeach
     {{-- </div> --}}
 
-
-    <!-- Promo Secton -->
-
-    <div class="promo-area">
-        <div class="container">
-            <div class="row gx-0">
-                <div class="col-lg-9 col-md-9 col-12">
-                    <div class="promo-inner wow fadeInUp" data-wow-delay=".3s">
-                        <div class="row no-gutters">
-                            <div class="col-lg-4 col-md-4 col-12">
-                                <div class="promo-bg bg-cover">
-                                </div>
-                            </div>
-                            <div class="col-lg-8 col-md-8 col-12">
-                                <div class="promo-content">
-                                    <h5> {{ trans('site.we_are_top') }}
-                                        <!-- <b> {{ trans('site.recycling') }} </b>
-                                        {{ trans('site.organization_to_create_best') }}
-                                        <b> {{ trans('site.environment') }} </b> -->
-                                    </h5>
-                                    {{--                                    aya --}}
-                                    <!-- <button class="main-btn bg-brown mt-3" type="button" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal">{{ trans('site.liceneses') }}</button> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-12 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="promo-founder">
-                        <img src="{{ asset('assets/front') }}/assets/img/5.png" style="width: 70px;"
-                            alt="">
-                        <p class="highlight">{{ $aboutUs->year_ex }}+</p>
-                        <p>{{ trans('site.years') }} <br>{{ trans('site.experience') }}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- About Section  -->
 
     <div class="about-area section-padding">

@@ -24,6 +24,10 @@
     <link href="{{ asset('assets/front/') }}/assets/css/owl.carousel.min.css" rel="stylesheet"/>
     <link href="{{ asset('assets/front/') }}/assets/css/owl.theme.default.min.css" rel="stylesheet"/>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tajawal&display=swap" rel="stylesheet">
+
     <!-- Nice Select  -->
     <link href="{{ asset('assets/front/') }}/assets/css/nice-select.css" rel="stylesheet"/>
 
