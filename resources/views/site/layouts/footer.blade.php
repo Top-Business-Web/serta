@@ -5,16 +5,20 @@
         <div class="footer-up">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="logo">
+                    <!-- <div class="logo">
                         <img src="{{ asset('assets/front') }}/assets/img/white png logo.png" alt="no-logo"/>
-                    </div>
+                    </div> -->
+                    <h6>Serta Group</h6>
                     <div class="contact-info">
                         <p><b>{{ trans('site.location') }}
                                 :</b> {{ app()->getLocale() == 'ar' ? $setting->address_ar : $setting->address_en }}</p>
                         <p><b>{{ trans('site.phone') }}:</b> {{ $setting->phone }}</p>
                         <p><b>{{ trans('site.email') }}:</b> {{ $setting->email }}</p>
-                        <a href="{{ route('quote') }}" class="main-btn primary text-decoration-none mt-3">{{ trans('site.get_a_quote') }}</a>
+                        <!-- <a href="{{ route('quote') }}" class="main-btn primary text-decoration-none mt-3">{{ trans('site.get_a_quote') }}</a> -->
                         <!-- <p><b>{{ trans('site.opening_hour') }}:</b> {{ $setting->open }}</p> -->
+                        <div class="image-footer mt-3">
+                            <img src="{{ asset('assets/front') }}/assets/img/2030-300x202.png" style="width: 150px; height: 98px;">
+                        </div>
                     </div>
 
                 </div>
@@ -48,8 +52,9 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6">
+                <h6>Location</h6>
                 <div class="image-footer mt-3">
-                    <img src="{{ asset('assets/front') }}/assets/img/footer1.png" class="w-100">
+                    <img src="{{ asset('assets/front') }}/assets/img/footer-img-01-300x171-map.png" class="w-100">
                 </div>
                     <!-- <div class="subscribe-form">
                         <h6>{{ trans('site.news_letter') }}</h6>
@@ -73,12 +78,10 @@
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-6 col-12">
-                <!-- <div class="copyright-area">
-                    <p class="copyright-line">© {{ date('Y') }} <a href="https://topbusiness.io/index.php/contact/">Top Business</a> All rights reserved.</p>
-                </div> -->
+            <img src="{{ asset('assets/front') }}/assets/img/white png logo.png" alt="no-logo" style="width: 300px; height: 76px;"/>
             </div>
 
-            <div class="col-12 d-flex justify-content-center">
+            <div class="col-lg-6 col-12 d-flex justify-content-center">
                 <div class="social-area">
                     <a href="{{ $setting->twitter }}" target="_blank"><i class="fab fa-twitter ms-2 me-2"></i></a>
                     <a href="{{ $setting->instagram }}" target="_blank"><i class="fab fa-instagram ms-2 me-2"></i></a>
