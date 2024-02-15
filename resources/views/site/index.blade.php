@@ -152,27 +152,11 @@
                         </div> -->
 
 
-            <div class="process-item-wrap">
-                <div class="col-lg-4 col-12">
-                    <div class="process-single">
-                        <div class="process-icon">
-                            <img src="{{ asset($setting->logo_vision) }}" alt="" style="width: 80px;">
-                        </div>
-                        <div class="process-title">
-                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_vision_ar : $setting->title_vision_en }}
-                            </h5>
-                        </div>
-                        <div class="process-desc">
-                            <p style="text-align: justify;">
-                                {{ app()->getLocale() == 'ar' ? $setting->desc_vision_ar : $setting->desc_vision_en }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12">
+            <div class="process-item-wrap row">
+            <div class="col-lg-3 col-12">
                     <div class="process-single two">
                         <div class="process-icon">
-                            <img src="{{ asset($setting->logo_mission) }}" alt="" style="width: 80px;">
+                            <img src="{{ asset($setting->logo_mission) }}" alt="" style="width: 100px;">
                         </div>
                         <div class="process-title">
                             <h5>{{ app()->getLocale() == 'ar' ? $setting->title_mission_ar : $setting->title_mission_en }}
@@ -185,10 +169,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-3 col-12">
+                    <div class="process-single">
+                        <div class="process-icon">
+                            <img src="{{ asset($setting->logo_vision) }}" alt="" style="width: 100px;">
+                        </div>
+                        <div class="process-title">
+                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_vision_ar : $setting->title_vision_en }}
+                            </h5>
+                        </div>
+                        <div class="process-desc">
+                            <p style="text-align: justify;">
+                                {{ app()->getLocale() == 'ar' ? $setting->desc_vision_ar : $setting->desc_vision_en }}
+                            </p>
+                            <div>
+                            <img src="{{ asset('assets/front') }}/assets/img/R.red.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
                     <div class="process-single three image-value">
                         <div class="process-icon">
-                            <img src="{{ asset($setting->logo_values) }}" alt="no-image">
+                            <img src="{{ asset($setting->logo_values) }}" alt="no-image" style="height: 410px;">
                         </div>
                     </div>
                 </div>
