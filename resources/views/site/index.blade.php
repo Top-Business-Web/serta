@@ -160,7 +160,7 @@
 
     <!-- Process Section  -->
 
-    <div class="process-area dark-bg section-padding">
+    <div class="process-area dark-bg mb-5">
         <div class="container">
             <!-- <div class="row">
                             <div class="col-12 col-lg-6">
@@ -333,7 +333,7 @@
     <!-- product Section  -->
 
     <div class="project-area gray-bg section-padding">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-7">
                     <div class="section-title">
@@ -380,6 +380,7 @@
                         </div>
                     </div>
                 @endforeach
+
             </div>
         </div>
     </div>
