@@ -10,7 +10,7 @@ class PartnerSuccessController extends Controller
 {
     public function index()
     {
-        $partners_success = PartnerSuccess::query()->select('id', 'image')->get();
+        $partners_success = PartnerSuccess::query()->select('id', 'image', 'second_image')->get();
         return view('site.partner_success', compact('partners_success'));
     }
 }

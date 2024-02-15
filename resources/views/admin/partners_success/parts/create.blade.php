@@ -2,10 +2,20 @@
     <form id="addForm" class="addForm" method="POST" enctype="multipart/form-data" action="{{route('partners_success.store')}}">
         @csrf
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label for="name" class="form-control-label">الصورة</label>
                     <input type="file" class="dropify" name="image"
+                           data-default-file="{{asset('assets/uploads/post.png')}}"
+                           accept="image/png,image/webp , image/gif, image/jpeg,image/jpg"/>
+                    <span
+                        class="form-text text-danger text-center">مسموح فقط بالصيغ التالية : png, gif, jpeg, jpg,webp</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="second_image" class="form-control-label">الصورة الثانية</label>
+                    <input type="file" class="dropify" name="second_image"
                            data-default-file="{{asset('assets/uploads/post.png')}}"
                            accept="image/png,image/webp , image/gif, image/jpeg,image/jpg"/>
                     <span

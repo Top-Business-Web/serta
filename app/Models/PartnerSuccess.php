@@ -12,6 +12,7 @@ class PartnerSuccess extends Model
     protected $name = 'partner_successes';
 
     protected $fillable = [
-        'image'
+        'image',
+        'second_image',
     ];
 }

@@ -29,7 +29,7 @@
                 @foreach ($partners_success as $partner_success)
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="card-image">
-                            <img src="{{ asset($partner_success->image) }}" class="img-partner move-up">
+                            <img src="{{ asset($partner_success->second_image) }}" class="img-partner move-up">
                             <img src="{{ asset($partner_success->image) }}" class="img-partner move-down">
                         </div>
                     </div>

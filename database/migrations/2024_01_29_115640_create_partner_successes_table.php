@@ -16,6 +16,7 @@ class CreatePartnerSuccessesTable extends Migration
         Schema::create('partner_successes', function (Blueprint $table) {
             $table->id();
             $table->string('image');
+            $table->string('second_image');
             $table->timestamps();
         });
     }

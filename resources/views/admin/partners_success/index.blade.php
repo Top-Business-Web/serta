@@ -25,6 +25,7 @@
                             <tr class="fw-bolder text-muted bg-light">
                                 <th>#</th>
                                 <th>الصورة</th>
+                                <th>الصورة الثانية</th>
                                 <th class="rounded-end">العمليات</th>
                             </tr>
                             </thead>
@@ -90,6 +91,7 @@
         var columns = [
             {data: 'id', name: 'id'},
             {data: 'image', name: 'image'},
+            {data: 'second_image', name: 'second_image'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]
         showData('{{route('partners_success.index')}}', columns);
