@@ -8,7 +8,7 @@
                     <!-- <div class="logo">
                         <img src="{{ asset('assets/front') }}/assets/img/white png logo.png" alt="no-logo"/>
                     </div> -->
-                    <h6>Serta Group</h6>
+                    <h6>Sertah Group</h6>
                     <div class="contact-info">
                         <p><b>{{ trans('site.location') }}
                                 :</b> {{ app()->getLocale() == 'ar' ? $setting->address_ar : $setting->address_en }}</p>
@@ -78,7 +78,7 @@
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-6 col-12">
-            <img src="{{ asset('assets/front') }}/assets/img/white png logo.png" alt="no-logo" style="width: 300px; height: 76px;"/>
+            <img src="{{ asset('assets/front') }}/assets/img/logo-footer.jpg" alt="no-logo" style="width: 300px; height: 76px;"/>
             </div>
 
             <div class="col-lg-6 col-12 d-flex justify-content-center">

@@ -2420,7 +2420,7 @@ ul.service-list li i {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   position: relative;
   margin-right: 30px;
   border: 1px solid #e8e8e9;
@@ -6156,7 +6156,7 @@ label.form-label {
 }
 
 
-.project-single .project-img::after {
+/* .project-single .project-img::after {
   content: "";
   position: absolute;
   top: 0;
@@ -6181,7 +6181,7 @@ label.form-label {
     translate3d(0, 100%, 0);
   transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg)
     translate3d(0, 100%, 0);
-}
+} */
 
 .service-single .service-content p {
     display: -webkit-box;
@@ -6269,5 +6269,10 @@ label.form-label {
     .about-img > img {
         height: 400px;
     }
+}
+
+.image-value{
+    padding: 0px;
+    border: none;
 }
 
