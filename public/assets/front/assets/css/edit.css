@@ -1,6 +1,6 @@
 .header-area .header-inner-box .logo img{
-    width: 200px;
-    height: 70px;
+    /* width: 200px; */
+    height: 50px;
 }
 .header-top .contact-info svg{
     color: #DFB163;
@@ -92,7 +92,7 @@ ul.contact-list li svg{
     margin-bottom: 15px;
   }
   .process-single{
-    height: 410px;
+    height: 580px;
   }
   /* .project-single{
     border-radius: 10px;

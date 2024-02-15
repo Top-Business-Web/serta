@@ -1074,7 +1074,7 @@ input.form-control {
 .header-area .navigation {
   padding: 0px 30px;
   background: white;
-  height: 90px;
+  height: 70px;
   position: relative;
   z-index: 9;
   display: flex;
@@ -2583,7 +2583,7 @@ ul.service-list li i {
   padding: 30px 40px 40px;
   background-color: #C03627;
   position: absolute;
-  bottom: -30%;
+  bottom: -50%;
   right: 0;
   left: 0;
   transition: all 0.5s ease;
@@ -2604,6 +2604,9 @@ ul.service-list li i {
 
 .project-title a{
     color: white;
+}
+.project-title a:hover{
+    color: white ;
 }
 
 .project-title h4 {
@@ -3377,6 +3380,9 @@ i.las.la-comments {
   font-size: 15px;
   color: white;
   font-weight: 400;
+}
+.footer-bottom a:hover{
+    color: #C03627;
 }
 .footer-bottom p.privacy {
   text-align: center;
@@ -6063,8 +6069,8 @@ label.form-label {
  /* edit css */
 
  .header-area .header-inner-box .logo img{
-    width: 200px;
-    height: 70px;
+    /* width: 200px; */
+    height: 50px;
 }
 .header-top .contact-info svg{
     color:  #b58517;
@@ -6159,7 +6165,7 @@ ul.contact-list li svg{
     margin-bottom: 15px;
   }
   .process-single{
-    height: 410px;
+    height: 580px;
   }
   /* .project-single{
     border-radius: 10px;
@@ -6612,8 +6618,21 @@ body{
 .partner-area .card-image .img-partner{
     transition: all 0.5s ease;
 }
-.partner-area .card-image:hover .img-partner{
-    transform: scale(1.1);
+.partner-area .card-image:hover .move-up{
+    bottom: 0%;
+}
+.partner-area .card-image:hover .move-down{
+    bottom: -100%;
+}
+.move-down{
+    position: absolute;
+    bottom: 0%;
+    transition: all 0.5s ease;
+}
+.move-up{
+    position: absolute;
+    bottom: 100%;
+    transition: all 0.5s ease;
 }
 .image-footer img{
     height: 155px;
