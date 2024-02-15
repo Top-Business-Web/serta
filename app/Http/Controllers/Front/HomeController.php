@@ -7,6 +7,7 @@ use App\Http\Requests\NewsStore;
 use App\Models\Benefits;
 use App\Models\Category;
 use App\Models\NewsLetter;
+use App\Models\PartnerSuccess;
 use App\Models\Product;
 use App\Models\Slider;
 use App\Models\Service;
@@ -20,6 +21,7 @@ class HomeController extends Controller
         $data['services'] = Service::all();
         $data['products'] = Product::latest()->take(9)->get();
         $data['benefits'] = Benefits::all();
+        $data['partners_success'] = PartnerSuccess::all();
         return view('site.index', compact('data'));
     }
 
