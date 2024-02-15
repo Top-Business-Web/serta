@@ -126,6 +126,38 @@
         </div>
     </div>
 
+     <!-- Choose Us Area  -->
+
+     <div class="why-choose-two section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h6>{{ trans('site.our_pontential_benefits') }}</h6>
+                <h2>{{ trans('site.why_you_should_choose_our_services') }}</h2>
+            </div>
+            <div class="mt-5">
+                <div class="row">
+                    @foreach ($data['benefits'] as $benefit)
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                            <div class="feature-card">
+                                <div class="feature-icon mb-3">
+                                    <img src="{{ asset('assets/admin/sliders/images/' . $benefit->image) }}"
+                                        alt="no-image">
+                                </div>
+                                <div class="feature-title">
+                                    <h3>{{ app()->getLocale() == 'ar' ? $benefit->title_ar : $benefit->title_en }}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+            <!-- <div class="image-all-egypt">
+                            <img src="{{ asset('assets/front/') }}/assets/img/img-all-egypt.jpg">
+                        </div> -->
+        </div>
+    </div>
+
+
     <!-- Process Section  -->
 
     <div class="process-area dark-bg section-padding">
@@ -191,43 +223,12 @@
                 <div class="col-lg-6 col-12">
                     <div class="process-single three image-value">
                         <div class="process-icon">
-                            <img src="{{ asset($setting->logo_values) }}" alt="no-image" style="height: 410px;">
+                            <img src="{{ asset($setting->logo_values) }}" alt="no-image" style="height: 580px;">
                         </div>
                     </div>
                 </div>
 
             </div>
-        </div>
-    </div>
-
-    <!-- Choose Us Area  -->
-
-    <div class="why-choose-two section-padding">
-        <div class="container">
-            <div class="section-title text-center">
-                <h6>{{ trans('site.our_pontential_benefits') }}</h6>
-                <h2>{{ trans('site.why_you_should_choose_our_services') }}</h2>
-            </div>
-            <div class="mt-5">
-                <div class="row">
-                    @foreach ($data['benefits'] as $benefit)
-                        <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                            <div class="feature-card">
-                                <div class="feature-icon mb-3">
-                                    <img src="{{ asset('assets/admin/sliders/images/' . $benefit->image) }}"
-                                        alt="no-image">
-                                </div>
-                                <div class="feature-title">
-                                    <h3>{{ app()->getLocale() == 'ar' ? $benefit->title_ar : $benefit->title_en }}</h3>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-            <!-- <div class="image-all-egypt">
-                            <img src="{{ asset('assets/front/') }}/assets/img/img-all-egypt.jpg">
-                        </div> -->
         </div>
     </div>
 

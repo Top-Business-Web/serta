@@ -1076,7 +1076,7 @@ input.form-control {
 .header-area .navigation {
   padding: 0px 30px;
   background: white;
-  height: 90px;
+  height: 70px;
   position: relative;
   z-index: 9;
   display: flex;
@@ -2585,7 +2585,7 @@ ul.service-list li i {
   padding: 30px 40px 40px;
   background-color: #C03627;
   position: absolute;
-  bottom: -30%;
+  bottom: -50%;
   right: 0;
   left: 0;
   transition: all 0.5s ease;
@@ -2606,6 +2606,9 @@ ul.service-list li i {
 }
 
 .project-title a{
+    color: white ;
+}
+.project-title a:hover{
     color: white ;
 }
 
@@ -3381,6 +3384,9 @@ i.las.la-comments {
   font-size: 15px;
   color: white;
   font-weight: 400;
+}
+.footer-bottom a:hover{
+    color: #C03627;
 }
 .footer-bottom p.privacy {
   text-align: center;
@@ -6190,21 +6196,36 @@ label.form-label {
     overflow: hidden;
 }
 .img-partner{
-    height: 250px;
-    border-radius: 10px;
+    height: 170px;
+    /* border-radius: 10px; */
 }
 .partner-area .card-image{
     transition: all 0.5s ease;
-    box-shadow: 0px 0px 10px rgb(1 1 1 / 10%);
-    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgb(1 1 1 / 10%);
+    border-radius: 10px; */
+    height: 170px;
     margin-bottom: 20px;
     overflow: hidden;
+    position: relative;
 }
 .partner-area .card-image .img-partner{
     transition: all 0.5s ease;
 }
-.partner-area .card-image:hover .img-partner{
-    transform: scale(1.1);
+.partner-area .card-image:hover .move-up{
+    bottom: 0%;
+}
+.partner-area .card-image:hover .move-down{
+    bottom: -100%;
+}
+.move-down{
+    position: absolute;
+    bottom: 0%;
+    transition: all 0.5s ease;
+}
+.move-up{
+    position: absolute;
+    bottom: 100%;
+    transition: all 0.5s ease;
 }
 .image-footer img{
     height: 155px;
