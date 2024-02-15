@@ -17,7 +17,7 @@
                         <!-- <a href="{{ route('quote') }}" class="main-btn primary text-decoration-none mt-3">{{ trans('site.get_a_quote') }}</a> -->
                         <!-- <p><b>{{ trans('site.opening_hour') }}:</b> {{ $setting->open }}</p> -->
                         <div class="image-footer mt-3">
-                            <img src="{{ asset('assets/front') }}/assets/img/2030-300x202.png" style="width: 150px; height: 98px;">
+                            <img src="{{ asset('assets/front/images/serta111.jpg') }}" style="width: 150px; height: 98px;">
                         </div>
                     </div>
 

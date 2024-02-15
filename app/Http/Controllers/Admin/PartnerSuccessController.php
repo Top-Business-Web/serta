@@ -30,6 +30,11 @@ class PartnerSuccessController extends Controller
                     <img alt="image" onclick="window.open(this.src)" class="avatar avatar-md rounded-circle" src="' . asset($services->image) . '">
                     ';
                 })
+                ->editColumn('second_image', function ($services) {
+                    return '
+                    <img alt="image" onclick="window.open(this.src)" class="avatar avatar-md rounded-circle" src="' . asset($services->second_image) . '">
+                    ';
+                })
                 ->escapeColumns([])
                 ->make(true);
         } else {
@@ -47,6 +52,10 @@ class PartnerSuccessController extends Controller
         $inputs = $request->all();
         if($request->has('image')){
             $inputs['image'] = $this->saveImage($request->image,'assets/uploads/partners_success', 'photo');
+        }
+
+        if($request->has('second_image')){
+            $inputs['second_image'] = $this->saveImage($request->second_image,'assets/uploads/partners_success', 'photo');
         }
 
         if (PartnerSuccess::create($inputs)) {
