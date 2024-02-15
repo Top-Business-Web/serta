@@ -2411,16 +2411,16 @@ ul.service-list li i {
 }
 
 .process-single {
-  background: #fff;
+  background: #ffe2e2;
   padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   position: relative;
   margin-right: 30px;
-  border: 1px solid #e8e8e9;
+  /* border: 1px solid #e8e8e9; */
   /* background-image: url("../img/400.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -6688,5 +6688,9 @@ body{
 }
 .dropdown-item{
     text-align: right;
+}
+
+.image-value{
+    padding: 0px;
 }
 
