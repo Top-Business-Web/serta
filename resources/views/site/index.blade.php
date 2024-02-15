@@ -156,7 +156,7 @@
                 <div class="col-lg-4 col-12">
                     <div class="process-single">
                         <div class="process-icon">
-                            <img src="{{ asset($setting->logo_vision) }}" alt="" style="width: 60px;">
+                            <img src="{{ asset($setting->logo_vision) }}" alt="" style="width: 80px;">
                         </div>
                         <div class="process-title">
                             <h5>{{ app()->getLocale() == 'ar' ? $setting->title_vision_ar : $setting->title_vision_en }}
@@ -172,7 +172,7 @@
                 <div class="col-lg-4 col-12">
                     <div class="process-single two">
                         <div class="process-icon">
-                            <img src="{{ asset($setting->logo_mission) }}" alt="" style="width: 60px;">
+                            <img src="{{ asset($setting->logo_mission) }}" alt="" style="width: 80px;">
                         </div>
                         <div class="process-title">
                             <h5>{{ app()->getLocale() == 'ar' ? $setting->title_mission_ar : $setting->title_mission_en }}
@@ -186,26 +186,10 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-12">
-                    <div class="process-single three">
+                    <div class="process-single three image-value">
                         <div class="process-icon">
-                            <img src="{{ asset($setting->logo_values) }}" alt="" style="width: 60px;">
+                            <img src="{{ asset($setting->logo_values) }}" alt="no-image">
                         </div>
-                        <div class="process-title">
-                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_values_ar : $setting->title_values_en }}
-                            </h5>
-                        </div>
-                        <p style="text-align: justify;">
-                            {{ app()->getLocale() == 'ar' ? $setting->desc_values_ar : $setting->desc_values_en }}
-                        </p>
-                        <!-- <div class="process-desc text-start"> -->
-                        {{-- <ul class="list-unstyled service-list mt-0">
-                            <li><i class="fas fa-check"></i>{{ trans('site.build_relations') }}</li>
-                            <li><i class="fas fa-check"></i>{{ trans('site.Integrity') }}</li>
-                            <li><i class="fas fa-check"></i>{{ trans('site.accountabilit') }}</li>
-                            <li><i class="fas fa-check"></i>{{ trans('site.excellence') }}</li>
-                            <li><i class="fas fa-check"></i>{{ trans('site.innovation') }}</li>
-                        </ul> --}}
-                        <!-- </div>                         -->
                     </div>
                 </div>
 

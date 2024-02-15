@@ -94,15 +94,15 @@ ul.contact-list li svg{
   .process-single{
     height: 410px;
   }
-  .project-single{
+  /* .project-single{
     border-radius: 10px;
-  }
+  } */
   .project-img{
     overflow: hidden;
   }
-  .project-single:hover .project-img img{
+  /* .project-single:hover .project-img img{
     transform: scale(1.1) rotate(2deg);
-  }
+  } */
 
 
   .thumbnails {
