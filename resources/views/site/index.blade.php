@@ -364,18 +364,23 @@
         </div>
     </div>
 
-
-    <div class="project-area gray-bg section-padding">
-        <div class="container-fluid">
-            <div class="product">
-                <div class="owl-carousel owl-theme">
+    <!-- paretner -->
+    <div class="partner-area section-padding">
+        <div class="container">
+            <div class="section-title" style="text-align: center;">
+                <h6 class="">{{ trans('site.partner_success') }}</h6>      
+                <h2>{{ trans('site.our_partner')}}</h2>
+            </div>
+            <div class="row">
                 @foreach ($data['partners_success'] as $partner_success)
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="card-image">
-                            <img src="{{ asset($partner_success->image) }}" class="img-partner move-up">
+                            <img src="{{ asset($partner_success->second_image) }}" class="img-partner move-up">
                             <img src="{{ asset($partner_success->image) }}" class="img-partner move-down">
                         </div>
+                    </div>
                 @endforeach
-                </div>
+
             </div>
         </div>
     </div>

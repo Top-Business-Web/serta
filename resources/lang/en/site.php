@@ -178,6 +178,7 @@ return [
     'team_work' => 'Team Work',
     #### Partner Success
     'partner_success' => 'Partner Success',
-    'partner_head' => 'We provide distinguished and unique services in the field of construction using advanced technologies'
+    'partner_head' => 'We provide distinguished and unique services in the field of construction using advanced technologies',
+    'our_partner' => 'Our Partner'
 
 ];
