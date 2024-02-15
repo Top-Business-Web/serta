@@ -136,7 +136,7 @@
 		autoplay: true,
 		autoplayhoverpause: true,
 		autoplaytimeout: 100,
-		items: 3,
+		items: 4,
 		nav: false,
 		loop: false,
 		dots: true,
@@ -154,7 +154,7 @@
 				items: 3
 			},
 			1200 : {
-				items: 3
+				items: 4
 			}
 		}
 	});
