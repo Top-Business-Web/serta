@@ -364,6 +364,22 @@
         </div>
     </div>
 
+
+    <div class="project-area gray-bg section-padding">
+        <div class="container-fluid">
+            <div class="product">
+                <div class="owl-carousel owl-theme">
+                @foreach ($data['partners_success'] as $partner_success)
+                        <div class="card-image">
+                            <img src="{{ asset($partner_success->image) }}" class="img-partner move-up">
+                            <img src="{{ asset($partner_success->image) }}" class="img-partner move-down">
+                        </div>
+                @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+
     {{--    aya modal --}}
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
