@@ -4,7 +4,7 @@
 <body>
 <!-- Pre-Loader -->
 <div class="preloader">
-<img src="{{ asset('assets/front') }}/assets/img/logo-serta-png.gif" style="height: 80px; width: 100px;">
+<img src="{{ asset('assets/front') }}/assets/img/logo-serta-png.gif" style="height: 80px; width: 200px;">
 <!-- <span class="loader"></span> -->
 </div>
 
