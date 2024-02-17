@@ -45,14 +45,14 @@
                     <div class="about-content-wrap wow bounceInUp" data-wow-duration="2s" data-wow-offset="100">
                         <div class="section-title">
                             <!-- <p>Complete Commercial And Residential Recycling Services!</p> -->
-                            <h2>{{ app()->getLocale() == 'ar' ? $about->top_title_ar : $about->top_title_en }}</h2>
+                            <h2>{{ app()->getLocale() == 'ar' ? $data['setting']->top_title_ar : $data['setting']->top_title_en }}</h2>
                         </div>
                         <div class="about-content">
                             <div class="row">
                                 <div class="col-12 col-lg-12">
                                     <div class="about-content-left">
                                         <p class="highlight mb-5">
-                                            {{ app()->getLocale() == 'ar' ? $aboutUs->top_desc_ar : $aboutUs->top_desc_en }}
+                                            {{ app()->getLocale() == 'ar' ? $data['setting']->top_desc_ar :$data['setting']->top_desc_en }}
                                         </p>
 
                                         <!--<p>-->
