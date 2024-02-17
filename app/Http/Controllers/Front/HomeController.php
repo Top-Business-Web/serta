@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\NewsStore;
+use App\Models\About;
 use App\Models\Benefits;
 use App\Models\Category;
 use App\Models\NewsLetter;
@@ -22,6 +23,7 @@ class HomeController extends Controller
         $data['products'] = Product::latest()->take(9)->get();
         $data['benefits'] = Benefits::all();
         $data['partners_success'] = PartnerSuccess::all();
+        $data['setting'] = About::first();
         return view('site.index', compact('data'));
     }
 
