@@ -45,7 +45,7 @@
                     <div class="about-content-wrap wow bounceInUp" data-wow-duration="2s" data-wow-offset="100">
                         <div class="section-title">
                             <!-- <p>Complete Commercial And Residential Recycling Services!</p> -->
-                            <h2>{{ trans('site.The_pioneers') }}</h2>
+                            <h2>{{ app()->getLocale() == 'ar' ? $about->top_title_ar : $about->top_title_en }}</h2>
                         </div>
                         <div class="about-content">
                             <div class="row">
