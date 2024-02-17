@@ -240,8 +240,8 @@
     <!-- product Section  -->
 
     <div class="project-area pt-5 pb-5">
-        <div class="container-fluid">
-            <div class="row justify-content-center text-center">
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-7">
                     <div class="section-title">
                         <h6>{{ trans('site.innovation_quality_and_continuous_improvement') }}</h6>
@@ -249,7 +249,9 @@
                     </div>
                 </div>
             </div>
-            <div class="product">
+        </div>
+           <div class="container-fluid">
+           <div class="product">
                 <div class="owl-carousel owl-theme">
                     @foreach ($data['products'] as $product)
                         <div class="project-single ms-2 me-2">
@@ -268,6 +270,7 @@
                     @endforeach
                 </div>
             </div>
+           </div>
         </div>
     </div>
 
@@ -275,7 +278,7 @@
     <!-- certificate -->
     <div class="certificate-area gray-bg section-padding">
         <div class="container">
-            <div class="section-title" style="text-align: center;">
+            <div class="section-title">
                 <h6 class="">Certification</h6>
                 <h2>Our Certification</h2>
             </div>
@@ -294,13 +297,13 @@
     <!-- paretner -->
     <div class="partner-area section-padding">
         <div class="container">
-            <div class="section-title" style="text-align: center;">
+            <div class="section-title">
                 <h6 class="">{{ trans('site.partner_success') }}</h6>
                 <h2>{{ trans('site.our_partner')}}</h2>
             </div>
             <div class="owl-carousel owl-theme">
                 @foreach ($data['partners_success'] as $partner_success)
-                        <div class="card-image m-2">
+                        <div class="card-image m-2 d-flex justify-content-center">
                             <img src="{{ asset($partner_success->second_image) }}" class="img-partner move-up">
                             <img src="{{ asset($partner_success->image) }}" class="img-partner move-down">
                         </div>
