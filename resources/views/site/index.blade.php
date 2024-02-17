@@ -10,8 +10,8 @@
                 <source src="{{ asset('assets/admin/sliders/images/' .$slider->image) }}" type="video/mp4">
             </video>
             <div class="image-layer">
-                <div class="overlay"></div>
-                <div class="title-container">
+                <!-- <div class="overlay"></div> -->
+                <div class="title-container wow bounceInUp" data-wow-duration="2s">
                     <h2 class="video-title text-white">{{ app()->getLocale() == 'ar' ? $slider->title_ar : $slider->title_en }}</h2>
                 </div>
             </div>
@@ -41,8 +41,8 @@
     <div class="about-area section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="about-content-wrap">
+                <div class="col-12 col-lg-7">
+                    <div class="about-content-wrap wow bounceInUp" data-wow-duration="2s" data-wow-offset="100">
                         <div class="section-title">
                             <!-- <p>Complete Commercial And Residential Recycling Services!</p> -->
                             <h2>{{ trans('site.The_pioneers') }}</h2>
@@ -66,21 +66,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="about-img">
-                        <img src="{{ $aboutUs->image }}" alt="">
-                        <div class="about-counter">
-                            <div class="counter-icon">
-                                <img src="{{ asset('assets/uploads/happy_customers.jpg') }}" style="width: 50px;"
-                                    alt="">
-                            </div>
-                            <div class="counter-number">
-                                <span class="counting" data-counterup-nums="">{{ $aboutUs->happy_clients }}</span>
-                            </div>
-                            <h6>{{ trans('site.Happy_customers') }}</h6>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>
@@ -88,7 +73,7 @@
 
     <!-- Service Section  -->
 
-    <div class="service-area gray-bg section-padding pt-200">
+    <!-- <div class="service-area gray-bg section-padding pt-200">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-9">
@@ -124,11 +109,11 @@
                 @endforeach
             </div>
         </div>
-    </div>
+    </div> -->
 
      <!-- Choose Us Area  -->
 
-     <div class="why-choose-two section-padding">
+     <!-- <div class="why-choose-two section-padding">
         <div class="container">
             <div class="section-title text-center">
                 <h6>{{ trans('site.our_pontential_benefits') }}</h6>
@@ -151,86 +136,8 @@
                     @endforeach
                 </div>
             </div>
-            <!-- <div class="image-all-egypt">
-                            <img src="{{ asset('assets/front/') }}/assets/img/img-all-egypt.jpg">
-                        </div> -->
         </div>
-    </div>
-
-
-    <!-- Process Section  -->
-
-    <div class="process-area dark-bg mb-5">
-        <div class="container">
-            <!-- <div class="row">
-                            <div class="col-12 col-lg-6">
-                                <div class="section-title">
-                                    <h6>{{ trans('site.recycling_wastage_save_environment') }}</h6>
-                                    <h2 class="text-white">{{ trans('site.simple_steps_wastage') }}
-                                        <br> {{ trans('site.to_recycling_item_processing') }}</h2>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="process-right-content">
-                                    <p class="text-white">{{ trans('site.recycling_is_the_process_of_converting') }}</p>
-                                    <p class="text-white">{{ trans('site.this_waste_management_video') }}</p>
-                                    <div class="process-btn">
-                                        <a href="{{ route('contact') }}" class="main-btn">{{ trans('site.get_started') }}</a>
-                                        <a href="{{ route('service') }}"
-                                           class="main-btn white">{{ trans('site.view_our_services') }}</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-
-            <div class="process-item-wrap row">
-            <div class="col-lg-3 col-12">
-                    <div class="process-single two">
-                        <div class="process-icon">
-                            <img src="{{ asset($setting->logo_mission) }}" alt="" style="width: 100px;">
-                        </div>
-                        <div class="process-title">
-                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_mission_ar : $setting->title_mission_en }}
-                            </h5>
-                        </div>
-                        <div class="process-desc">
-                            <p style="text-align: justify;">
-                                {{ app()->getLocale() == 'ar' ? $setting->desc_mission_ar : $setting->desc_mission_en }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12">
-                    <div class="process-single">
-                        <div class="process-icon">
-                            <img src="{{ asset($setting->logo_vision) }}" alt="" style="width: 100px;">
-                        </div>
-                        <div class="process-title">
-                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_vision_ar : $setting->title_vision_en }}
-                            </h5>
-                        </div>
-                        <div class="process-desc">
-                            <p style="text-align: justify;">
-                                {{ app()->getLocale() == 'ar' ? $setting->desc_vision_ar : $setting->desc_vision_en }}
-                            </p>
-                            <div>
-                            <img src="{{ asset('assets/front') }}/assets/img/R.red.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="process-single three image-value">
-                        <div class="process-icon">
-                            <img src="{{ asset($setting->logo_values) }}" alt="no-image" style="height: 580px;">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    </div> -->
 
     <!-- Contact Section  -->
 
@@ -332,7 +239,7 @@
 
     <!-- product Section  -->
 
-    <div class="project-area gray-bg section-padding">
+    <div class="project-area pt-5 pb-5">
         <div class="container-fluid">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-7">
@@ -363,6 +270,26 @@
             </div>
         </div>
     </div>
+
+
+    <!-- certificate -->
+    <div class="certificate-area gray-bg section-padding">
+        <div class="container">
+            <div class="section-title" style="text-align: center;">
+                <h6 class="">Certification</h6>
+                <h2>Our Certification</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="certificate-image m-2">
+                        <img src="{{ asset('assets/front/') }}/assets/img/Al-Bawani-baner-design8-1536x1078.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- paretner -->
     <div class="partner-area section-padding">
