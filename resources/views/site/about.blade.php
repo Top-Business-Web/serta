@@ -119,6 +119,81 @@
         </div>
     </div>
 
+     <!-- Process Section  -->
+
+     <div class="process-area dark-bg mb-5">
+        <div class="container">
+            <!-- <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="section-title">
+                                    <h6>{{ trans('site.recycling_wastage_save_environment') }}</h6>
+                                    <h2 class="text-white">{{ trans('site.simple_steps_wastage') }}
+                                        <br> {{ trans('site.to_recycling_item_processing') }}</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="process-right-content">
+                                    <p class="text-white">{{ trans('site.recycling_is_the_process_of_converting') }}</p>
+                                    <p class="text-white">{{ trans('site.this_waste_management_video') }}</p>
+                                    <div class="process-btn">
+                                        <a href="{{ route('contact') }}" class="main-btn">{{ trans('site.get_started') }}</a>
+                                        <a href="{{ route('service') }}"
+                                           class="main-btn white">{{ trans('site.view_our_services') }}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+            <div class="process-item-wrap row">
+            <div class="col-lg-3 col-12">
+                    <div class="process-single two">
+                        <div class="process-icon">
+                            <img src="{{ asset($setting->logo_mission) }}" alt="" style="width: 100px;">
+                        </div>
+                        <div class="process-title">
+                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_mission_ar : $setting->title_mission_en }}
+                            </h5>
+                        </div>
+                        <div class="process-desc">
+                            <p style="text-align: justify;">
+                                {{ app()->getLocale() == 'ar' ? $setting->desc_mission_ar : $setting->desc_mission_en }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="process-single">
+                        <div class="process-icon">
+                            <img src="{{ asset($setting->logo_vision) }}" alt="" style="width: 100px;">
+                        </div>
+                        <div class="process-title">
+                            <h5>{{ app()->getLocale() == 'ar' ? $setting->title_vision_ar : $setting->title_vision_en }}
+                            </h5>
+                        </div>
+                        <div class="process-desc">
+                            <p style="text-align: justify;">
+                                {{ app()->getLocale() == 'ar' ? $setting->desc_vision_ar : $setting->desc_vision_en }}
+                            </p>
+                            <div>
+                            <img src="{{ asset('assets/front') }}/assets/img/R.red.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="process-single three image-value">
+                        <div class="process-icon">
+                            <img src="{{ asset($setting->logo_values) }}" alt="no-image" style="height: 580px;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <!-- CTA -->
     <!-- <div class="cta-area-2 mt-100 dark-bg">
         <div class="container">

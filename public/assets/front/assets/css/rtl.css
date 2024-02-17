@@ -760,7 +760,7 @@ input.form-control {
 }
 
 .header-area .is-sticky .navigation {
-  height: 90px;
+  height: 70px;
   margin-top: 0;
 }
 
@@ -6713,5 +6713,36 @@ body{
 
 .image-value{
     padding: 0px;
+}
+
+.certificate-image{
+    position: relative;
+    overflow: hidden;
+}
+.certificate-image::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #C03627;
+    transform: translateX(-101%);
+    animation-name: movingImage;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes movingImage{
+    0% {
+        transform: translateX(-101%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(101%);
+         }
 }
 

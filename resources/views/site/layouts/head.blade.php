@@ -103,6 +103,10 @@
     <script src="{{ asset('assets/front/') }}/assets/js/plugin.js"></script>
 
     <script>
+      new WOW().init();
+      </script>
+
+    <script>
         // upload file
         const form = document.querySelector("form"),
             fileInput = document.querySelector(".file-input"),
