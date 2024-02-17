@@ -418,7 +418,7 @@ hr {
 /*Section Title */
 .section-title {
   position: relative;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 @media (max-width: 767px) {
   .section-title {
@@ -428,7 +428,7 @@ hr {
 
 .section-title h2 {
   font-size: 55px;
-  font-weight: 600;
+  /* font-weight: 600; */
   line-height: 75px;
   letter-spacing: 1px;
   margin: 20px 0;
@@ -492,7 +492,7 @@ hr {
   font-size: 14px;
   font-weight: 500;
   text-transform: capitalize;
-  padding: 12px 30px;
+  padding: 10px 20px;
   border: 2px solid #C03627;
   border-radius: 7px;
   text-align: center;
@@ -1555,7 +1555,7 @@ input.form-control {
 p.highlight {
   color: #2b3e4b;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 ul.feature-list {
@@ -1576,9 +1576,9 @@ ul.feature-list li i {
   margin-right: 10px;
 }
 
-.about-img img {
+/* .about-img img {
   border-radius: 10px;
-}
+} */
 
 .about-content-left .main-btn {
   margin-top: 30px;
@@ -1968,7 +1968,7 @@ p.text-black:before {
 
 .services-two_icon {
   padding: 20px;
-  background-color: #dfb163;
+  background-color: gainsboro;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3832,7 +3832,7 @@ p.privacy a:not(:last-of-type)::after {
 }
 
 .breadcroumb-area h6 {
-  color:  #b58517;
+  color:  #C03627;
   font-size: 18px;
   letter-spacing: 1px;
   margin-top: 25px;
@@ -6092,7 +6092,7 @@ a:hover{
     width: 100%;
 }
 .about-img > img{
-  height: 550px;
+  height: 400px;
 }
 .featured-icon svg{
     font-size: 35px;
@@ -6605,7 +6605,8 @@ body{
 }
 
 .img-partner{
-    height: 170px;
+    width: 170px !important;
+    height: 160px;
     /* border-radius: 10px; */
 }
 .partner-area .card-image{
