@@ -47,6 +47,7 @@
                     </div> -->
                     <div class="row">
                         <div class="col-xl-12">
+                            <div class="container">
                             <div class="contact-page_form">
                                 <form class="contactForm" id="contactForm">
                                     @csrf
@@ -90,6 +91,7 @@
                                         </div>
                                     </div>
                                 </form>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -189,7 +191,7 @@
                         });
                         $('#career-btn').html('خطأ');
                         setTimeout(function () {
-                            $('#career-btn').html('{{ trans('site.send_a_message') }}');
+                            $('#career-btn').html('{{ trans('site.send_a_message') }}'),
                         },2000)
                     }
                 }
