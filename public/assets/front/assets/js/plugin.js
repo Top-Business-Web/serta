@@ -8,6 +8,8 @@ $(function (){
         arrows: false,
         dots: true,
         fade: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         // asNavFor: '.small-slider'
       });
     //   $('.small-slider').slick({
