@@ -14,7 +14,6 @@ class ProductController extends Controller
     {
         $data['products'] = Product::all();
         $data['categories'] = Category::with('subCategory')->withCount('subCategory')->get();
-        //        return $data['categories'];
         $data['sub_categories'] = SubCategory::all();
         return view('site.products', compact('data'));
     }
