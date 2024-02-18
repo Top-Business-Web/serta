@@ -36,7 +36,7 @@
                             </div>
                         @endforeach
                     </div>
-                    <div class="small-slider">
+                    <!-- <div class="small-slider">
                         @foreach ($data['product']->images as $image)
                             <img
                                 class="img-fluid"
@@ -44,7 +44,7 @@
                                 alt="product image"
                             />
                         @endforeach
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="col-lg-6 col-12">
@@ -55,7 +55,7 @@
                         {{ app()->getLocale() == 'ar' ? $data['product']->desc_ar : $data['product']->desc_en }}
                     </p>
                     <div class="mb-4 mt-2">
-                        <span class="fw-bold me-2" style="color: #016A41;">{{ trans('site.category') }} :</span><span
+                        <span class="fw-bold me-2" style="color: #C03627;">{{ trans('site.category') }} :</span><span
                             style="color: #777;">{{ app()->getLocale() == 'ar' ? $data['product']->subCategory->title_ar : $data['product']->subCategory->title_en }}</span>
                     </div>
                     <hr>
@@ -70,7 +70,54 @@
 
         <!-- description -->
 
-        {{-- <div class="container mb-5 mt-5">
+        <div class="container pt-5 mt-5">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="{{ asset('assets/front') }}/assets/img/4.png" style="width: 65px; height:65px;">
+                    </div>
+                    <p class="text-center" style="margin-bottom: 0;">Location</p>
+                    <h6 class="text-center fw-bold">Riyadh Province, Riyadh</h6>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="{{ asset('assets/front') }}/assets/img/4.png" style="width: 65px; height:65px;">
+                    </div>
+                    <p class="text-center" style="margin-bottom: 0;">INDUSTRY</p>
+                    <h6 class="text-center fw-bold">Riyadh Province, Riyadh</h6>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="{{ asset('assets/front') }}/assets/img/4.png" style="width: 65px; height:65px;">
+                    </div>
+                    <p class="text-center" style="margin-bottom: 0;">SECTOR</p>
+                    <h6 class="text-center fw-bold">Riyadh Province, Riyadh</h6>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="{{ asset('assets/front') }}/assets/img/4.png" style="width: 65px; height:65px;">
+                    </div>
+                    <p class="text-center" style="margin-bottom: 0;">SUB SECTOR</p>
+                    <h6 class="text-center fw-bold">Riyadh Province, Riyadh</h6>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="{{ asset('assets/front') }}/assets/img/4.png" style="width: 65px; height:65px;">
+                    </div>
+                    <p class="text-center" style="margin-bottom: 0;">STATUS</p>
+                    <h6 class="text-center fw-bold">Ongoing</h6>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="{{ asset('assets/front') }}/assets/img/4.png" style="width: 65px; height:65px;">
+                    </div>
+                    <p class="text-center" style="margin-bottom: 0;">YEAR</p>
+                    <h6 class="text-center fw-bold">2019</h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="container mb-5 mt-5">
             <div class="tabs border-bottom border-3">
                 <ul class="tabs-list">
                     <li class="show" data-content=".content-one">{{ trans('site.description') }}</li>
@@ -99,9 +146,9 @@
 
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="container">
+        <div class="container mt-5 pt-5">
             <div class="title mt-3 mb-4">
                 <h2>{{ trans('site.related_projects') }}</h2>
             </div>
@@ -122,7 +169,7 @@
                     </div>
                 @endforeach
             </div>
-        </div> --}}
+        </div>
     </div>
 
 @endsection

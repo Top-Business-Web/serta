@@ -3272,8 +3272,8 @@ i.las.la-comments {
   transform: scale(1.07);
 }
 .blog-bg span {
-  background: #C03627;
-  color: #fff;
+  background: gainsboro;
+  color: #C03627;
   padding: 20px;
   display: block;
   width: 80px;
@@ -3882,7 +3882,7 @@ p.privacy a:not(:last-of-type)::after {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   display: block;
-  background-color: #edf3f6;
+  background-color: gainsboro;
   padding: 20px 40px;
   margin-bottom: 10px;
 }
@@ -3951,8 +3951,8 @@ p.privacy a:not(:last-of-type)::after {
 .service-details_need-help-icon {
   height: 57px;
   width: 57px;
-  background-color:  #b58517;
-  color: #fff;
+  background-color:  gainsboro;
+  color: #C03627;
   font-size: 28px;
   display: flex;
   align-items: center;
@@ -3996,7 +3996,7 @@ p.privacy a:not(:last-of-type)::after {
 }
 
 .service-details_need-help-contact a:hover {
-  color: #C03627;
+  color: gainsboro;
 }
 
 .service-details_right {
@@ -5497,7 +5497,7 @@ label.form-label {
 .contact-page-details {
   position: relative;
   display: block;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
   /* background-image: url("../img/400.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -5559,13 +5559,14 @@ label.form-label {
 }
 
 .contact-page-details_right {
-  position: relative;
+    height: 100%;
+  /* position: relative; */
   display: block;
-  margin-right: 60px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
+  /* margin-right: 60px; */
+  background-color: #B8B8B8;
+  /* box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
   padding: 38px 50px 50px;
-  margin-top: -84px;
+  margin-top: -84px; */
 }
 @media (max-width: 767px) {
   .contact-page-details_right {
@@ -5574,7 +5575,7 @@ label.form-label {
   }
 }
 
-.contact-page-details_right:before {
+/* .contact-page-details_right:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -5582,7 +5583,7 @@ label.form-label {
   content: "";
   height: 4px;
   background-color: #C03627;
-}
+} */
 
 .contact-page-details_list {
   position: relative;
@@ -6112,7 +6113,7 @@ ul.service-list li svg {
     margin-left: 10px;
 }
 .project-img img{
-    height: 250px;
+    height: 350px;
     width: 100%;
 }
 .project-more svg{
@@ -6273,14 +6274,15 @@ ul.contact-list li svg{
     color: #08698a;
   }
   ul.collapse li:hover a{
-    color:  #b58517;
+    color:  gainsboro;
     padding-left: 0px;
   }
   .main-slider .product-img img{
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    height: 400px;
   }
   .small-slider img{
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin: 10px 5px;
     cursor: pointer;
   }

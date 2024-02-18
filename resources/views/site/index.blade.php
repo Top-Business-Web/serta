@@ -257,7 +257,7 @@
                         <div class="project-single ms-2 me-2">
                             <div class="project-img">
                                 <a href="{{ route('singleProduct', $product->id) }}" class="w-100">
-                                <img src="{{ asset($product->images[0]) }}" alt="">
+                                <img src="{{ asset($product->images[0]) }}" alt="" style=" height: 250px;">
                                 </a>
                             </div>
                             <div class="project-content">

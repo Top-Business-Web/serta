@@ -6,17 +6,18 @@ $(function (){
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        dots: true,
         fade: true,
-        asNavFor: '.small-slider'
+        // asNavFor: '.small-slider'
       });
-      $('.small-slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.main-slider',
-        dots: false,
-        centerMode: true,
-        focusOnSelect: true
-      });
+    //   $('.small-slider').slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     asNavFor: '.main-slider',
+    //     dots: false,
+    //     centerMode: true,
+    //     focusOnSelect: true
+    //   });
 
 
       // tabs describtion
