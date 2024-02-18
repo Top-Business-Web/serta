@@ -74,42 +74,42 @@
             <div class="row">
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
-                        <img src="{{ asset('assets/front') }}/assets/img/4.png" style="width: 65px; height:65px;">
+                        <img src="{{ asset('assets/front') }}/assets/img/pin.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">Location</p>
                     <h6 class="text-center fw-bold">Riyadh Province, Riyadh</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
-                        <img src="{{ asset('assets/front') }}/assets/img/4.png" style="width: 65px; height:65px;">
+                        <img src="{{ asset('assets/front') }}/assets/img/industry.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">INDUSTRY</p>
                     <h6 class="text-center fw-bold">Riyadh Province, Riyadh</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
-                        <img src="{{ asset('assets/front') }}/assets/img/4.png" style="width: 65px; height:65px;">
+                        <img src="{{ asset('assets/front') }}/assets/img/sector.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">SECTOR</p>
                     <h6 class="text-center fw-bold">Riyadh Province, Riyadh</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
-                        <img src="{{ asset('assets/front') }}/assets/img/4.png" style="width: 65px; height:65px;">
+                        <img src="{{ asset('assets/front') }}/assets/img/sub-sector.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">SUB SECTOR</p>
                     <h6 class="text-center fw-bold">Riyadh Province, Riyadh</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
-                        <img src="{{ asset('assets/front') }}/assets/img/4.png" style="width: 65px; height:65px;">
+                        <img src="{{ asset('assets/front') }}/assets/img/progress.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">STATUS</p>
                     <h6 class="text-center fw-bold">Ongoing</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
-                        <img src="{{ asset('assets/front') }}/assets/img/4.png" style="width: 65px; height:65px;">
+                        <img src="{{ asset('assets/front') }}/assets/img/year.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">YEAR</p>
                     <h6 class="text-center fw-bold">2019</h6>

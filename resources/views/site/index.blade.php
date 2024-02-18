@@ -285,8 +285,30 @@
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div class="certificate-image m-2">
-                        <img src="{{ asset('assets/front/') }}/assets/img/Al-Bawani-baner-design8-1536x1078.jpg">
+                        <img src="{{ asset('assets/front/') }}/assets/img/Al-Bawani-baner-design8-1536x1078.png">
                     </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                <div class="card-certificate">
+                                <div class="" id="heading">
+                                    <h5 class="mb-0 subtitle">
+                                        <button class="btn-certificate collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-1" aria-expanded="true"
+                                            aria-controls="collapse">
+                                            ISO 14001 : 2024
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapse-1" class="collapse"
+                                    aria-labelledby="heading" data-parent="#accordionFaq">
+                                    <div class="card-body">
+                                        <div class="content">
+                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur deserunt pariatur voluptates dolores, harum doloremque dolorum</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                 </div>
             </div>
         </div>

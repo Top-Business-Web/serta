@@ -2414,7 +2414,7 @@ ul.service-list li i {
 }
 
 .process-single {
-  background: #ffe2e2;
+  background: #FFF1F1;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -6314,7 +6314,7 @@ label.form-label {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #C03627;
+    background-color: gainsboro;
     transform: translateX(-101%);
     animation-name: movingImage;
     animation-duration: 1.5s;
@@ -6338,5 +6338,18 @@ label.form-label {
     color: #C03627;
     font-size: 25px;
 }
-
+.slick-dots li button:before{
+    font-size: 25px;
+}
+.btn-certificate {
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    color: #C03627;
+    font-weight: bold;
+}
+.card-certificate{
+    background-color: transparent;
+}
 
