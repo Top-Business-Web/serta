@@ -33,8 +33,20 @@ class ProductController extends Controller
                     <img alt="image" onclick="window.open(this.src)" class="avatar avatar-md rounded-circle" src="' . asset($products->images[0]) . '">
                     ';
                 })
-                ->editColumn('sub_categories_id',function ($products) {
+                ->editColumn('sub_categories_id', function ($products) {
                     return $products->subCategory->title_ar;
+                })
+                ->editColumn('sector', function ($products) {
+                    if ($products->sector->value == 'public')
+                        return 'عام';
+                    elseif($products->sector->value == 'private')
+                        return 'خاص';
+                })
+                ->editColumn('status', function ($products) {
+                    if ($products->status == '0')
+                        return 'غير مفعل';
+                    else
+                        return 'مفعل';
                 })
                 ->escapeColumns([])
                 ->make(true);
@@ -53,10 +65,9 @@ class ProductController extends Controller
     {
         $inputs = $request->all();
 
-        if($request->has('files')){
-            foreach($request->file('files') as $file)
-            {
-                $inputs['images'][] = $this->saveImage($file,'assets/uploads/products','photo');
+        if ($request->has('files')) {
+            foreach ($request->file('files') as $file) {
+                $inputs['images'][] = $this->saveImage($file, 'assets/uploads/products', 'photo');
             }
         }
 
@@ -74,7 +85,7 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         $sub_categories = SubCategory::get();
-        return view('admin/products/parts/edit', compact(['product','sub_categories']));
+        return view('admin/products/parts/edit', compact(['product', 'sub_categories']));
     }
 
     public function update(UpdateProduct $request, $id)
@@ -83,10 +94,9 @@ class ProductController extends Controller
             $contacts = Product::findOrFail($id);
             $inputs = $request->all();
 
-            if($request->has('files')){
-                foreach($request->file('files') as $file)
-                {
-                    $inputs['images'][] = $this->saveImage($file,'assets/uploads/products','photo');
+            if ($request->has('files')) {
+                foreach ($request->file('files') as $file) {
+                    $inputs['images'][] = $this->saveImage($file, 'assets/uploads/products', 'photo');
                 }
             }
 
