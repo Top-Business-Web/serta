@@ -7,4 +7,4 @@ enum SectorTypeEnum : string
     case PUBLIC = 'public';
 
     case PRIVATE = 'private';
-}
+
