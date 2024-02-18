@@ -40,7 +40,7 @@ ul.service-list li svg {
 }
 .project-img img{
     width: 100%;
-    height: 250px;
+    height: 350px;
 }
 .project-more svg{
     font-size: 30px;
@@ -56,9 +56,6 @@ ul.contact-list li svg{
     border-radius: 50%;
     padding: 4px;
     margin-right: 10px;
-}
-.service-details_need-help-contact a:hover{
-    color: #DFB163;
 }
 .contact-page-details_list li{
     display: block;
@@ -204,10 +201,11 @@ ul.contact-list li svg{
     padding-left: 0px;
   }
   .main-slider .product-img img{
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    height: 400px;
   }
   .small-slider img{
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin: 10px 5px;
     cursor: pointer;
   }

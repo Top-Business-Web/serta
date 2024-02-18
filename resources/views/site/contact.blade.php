@@ -22,7 +22,7 @@
     </div>
 
     <!--Contact Page Google Map Start-->
-    <div class="contact-page-google-map">
+    <!-- <div class="contact-page-google-map">
         <div class="container">
             <iframe
                 src="{{ $setting->location_url }}"
@@ -30,7 +30,7 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
-    </div>
+    </div> -->
 <style>
     .blackColor {
         color: black !important;
@@ -38,36 +38,36 @@
 </style>
     <!--Contact Page Details Start-->
     <section class="contact-page-details">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-8 col-lg-7">
-                    <div class="section-title text-center">
+                <div class="col-xl-6 col-lg-6 col-12">
+                    <!-- <div class="section-title text-center">
                         <h6>{{ trans('site.contact_with_us') }}</h6>
                         <h2 class="section-title">{{ trans('site.drop_us_a_message') }}</h2>
-                    </div>
+                    </div> -->
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="contact-page_form">
                                 <form class="contactForm" id="contactForm">
                                     @csrf
                                     <div class="row">
-                                        <div class="col-xl-6">
+                                        <div class="col-xl-12">
                                             <div class="comment-form_input-box">
                                                 <input class="blackColor" type="text" placeholder="{{ trans('site.name') }}" name="name">
                                             </div>
                                         </div>
-                                        <div class="col-xl-6">
+                                        <div class="col-xl-12">
                                             <div class="comment-form_input-box">
                                                 <input class="blackColor" type="email" placeholder="{{ trans('site.email') }}"
                                                        name="email">
                                             </div>
                                         </div>
-                                        <div class="col-xl-6">
+                                        <div class="col-xl-12">
                                             <div class="comment-form_input-box">
                                                 <input class="blackColor" type="text" placeholder="{{ trans('site.phone') }}" name="phone">
                                             </div>
                                         </div>
-                                        <div class="col-xl-6">
+                                        <div class="col-xl-12">
                                             <div class="comment-form_input-box">
                                                 <input class="blackColor" type="text" placeholder="{{ trans('site.subject') }}"
                                                        name="subject">
@@ -94,9 +94,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-5">
+                <div class="col-xl-6 col-lg-6 col-12" style="padding-right:0px">
                     <div class="contact-page-details_right">
-                        <ul class="list-unstyled contact-page-details_list">
+                        <div class="section-title text-center">
+                            <h6>{{ trans('site.contact_with_us') }}</h6>
+                            <h2 class="section-title">{{ trans('site.drop_us_a_message') }}</h2>
+                        </div>
+                        <div>
+                            <span class="text-white">{{ trans('site.call_anytime') }}</span>
+                            <p><a href="tel:13077760608">{{ $setting->phone }}</a></p>
+                        </div>
+                        <div>
+                            <span class="text-white">{{ trans('site.send_email') }}</span>
+                            <p><a href="mailto:{{ $setting->email }}">{{ $setting->email }}</a></p>
+                        </div>
+                        <div>
+                            <span class="text-white">{{ trans('site.visit_office') }}</span>
+                            <p class="text-white">{{ trans('site.egypt') }}</p>
+                        </div>
+                        <!-- <ul class="list-unstyled contact-page-details_list">
                             <li>
                                 <span>{{ trans('site.call_anytime') }}</span>
                                 <p><a href="tel:13077760608">{{ $setting->phone }}</a></p>
@@ -109,7 +125,7 @@
                                 <span>{{ trans('site.visit_office') }}</span>
                                 <p>{{ trans('site.egypt') }}</p>
                             </li>
-                        </ul>
+                        </ul> -->
                         <div class="contact-page-details_social">
                             <a href="{{ $setting->twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
                             <a href="{{ $setting->instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -121,6 +137,17 @@
         </div>
     </section>
     <!--Contact Page Details End-->
+
+    <!--Contact Page Google Map Start-->
+    <div class="contact-page-google-map">
+        <div class="container-fluid">
+            <iframe
+                src="{{ $setting->location_url }}"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
 
     <script>
         $('#career-btn').on('click', function (e) {
