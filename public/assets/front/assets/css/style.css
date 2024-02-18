@@ -5064,9 +5064,10 @@ p.privacy a:not(:last-of-type)::after {
 .comment-form_input-box input[type=text],
 .comment-form_input-box input[type=email] {
   height: 63px;
-  width: 100%;
+  width: 70%;
+  border-bottom: 1px solid gainsboro !important;
   border: none;
-  background-color: #edf3f6;
+  background-color: transparent;
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 30px;
@@ -5082,10 +5083,11 @@ p.privacy a:not(:last-of-type)::after {
   font-size: 14px;
   color: #eee;
   height: 180px;
-  width: 100%;
-  background-color: #edf3f6;
+  width: 70%;
+  background-color: transparent;
   padding: 18px 30px 30px;
   border: none;
+  border-bottom: 1px solid gainsboro;
   border-radius: 0px;
   outline: none;
   margin-bottom: 0px;
@@ -5571,7 +5573,7 @@ label.form-label {
     height: 100%;
   /* position: relative; */
   display: block;
-  /* margin-right: 60px; */
+  padding-left: 60px;
   background-color: #B8B8B8;
   /* box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05); */
   /* padding: 38px 50px 50px; */
@@ -5632,7 +5634,7 @@ label.form-label {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  border-top: 1px solid #c9d5db;
+  /* border-top: 1px solid #c9d5db; */
   padding-top: 30px;
   margin-top: 21px;
 }

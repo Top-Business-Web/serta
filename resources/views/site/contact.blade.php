@@ -47,29 +47,28 @@
                     </div> -->
                     <div class="row">
                         <div class="col-xl-12">
-                            <div class="container">
-                            <div class="contact-page_form">
+                            <div class="contact-page_form pt-5">
                                 <form class="contactForm" id="contactForm">
                                     @csrf
                                     <div class="row">
                                         <div class="col-xl-12">
-                                            <div class="comment-form_input-box">
+                                            <div class="comment-form_input-box d-flex justify-content-center">
                                                 <input class="blackColor" type="text" placeholder="{{ trans('site.name') }}" name="name">
                                             </div>
                                         </div>
                                         <div class="col-xl-12">
-                                            <div class="comment-form_input-box">
+                                            <div class="comment-form_input-box d-flex justify-content-center">
                                                 <input class="blackColor" type="email" placeholder="{{ trans('site.email') }}"
                                                        name="email">
                                             </div>
                                         </div>
                                         <div class="col-xl-12">
-                                            <div class="comment-form_input-box">
+                                            <div class="comment-form_input-box d-flex justify-content-center">
                                                 <input class="blackColor" type="text" placeholder="{{ trans('site.phone') }}" name="phone">
                                             </div>
                                         </div>
                                         <div class="col-xl-12">
-                                            <div class="comment-form_input-box">
+                                            <div class="comment-form_input-box d-flex justify-content-center">
                                                 <input class="blackColor" type="text" placeholder="{{ trans('site.subject') }}"
                                                        name="subject">
                                             </div>
@@ -77,12 +76,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-xl-12">
-                                            <div class="comment-form_input-box">
+                                            <div class="comment-form_input-box d-flex justify-content-center">
                                                 <textarea class="blackColor" name="message"
                                                           placeholder="{{ trans('site.write_a_message') }}"></textarea>
                                             </div>
                                             <button type="button" id="career-btn"
-                                                    class="main-btn comment-form_btn">{{ trans('site.send_a_message') }}
+                                                    class="main-btn comment-form_btn mb-5">{{ trans('site.send_a_message') }}
                                             </button>
                                         </div>
                                         <div class="col-12">
@@ -92,15 +91,14 @@
                                     </div>
                                 </form>
                             </div>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-12" style="padding-right:0px">
-                    <div class="contact-page-details_right">
-                        <div class="section-title text-center">
-                            <h6>{{ trans('site.contact_with_us') }}</h6>
-                            <h2 class="section-title">{{ trans('site.drop_us_a_message') }}</h2>
+                    <div class="contact-page-details_right" style="padding-top: 100px;">
+                        <div class="mb-3">
+                            <h6 class="text-white">{{ trans('site.contact_with_us') }}</h6>
+                            <h2>{{ trans('site.drop_us_a_message') }}</h2>
                         </div>
                         <div>
                             <span class="text-white">{{ trans('site.call_anytime') }}</span>
