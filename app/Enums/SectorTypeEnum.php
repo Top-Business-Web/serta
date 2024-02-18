@@ -2,7 +2,7 @@
 
 namespace App\Enums;
 
-enum SectorTypeEnum : string
+enum SectorTypeEnum: string
 {
     case PUBLIC = 'public';
 

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\SectorTypeEnum;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,6 +17,10 @@ class Product extends Model
         'title_en',
         'sub_title_ar',
         'sub_title_en',
+        'location',
+        'year',
+        'sector',
+        'status',
         'desc_ar',
         'desc_en',
         'images',
@@ -26,6 +31,7 @@ class Product extends Model
     protected $casts = [
         'images' => 'array',
         'details' => 'array',
+        'sector' => SectorTypeEnum::class,
     ];
 
     public function subCategory()
