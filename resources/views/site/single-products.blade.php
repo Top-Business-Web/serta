@@ -162,7 +162,7 @@
                             <div class="project-content">
                                 <div class="project-title text-center">
                                     <a href="{{ route('singleProduct', $related->id) }}"
-                                       class="fs-5">{{ $related->title_ar }}</a>
+                                       class="fs-5">{{ app()->getLocale() == 'ar' ? $related->title_ar : $related->title_en }}</a>
                                 </div>
                             </div>
                         </div>
