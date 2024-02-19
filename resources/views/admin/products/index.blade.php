@@ -96,7 +96,7 @@
             {data: 'id', name: 'id'},
             {data: 'images', name: 'images'},
             {data: 'title_ar', name: 'title_ar'},
-            {data: 'location', name: 'location'},
+            {data: 'location_ar', name: 'location_ar'},
             {data: 'sector', name: 'sector'},
             {data: 'status', name: 'status'},
             {data: 'sub_categories_id', name: 'sub_categories_id'},

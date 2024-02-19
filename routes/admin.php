@@ -60,6 +60,9 @@ Route::group(['prefix'=>'admin','middleware'=>'auth:admin'],function (){
     #### News letter  ####
     Route::resource('news_letter','NewsLetterController');
 
+    #### Certificates ####
+    Route::resource('certificates','CertificateController');
+
     #### Quote ####
     Route::resource('quotes','QuoteController');
 

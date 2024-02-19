@@ -77,7 +77,7 @@
                         <img src="{{ asset('assets/front') }}/assets/img/pin.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">Location</p>
-                    <h6 class="text-center fw-bold">{{ $data['product']->location }}</h6>
+                    <h6 class="text-center fw-bold">{{ app()->getLocale() == 'ar' ? $data['product']->location_ar : $data['product']->location_en }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">

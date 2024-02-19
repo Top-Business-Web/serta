@@ -81,6 +81,13 @@
         </li>
 
         <li class="slide">
+            <a class="side-menu__item" href="{{route('certificates.index')}}">
+                <i class="fa fa-question side-menu__icon"></i>
+                <span class="side-menu__label">الشهادات</span>
+            </a>
+        </li>
+
+        <li class="slide">
             <a class="side-menu__item" href="{{route('post.index')}}">
                 <i class="fa fa-blog side-menu__icon"></i>
                 <span class="side-menu__label">وظائف</span>
