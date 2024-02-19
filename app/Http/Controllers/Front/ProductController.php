@@ -22,7 +22,10 @@ class ProductController extends Controller
     {
         $data['products'] = Product::all();
         $data['product'] = Product::find($id);
-        $data['related'] = Product::where('sub_categories_id', $id)->get();
+        $subCategoryId = $data['product']->subCategory->id;
+        $data['related'] = Product::where('sub_categories_id', $subCategoryId)
+            ->whereNotIn('id', [$id])
+            ->get();
         return view('site.single-products', compact('data'));
     }
 

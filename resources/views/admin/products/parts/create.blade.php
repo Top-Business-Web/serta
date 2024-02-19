@@ -41,16 +41,22 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
-                    <label for="loaction" class="form-control-label">الموقع</label>
-                    <input type="text" class="form-control" name="location" id="location">
+                    <label for="location_ar" class="form-control-label">الموقع بالعربي</label>
+                    <input type="text" class="form-control" name="location_ar" id="location_ar">
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="location_en" class="form-control-label">الموقع بالانكليزي</label>
+                    <input type="text" class="form-control" name="location_en" id="location_en">
+                </div>
+            </div>
+            <div class="col-md-4">
                 <div class="form-group">
                     <label for="year" class="form-control-label">السنة</label>
-                    <input type="date" class="form-control" name="year" id="year">
+                    <input type="number" class="form-control" min="1900" max="2099" step="1" placeholder="2016" name="year" id="year">
                 </div>
             </div>
         </div>
