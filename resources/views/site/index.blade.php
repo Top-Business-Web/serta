@@ -294,9 +294,16 @@
                     <div class="card-certificate">
                         @foreach ($data['faqs'] as $key => $faq)
                             <div class="DemoBS2">
-                                <button type="button" class="btn btn-warning" id="toggle-btn{{ $key }}"
+                                <div class="d-flex justify-content-between hover-certificate">
+                                <button type="button" class="btn btn-certificate" id="toggle-btn{{ $key }}"
                                     data-toggle="collapse"
-                                    data-target="#toggle-example{{ $key }}">{{ app()->getLocale() == 'ar' ? $faq->question : $faq->question_ar }}</button>
+                                    data-target="#toggle-example{{ $key }}">{{ app()->getLocale() == 'ar' ? $faq->question : $faq->question_ar }}
+                                </button>
+                                <div class="add-certificate">
+                                    <p class="plus">+</p>
+                                    <p class="minus">-</p>
+                                </div>
+                                </div>
                                 <div id="toggle-example{{ $key }}" class="collapse">
                                     <p>{{ app()->getLocale() == 'ar' ? $faq->answer : $faq->answer_ar }}</p>
                                 </div>
