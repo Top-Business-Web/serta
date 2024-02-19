@@ -41,7 +41,7 @@ class StoreSetting extends FormRequest
             'twitter' => 'nullable',
             'instagram' => 'nullable',
             'linkedin' => 'nullable',
-            'profile' => 'nullable|mimes:pdf|max:10000',
+            'profile' => 'nullable|mimes:pdf',
             'licenese' => 'nullable|image:png',
             'logo_vision' => 'image:png|nullable',
             'logo_mission' => 'image:png|nullable',
