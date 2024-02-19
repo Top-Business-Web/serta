@@ -21,7 +21,7 @@
     </div>
 
 
-    <div class="project-area gray-bg section-padding">
+    <div class="project-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-12">
@@ -54,16 +54,16 @@
                     <p class="mt-3">
                         {{ app()->getLocale() == 'ar' ? $data['product']->desc_ar : $data['product']->desc_en }}
                     </p>
-                    <div class="mb-4 mt-2">
+                    <!-- <div class="mb-4 mt-2">
                         <span class="fw-bold me-2" style="color: #C03627;">{{ trans('site.category') }} :</span><span
                             style="color: #777;">{{ app()->getLocale() == 'ar' ? $data['product']->subCategory->title_ar : $data['product']->subCategory->title_en }}</span>
-                    </div>
-                    <hr>
-                    <div class="blog-details_social-list mt-4">
+                    </div> -->
+                    <!-- <hr> -->
+                    <!-- <div class="blog-details_social-list mt-4">
                         <a href="{{ $setting->twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a href="{{ $setting->linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="{{ $setting->instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -84,35 +84,35 @@
                         <img src="{{ asset('assets/front') }}/assets/img/industry.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">INDUSTRY</p>
-                    <h6 class="text-center fw-bold">{{ $data['product']->sector->value }}</h6>
+                    <h6 class="text-center">{{ $data['product']->sector->value }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
                         <img src="{{ asset('assets/front') }}/assets/img/sector.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">SECTOR</p>
-                    <h6 class="text-center fw-bold">{{ app()->getLocale() == 'ar' ? $data['product']->subCategory->category->title_ar : $data['product']->subCategory->category->title_en }}</h6>
+                    <h6 class="text-center">{{ app()->getLocale() == 'ar' ? $data['product']->subCategory->category->title_ar : $data['product']->subCategory->category->title_en }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
                         <img src="{{ asset('assets/front') }}/assets/img/sub-sector.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">SUB SECTOR</p>
-                    <h6 class="text-center fw-bold">{{ app()->getLocale() == 'ar' ? $data['product']->subCategory->title_ar : $data['product']->subCategory->title_en }}</h6>
+                    <h6 class="text-center">{{ app()->getLocale() == 'ar' ? $data['product']->subCategory->title_ar : $data['product']->subCategory->title_en }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
                         <img src="{{ asset('assets/front') }}/assets/img/progress.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">STATUS</p>
-                    <h6 class="text-center fw-bold">{{ $data['product']->status == 0 ? 'Complete' : 'On Going' }}</h6>
+                    <h6 class="text-center">{{ $data['product']->status == 0 ? 'Complete' : 'On Going' }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
                         <img src="{{ asset('assets/front') }}/assets/img/year.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">YEAR</p>
-                    <h6 class="text-center fw-bold">{{ $data['product']->year }}</h6>
+                    <h6 class="text-center">{{ $data['product']->year }}</h6>
                 </div>
             </div>
         </div>
@@ -148,13 +148,14 @@
             </div>
         </div> -->
 
+        <div class="product">
         <div class="container mt-5 pt-5">
             <div class="title mt-3 mb-4">
                 <h2>{{ trans('site.related_projects') }}</h2>
             </div>
-            <div class="row">
+            <div class="owl-carousel owl-theme">
                 @foreach ($data['related'] as $related)
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-12"> -->
                         <div class="project-single">
                             <div class="project-img">
                                 <img src="{{ asset($related->images[0]) }}" alt="" style="height: 250px;">
@@ -166,9 +167,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 @endforeach
             </div>
+        </div>
         </div>
     </div>
 
