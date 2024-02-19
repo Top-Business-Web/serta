@@ -4,8 +4,14 @@
 <body>
 <!-- Pre-Loader -->
 <div class="preloader">
-<img src="{{ asset('assets/front') }}/assets/img/logo-serta-png.gif" style="height: 80px; width: 200px;">
+<!-- <img src="{{ asset('assets/front') }}/assets/img/logo-serta-png.gif" style="height: 80px; width: 200px;"> -->
 <!-- <span class="loader"></span> -->
+<div class="lines">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    <div class="line4"></div>
+</div>
 </div>
 
 @include('site.layouts.header')
