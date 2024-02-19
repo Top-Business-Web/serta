@@ -47,16 +47,22 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="form-group">
-                <label for="loaction" class="form-control-label">الموقع</label>
-                <input type="text" class="form-control" value="{{ $product->location }}" name="loaction" id="loaction">
+                <label for="loaction_ar" class="form-control-label">الموقع بالعربي</label>
+                <input type="text" class="form-control" value="{{ $product->location_ar }}" name="location_ar" id="loaction">
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="loaction_en" class="form-control-label">الموقع بالانكليزي</label>
+                <input type="text" class="form-control" value="{{ $product->location_en }}" name="location_en" id="loaction_en">
+            </div>
+        </div>
+        <div class="col-md-4">
             <div class="form-group">
                 <label for="year" class="form-control-label">السنة</label>
-                <input type="date" class="form-control" value="{{ $product->year }}" name="year" id="year">
+                <input type="number" min="1900" max="2099" step="1" class="form-control" value="{{ $product->year }}" name="year" id="year">
             </div>
         </div>
     </div>

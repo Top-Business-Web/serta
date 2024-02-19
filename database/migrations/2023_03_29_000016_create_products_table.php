@@ -29,8 +29,9 @@ class CreateProductsTable extends Migration
             $table->string('title_en', 225)->nullable();
             $table->text('sub_title_ar')->nullable();
             $table->text('sub_title_en')->nullable();
-            $table->string('location');
-            $table->date('year');
+            $table->string('location_ar');
+            $table->string('location_en');
+            $table->string('year', 255);
             $table->enum('sector', ['public', 'private'])->default('public');
             $table->tinyInteger('status');
             $table->text('desc_ar')->nullable();
