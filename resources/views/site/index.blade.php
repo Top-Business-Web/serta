@@ -292,13 +292,13 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="card-certificate">
-                        @foreach ($data['faqs'] as $key => $faq)
+                        @foreach ($data['certificates'] as $key => $faq)
                             <div class="DemoBS2">
                                 <button type="button" class="btn btn-warning" id="toggle-btn{{ $key }}"
                                     data-toggle="collapse"
-                                    data-target="#toggle-example{{ $key }}">{{ app()->getLocale() == 'ar' ? $faq->question : $faq->question_ar }}</button>
+                                    data-target="#toggle-example{{ $key }}">{{ app()->getLocale() == 'ar' ? $faq->question_ar : $faq->question_en }}</button>
                                 <div id="toggle-example{{ $key }}" class="collapse">
-                                    <p>{{ app()->getLocale() == 'ar' ? $faq->answer : $faq->answer_ar }}</p>
+                                    <p>{{ app()->getLocale() == 'ar' ? $faq->answer_ar : $faq->answer_en }}</p>
                                 </div>
                             </div>
                         @endforeach
