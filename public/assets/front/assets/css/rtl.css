@@ -624,9 +624,9 @@ input.form-control {
 }
 
 /*Bootstrap CSS*/
-.container-fluid {
+/* .container-fluid {
   padding: 0 20px;
-}
+} */
 
 .navbar-toggler-icon {
   background-image: none;
@@ -5487,13 +5487,13 @@ label.form-label {
 }
 
 .contact-page-google-map {
-  position: relative;
+  /* position: relative; */
   display: block;
-  padding: 120px 0 41px;
+  /* padding: 120px 0 41px; */
 }
 
 .contact-page-google-map iframe {
-  position: relative;
+  /* position: relative; */
   display: block;
   border: none;
   height: 430px;
@@ -5558,22 +5558,27 @@ label.form-label {
 }
 
 .contact-page-details_sign {
-  font-size: 20px;
-  color: #C03627;
-  line-height: 34px;
-  margin-top: 20px;
-}
-
-.contact-page-details_right {
-    height: 100%;
-  /* position: relative; */
-  display: block;
-  padding-left: 60px;
-  background-color: #B8B8B8;
-  /* box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
-  padding: 38px 50px 50px;
-  margin-top: -84px; */
-}
+    font-size: 20px;
+    color: #C03627;
+    line-height: 34px;
+    margin-top: 20px;
+  }
+  .contact-page-details_right a{
+      color: white;
+  }
+  .contact-page-details_right a:hover{
+      color: #C03627;
+  }
+  .contact-page-details_right {
+      height: 100%;
+    /* position: relative; */
+    display: block;
+    padding-right: 60px;
+    background-color: #B8B8B8;
+    /* box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05); */
+    /* padding: 38px 50px 50px; */
+    /* margin-top: -84px; */
+  }
 @media (max-width: 767px) {
   .contact-page-details_right {
     margin-top: 30px;
@@ -6696,21 +6701,21 @@ body{
     border-top: 2px solid #FCC300;
   }
   .video-title{
-    font-size: 80px;
+    font-size: 50px;
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .video-title{
-        font-size: 60px;
-    }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
     .video-title{
         font-size: 40px;
     }
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .video-title{
+        font-size: 20px;
+    }
+}
 @media only screen and (max-width: 767px) {
     .video-title{
-        font-size: 25px;
+        font-size: 20px;
     }
     .about-img > img {
         height: 400px;
@@ -6770,7 +6775,45 @@ body{
     border: none;
     color: #C03627;
     font-weight: bold;
+    position: relative;
+    transition: all 0.5s ease;
 }
 .card-certificate{
     background-color: transparent;
 }
+.plus{
+    font-size: 25px;
+    padding: 0px 15px;
+    color: #C03627;
+    cursor: pointer;
+}
+.add-certificate{
+    position: relative;
+}
+.minus{
+    background-color: #C03627;
+    box-shadow: 0 3px 9px -2px #C03627;
+    color: white;
+    padding: 5px 17px;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    display: none;
+    transition: all 0.5s ease;
+}
+.hover-certificate{
+    transition: all 0.5s ease;
+}
+.hover-certificate:hover .minus{
+    display: block;
+}
+.btn-certificate:hover{
+    color: #C03627 !important;
+}
+.change-padding{
+    padding-left: 0px;
+}
+

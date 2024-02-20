@@ -94,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-12" style="padding-right:0px">
+                <div class="col-xl-6 col-lg-6 col-12 change-padding">
                     <div class="contact-page-details_right" style="padding-top: 100px;">
                         <div class="mb-3">
                             <h6 class="text-white">{{ trans('site.contact_with_us') }}</h6>
