@@ -86,7 +86,7 @@ return [
     'submit_request' => 'Submit Request',
     'innovation_quality_and_continuous_improvement' => 'Our Projects',
     'latest_products' => 'Latest products',
-    'latest_projects' => 'Latest Projects',
+    'latest_projects' => ' Projects',
     'plastic_recycling_services' => 'Plastic Recycling Services',
     'our_core_values' => 'Our core values',
 
@@ -178,7 +178,7 @@ return [
     'team_work' => 'Team Work',
     #### Partner Success
     'partner_success' => 'Partner Success',
-    'partner_head' => 'We provide distinguished and unique services in the field of construction using advanced technologies',
+    'partner_head' => 'Partner Success',
     'our_partner' => 'Our Partner'
 
 ];

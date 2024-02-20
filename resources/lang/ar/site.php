@@ -86,7 +86,7 @@ return [
     'submit_request' => 'تقديم الطلب',
     'innovation_quality_and_continuous_improvement' => 'مشاريعنا',
     'latest_products' => 'أحدث المنتجات',
-    'latest_projects' => 'أحدث المشاريع',
+    'latest_projects' => ' المشاريع',
     'plastic_recycling_services' => 'خدمات إعادة تدوير البلاستيك',
     'our_core_values' => 'قيمنا الأساسية',
 
@@ -178,7 +178,7 @@ return [
 
     #### Partner Success
     'partner_success' => 'شركاء النجاح',
-    'partner_head' => 'نقدم خدمات متميزة وفريدة من نوعها في مجال الانشاءات باستخدام التقنيات المتقدمة',
+    'partner_head' => 'شركاء النجاح',
     'our_partner' => 'شركائنا'
 
 ];

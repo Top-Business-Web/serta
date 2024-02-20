@@ -42,8 +42,8 @@
     <div class="about-area section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-7">
-                    <div class="about-content-wrap wow bounceInUp" data-wow-duration="2s" data-wow-offset="100">
+                <div class="col-12 col-lg-6">
+                    <div class="about-content-wrap">
                         <div class="section-title">
                             <!-- <p>Complete Commercial And Residential Recycling Services!</p> -->
                             <h2>{{ app()->getLocale() == 'ar' ? $data['setting']->top_title_ar : $data['setting']->top_title_en }}
@@ -68,7 +68,20 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="col-12 col-lg-6">
+                    <div class="about-img">
+                        <img src="{{ asset($aboutUs->image) }}" alt="">
+                        <!-- <div class="about-counter">
+                            <div class="counter-icon">
+                                <img src="{{ asset('assets/front') }}/assets/img/icon/customer-service.png" alt="" style="width: 60px;">
+                            </div>
+                            <div class="counter-number">
+                                <span class="counting" data-counterup-nums="">{{ $aboutUs->happy_clients }}</span>
+                            </div>
+                            <h6>{{ trans('site.Happy_customers') }}</h6>
+                        </div> -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -246,17 +259,17 @@
             <div class="row">
                 <div class="col-lg-7">
                     <div class="section-title">
-                        <h6>{{ trans('site.innovation_quality_and_continuous_improvement') }}</h6>
+                        <!-- <h6>{{ trans('site.innovation_quality_and_continuous_improvement') }}</h6> -->
                         <h2>{{ trans('site.latest_projects') }}</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" style="background-color: #bcbcbc; padding-top: 80px;">
             <div class="product">
                 <div class="owl-carousel owl-theme">
                     @foreach ($data['products'] as $product)
-                        <div class="project-single ms-2 me-2">
+                        <div class="project-single ms-2 me-2" style="margin-bottom: 0px;">
                             <div class="project-img">
                                 <a href="{{ route('singleProduct', $product->id) }}" class="w-100">
                                     <img src="{{ asset($product->images[0]) }}" alt="" style=" height: 250px;">
@@ -278,10 +291,10 @@
 
 
     <!-- certificate -->
-    <div class="certificate-area gray-bg section-padding">
+    <div class="certificate-area section-padding">
         <div class="container">
             <div class="section-title">
-                <h6 class="">Certification</h6>
+                <!-- <h6 class="">Certification</h6> -->
                 <h2>Our Certification</h2>
             </div>
             <div class="row">
@@ -327,7 +340,7 @@
     <div class="partner-area section-padding">
         <div class="container">
             <div class="section-title">
-                <h6 class="">{{ trans('site.partner_success') }}</h6>
+                <!-- <h6 class="">{{ trans('site.partner_success') }}</h6> -->
                 <h2>{{ trans('site.our_partner') }}</h2>
             </div>
             <div class="owl-carousel owl-theme">

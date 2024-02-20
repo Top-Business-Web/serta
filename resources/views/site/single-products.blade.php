@@ -156,9 +156,11 @@
             <div class="owl-carousel owl-theme">
                 @foreach ($data['related'] as $related)
                     <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-12"> -->
-                        <div class="project-single">
+                        <div class="project-single m-2">
                             <div class="project-img">
-                                <img src="{{ asset($related->images[0]) }}" alt="" style="height: 250px;">
+                                <a href="{{ route('singleProduct', $related->id) }}" class="w-100">
+                                    <img src="{{ asset($related->images[0]) }}" alt="" style="height: 250px;">
+                                </a>
                             </div>
                             <div class="project-content">
                                 <div class="project-title text-center">

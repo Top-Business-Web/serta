@@ -22,7 +22,7 @@
     <div class="partner-area section-padding">
         <div class="container">
             <div class="section-title">
-                <h6>{{ trans('site.partner_success') }}</h6>
+                <!-- <h6>{{ trans('site.partner_success') }}</h6> -->
                 <h2>{{ trans('site.partner_head')}}</h2>
             </div>
             <div class="row">
