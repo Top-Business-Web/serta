@@ -29,6 +29,8 @@ class CreateProductsTable extends Migration
             $table->string('title_en', 225)->nullable();
             $table->text('sub_title_ar')->nullable();
             $table->text('sub_title_en')->nullable();
+            $table->string('customer_ar', 255);
+            $table->string('customer_en', 255);
             $table->string('location_ar');
             $table->string('location_en');
             $table->string('year', 255);

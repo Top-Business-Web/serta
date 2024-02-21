@@ -80,6 +80,10 @@ class PartnerSuccessController extends Controller
                 $inputs['image'] = $this->saveImage($request->image,'assets/uploads/partners_success', 'photo');
             }
 
+            if($request->has('second_image')){
+                $inputs['second_image'] = $this->saveImage($request->second_image,'assets/uploads/partners_success', 'photo');
+            }
+
             if ($partners_success->update($inputs)) {
                 return response()->json(['status' => 200]);
             } else {

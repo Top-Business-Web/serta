@@ -17,22 +17,22 @@
                 </div>
             </div>
             <!-- <div class="hero-area-content">
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-lg-10 wow fadeInUp animated" data-wow-delay=".2s">
-                                                        <div class="section-title">
-                                                            <h6>{{ app()->getLocale() == 'ar' ? $slider->sub_title_ar : $slider->sub_title_en }}
-                                                            </h6>
-                                                            <h1>{{ app()->getLocale() == 'ar' ? $slider->title_ar : $slider->title_en }}</h1>
-                                                        </div>
-                                                        <div class="right-btn">
-                                                            <a href="{{ route('about') }}"
-                                                                class="main-btn primary">{{ trans('site.learn_more') }}</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-lg-10 wow fadeInUp animated" data-wow-delay=".2s">
+                                                                        <div class="section-title">
+                                                                            <h6>{{ app()->getLocale() == 'ar' ? $slider->sub_title_ar : $slider->sub_title_en }}
+                                                                            </h6>
+                                                                            <h1>{{ app()->getLocale() == 'ar' ? $slider->title_ar : $slider->title_en }}</h1>
+                                                                        </div>
+                                                                        <div class="right-btn">
+                                                                            <a href="{{ route('about') }}"
+                                                                                class="main-btn primary">{{ trans('site.learn_more') }}</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
         </div>
     @endforeach
     {{-- </div> --}}
@@ -89,168 +89,168 @@
     <!-- Service Section  -->
 
     <!-- <div class="service-area gray-bg section-padding pt-200">
-                            <div class="container">
-                                <div class="row justify-content-center text-center">
-                                    <div class="col-lg-9">
-                                        <div class="section-title">
-                                            <h6>{{ trans('site.sustainable') }}</h6>
-                                            <h2>{{ trans('site.we_provide') }}</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service mt-30 owl-carousel owl-theme">
-                                    @foreach ($data['services'] as $service)
+                                            <div class="container">
+                                                <div class="row justify-content-center text-center">
+                                                    <div class="col-lg-9">
+                                                        <div class="section-title">
+                                                            <h6>{{ trans('site.sustainable') }}</h6>
+                                                            <h2>{{ trans('site.we_provide') }}</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="service mt-30 owl-carousel owl-theme">
+                                                    @foreach ($data['services'] as $service)
     <div class="service-single ms-2 me-2">
-                                            <div class="service-icon">
-                                                <img src="{{ $service->image_logo }}" alt="">
-                                            </div>
-                                            <div class="service-content">
-                                                <h4>
-                                                    <a href="{{ route('singleService', $service->id) }}">{{ app()->getLocale() == 'ar' ? $service->title_ar : $service->title_en }}
-                                                    </a>
-                                                </h4>
-                                                <hr>
-                                                <p>{{ app()->getLocale() == 'ar' ? $service->desc_ar : $service->desc_en }}</p>
-                                                {{-- <ul class="list-unstyled service-list">
+                                                            <div class="service-icon">
+                                                                <img src="{{ $service->image_logo }}" alt="">
+                                                            </div>
+                                                            <div class="service-content">
+                                                                <h4>
+                                                                    <a href="{{ route('singleService', $service->id) }}">{{ app()->getLocale() == 'ar' ? $service->title_ar : $service->title_en }}
+                                                                    </a>
+                                                                </h4>
+                                                                <hr>
+                                                                <p>{{ app()->getLocale() == 'ar' ? $service->desc_ar : $service->desc_en }}</p>
+                                                                {{-- <ul class="list-unstyled service-list">
                                 <li><i class="fas fa-check"></i>{{ trans('site.collect_separate_materials')}}</li>
                                 <li><i class="fas fa-check"></i>{{ trans('site.reduce_recycling_into_raw_material') }}
                                 </li>
                                 <li><i class="fas fa-check"></i>{{ trans('site.turn_raw_material_into_product') }}</li>
                             </ul> --}}
-                                                <a class="main-btn primary"
-                                                    href="{{ route('singleService', $service->id) }}">{{ trans('site.find_out_more') }}</a>
-                                            </div>
-                                        </div>
+                                                                <a class="main-btn primary"
+                                                                    href="{{ route('singleService', $service->id) }}">{{ trans('site.find_out_more') }}</a>
+                                                            </div>
+                                                        </div>
     @endforeach
-                                </div>
-                            </div>
-                        </div> -->
+                                                </div>
+                                            </div>
+                                        </div> -->
 
     <!-- Choose Us Area  -->
 
     <!-- <div class="why-choose-two section-padding">
-                            <div class="container">
-                                <div class="section-title text-center">
-                                    <h6>{{ trans('site.our_pontential_benefits') }}</h6>
-                                    <h2>{{ trans('site.why_you_should_choose_our_services') }}</h2>
-                                </div>
-                                <div class="mt-5">
-                                    <div class="row">
-                                        @foreach ($data['benefits'] as $benefit)
+                                            <div class="container">
+                                                <div class="section-title text-center">
+                                                    <h6>{{ trans('site.our_pontential_benefits') }}</h6>
+                                                    <h2>{{ trans('site.why_you_should_choose_our_services') }}</h2>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="row">
+                                                        @foreach ($data['benefits'] as $benefit)
     <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                                                <div class="feature-card">
-                                                    <div class="feature-icon mb-3">
-                                                        <img src="{{ asset('assets/admin/sliders/images/' . $benefit->image) }}"
-                                                            alt="no-image">
-                                                    </div>
-                                                    <div class="feature-title">
-                                                        <h3>{{ app()->getLocale() == 'ar' ? $benefit->title_ar : $benefit->title_en }}</h3>
+                                                                <div class="feature-card">
+                                                                    <div class="feature-icon mb-3">
+                                                                        <img src="{{ asset('assets/admin/sliders/images/' . $benefit->image) }}"
+                                                                            alt="no-image">
+                                                                    </div>
+                                                                    <div class="feature-title">
+                                                                        <h3>{{ app()->getLocale() == 'ar' ? $benefit->title_ar : $benefit->title_en }}</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+    @endforeach
                                                     </div>
                                                 </div>
                                             </div>
-    @endforeach
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                                        </div> -->
 
     <!-- Contact Section  -->
 
     <!-- <div class="contact-area section-padding">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-xl-5 col-lg-6">
-                                                    <div class="contact-wrap">
-                                                        <div class="section-title">
-                                                            <h2 class="text-white">{{ trans('site.time_is_the_best_way_to_thin_About_recycling') }}</h2>
-                                                        </div>
-                                                        <div class="contact-desc">
-                                                            <p class="text-white">
-                                                                {{ trans('site.we_offer_product') }}
-                                                            </p>
-                                                        </div>
-                                                        <div class="contact-list-wrap">
+                                                        <div class="container">
                                                             <div class="row">
-                                                                <div class="col-12 col-md-6 col-sm-6 col-lg-6">
-                                                                    <ul class="list-unstyled contact-list">
-                                                                        <li><i class="fas fa-check"></i> {{ trans('site.reduce_greenhouse_effect') }}
-                                                                        </li>
-                                                                        <li><i class="fas fa-check"></i>{{ trans('site.conserv_natural_resources') }}
-                                                                        </li>
-                                                                        <li><i class="fas fa-check"></i>{{ trans('site.reduces_carbon_emissions') }}
-                                                                        </li>
-                                                                    </ul>
+                                                                <div class="col-xl-5 col-lg-6">
+                                                                    <div class="contact-wrap">
+                                                                        <div class="section-title">
+                                                                            <h2 class="text-white">{{ trans('site.time_is_the_best_way_to_thin_About_recycling') }}</h2>
+                                                                        </div>
+                                                                        <div class="contact-desc">
+                                                                            <p class="text-white">
+                                                                                {{ trans('site.we_offer_product') }}
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="contact-list-wrap">
+                                                                            <div class="row">
+                                                                                <div class="col-12 col-md-6 col-sm-6 col-lg-6">
+                                                                                    <ul class="list-unstyled contact-list">
+                                                                                        <li><i class="fas fa-check"></i> {{ trans('site.reduce_greenhouse_effect') }}
+                                                                                        </li>
+                                                                                        <li><i class="fas fa-check"></i>{{ trans('site.conserv_natural_resources') }}
+                                                                                        </li>
+                                                                                        <li><i class="fas fa-check"></i>{{ trans('site.reduces_carbon_emissions') }}
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="col-12 col-md-6 col-sm-6 col-lg-6">
+                                                                                    <ul class="list-unstyled contact-list">
+                                                                                        <li><i class="fas fa-check"></i>{{ trans('site.protects_ecosystems') }}</li>
+                                                                                        <li><i class="fas fa-check"></i>{{ trans('site.economic_Benefits') }}</li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="contact-btn">
+                                                                            <a class="main-btn" href="{{ trans('about') }}">{{ trans('site.learn_more') }}</a>
+                                                                            <a class="main-btn white" href="{{ trans('faqs') }}">{{ trans('site.our_core_values') }}</a>
+                                                                        </div>
+
+                                                                    </div>
                                                                 </div>
-                                                                <div class="col-12 col-md-6 col-sm-6 col-lg-6">
-                                                                    <ul class="list-unstyled contact-list">
-                                                                        <li><i class="fas fa-check"></i>{{ trans('site.protects_ecosystems') }}</li>
-                                                                        <li><i class="fas fa-check"></i>{{ trans('site.economic_Benefits') }}</li>
-                                                                    </ul>
+                                                                <div class="col-xl-6 col-lg-6 offset-xl-1">
+                                                                    <div class="quotation-wrap">
+                                                                        <div class="quotation-inner">
+                                                                            <h5 class="quotation-heading">{{ trans('site.get_a_quote') }}</h5>
+                                                                            <p class="quotation-desc">
+                                                                                {{ trans('site.we_take_great_pride') }}
+                                                                            </p>
+                                                                            <form class="quoteForm" id="quoteForm">
+                                                                                @csrf
+                                                                                <div class="row">
+                                                                                    <div class="col-12 col-md-6">
+                                                                                        <label class="form-label" for="contact-usage">{{ trans('site.first_name') }}
+                                                                                        </label>
+                                                                                        <input class="form-control" type="text" name="first_name"
+                                                                                               placeholder="{{ trans('site.first_name') }}" required=""/>
+                                                                                    </div>
+                                                                                    <div class="col-12 col-md-6">
+                                                                                        <label class="form-label" for="contact-usage">{{ trans('site.last_name') }}
+                                                                                        </label>
+                                                                                        <input class="form-control" type="text" name="last_name"
+                                                                                               placeholder="{{ trans('site.last_name') }}" required=""/>
+                                                                                    </div>
+                                                                                    <div class="col-12 col-md-6">
+                                                                                        <label class="form-label" for="contact-usage">{{ trans('site.name_company') }}
+                                                                                        </label>
+                                                                                        <input class="form-control" type="text" name="company"
+                                                                                               placeholder="{{ trans('site.name_company') }}"
+                                                                                               required=""/>
+                                                                                    </div>
+                                                                                    <div class="col-12 col-md-6">
+                                                                                        <label class="form-label" for="contact-usage">{{ trans('site.phone') }}
+                                                                                        </label>
+                                                                                        <input class="form-control" type="number" name="phone"
+                                                                                               placeholder="{{ trans('site.phone') }}"
+                                                                                               required=""/>
+                                                                                    </div>
+                                                                                    <div class="col-12 col-md-6">
+                                                                                        <label class="form-label" for="contact-usage">{{ trans('site.email') }}
+                                                                                        </label>
+                                                                                        <input class="form-control" type="email" name="email"
+                                                                                               placeholder="{{ trans('site.email') }}" required=""/>
+                                                                                    </div>
+
+                                                                                    <div class="col-12">
+                                                                                        <button type="button" id="quote-btn"
+                                                                                                class="main-btn primary">{{ trans('site.submit') }}</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="contact-btn">
-                                                            <a class="main-btn" href="{{ trans('about') }}">{{ trans('site.learn_more') }}</a>
-                                                            <a class="main-btn white" href="{{ trans('faqs') }}">{{ trans('site.our_core_values') }}</a>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-6 col-lg-6 offset-xl-1">
-                                                    <div class="quotation-wrap">
-                                                        <div class="quotation-inner">
-                                                            <h5 class="quotation-heading">{{ trans('site.get_a_quote') }}</h5>
-                                                            <p class="quotation-desc">
-                                                                {{ trans('site.we_take_great_pride') }}
-                                                            </p>
-                                                            <form class="quoteForm" id="quoteForm">
-                                                                @csrf
-                                                                <div class="row">
-                                                                    <div class="col-12 col-md-6">
-                                                                        <label class="form-label" for="contact-usage">{{ trans('site.first_name') }}
-                                                                        </label>
-                                                                        <input class="form-control" type="text" name="first_name"
-                                                                               placeholder="{{ trans('site.first_name') }}" required=""/>
-                                                                    </div>
-                                                                    <div class="col-12 col-md-6">
-                                                                        <label class="form-label" for="contact-usage">{{ trans('site.last_name') }}
-                                                                        </label>
-                                                                        <input class="form-control" type="text" name="last_name"
-                                                                               placeholder="{{ trans('site.last_name') }}" required=""/>
-                                                                    </div>
-                                                                    <div class="col-12 col-md-6">
-                                                                        <label class="form-label" for="contact-usage">{{ trans('site.name_company') }}
-                                                                        </label>
-                                                                        <input class="form-control" type="text" name="company"
-                                                                               placeholder="{{ trans('site.name_company') }}"
-                                                                               required=""/>
-                                                                    </div>
-                                                                    <div class="col-12 col-md-6">
-                                                                        <label class="form-label" for="contact-usage">{{ trans('site.phone') }}
-                                                                        </label>
-                                                                        <input class="form-control" type="number" name="phone"
-                                                                               placeholder="{{ trans('site.phone') }}"
-                                                                               required=""/>
-                                                                    </div>
-                                                                    <div class="col-12 col-md-6">
-                                                                        <label class="form-label" for="contact-usage">{{ trans('site.email') }}
-                                                                        </label>
-                                                                        <input class="form-control" type="email" name="email"
-                                                                               placeholder="{{ trans('site.email') }}" required=""/>
-                                                                    </div>
-
-                                                                    <div class="col-12">
-                                                                        <button type="button" id="quote-btn"
-                                                                                class="main-btn primary">{{ trans('site.submit') }}</button>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
+                                                    </div> -->
 
     <!-- product Section  -->
 
@@ -305,24 +305,24 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="card-certificate">
-                        @foreach ($data['certificates'] as $key => $faq)
+                        @foreach ($data['certificates'] as $key => $certificate)
                             <div class="DemoBS2">
                                 <div class="d-flex justify-content-between hover-certificate">
-                                <button type="button" class="btn btn-certificate" id="toggle-btn{{ $key }}"
-                                    data-toggle="collapse"
-
-                                    data-target="#toggle-example{{ $key }}">{{ app()->getLocale() == 'ar' ? $faq->question : $faq->question_ar }}
-                                </button>
-                                <div class="add-certificate">
-                                    <p class="plus">+</p>
-                                    <p class="minus">-</p>
+                                    <button type="button" class="btn btn-certificate" data-toggle="collapse"
+                                        data-target="#toggle-example{{ $key }}">
+                                        {{ app()->getLocale() == 'ar' ? $certificate->question_ar : $certificate->question_en }}
+                                    </button>
+                                    <div class="add-certificate">
+                                        <p class="plus">+</p>
+                                        <p class="minus">-</p>
+                                    </div>
                                 </div>
-                                </div>
-
-                                    data-target="#toggle-example{{ $key }}">{{ app()->getLocale() == 'ar' ? $faq->question_ar : $faq->question_en }}</button>
-
                                 <div id="toggle-example{{ $key }}" class="collapse">
-                                    <p>{{ app()->getLocale() == 'ar' ? $faq->answer_ar : $faq->answer_en }}</p>
+                                    <div class="">
+                                        <p>
+                                            {{ app()->getLocale() == 'ar' ? $certificate->answer_ar : $certificate->answer_en }}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         @endforeach

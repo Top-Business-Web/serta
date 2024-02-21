@@ -47,6 +47,20 @@
         </div>
     </div>
     <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="sub_title_ar" class="form-control-label">اسم العميل بالعربي</label>
+                <input class="form-control" name="customer_ar" value="{{ $product->customer_ar }}" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="customer_en" class="form-control-label">اسم العميل بالانكليزي</label>
+                <input class="form-control" name="customer_en" value="{{ $product->customer_en }}" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-4">
             <div class="form-group">
                 <label for="loaction_ar" class="form-control-label">الموقع بالعربي</label>

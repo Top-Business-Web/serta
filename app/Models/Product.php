@@ -17,6 +17,8 @@ class Product extends Model
         'title_en',
         'sub_title_ar',
         'sub_title_en',
+        'customer_ar',
+        'customer_en',
         'location_ar',
         'location_en',
         'year',
