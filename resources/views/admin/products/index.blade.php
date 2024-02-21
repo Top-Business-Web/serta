@@ -109,7 +109,7 @@
 
         deleteAny('{{route('product.destroy', ':id')}}');
 
-        // Add Using Ajax
+        // Add Using Ajax ss
         showAddModal('{{route('product.create')}}');
         addScript();
 
