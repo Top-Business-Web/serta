@@ -252,6 +252,32 @@
                                         </div>
                                     </div> -->
 
+                                    <!-- project mangement -->
+                                    <div class="mangement">
+                                        <div class="container">
+                                            <div class="row">
+                                            <div class="col-lg-8 col-12">
+                                            <div class="pen">
+                                                <img src="{{ asset('assets/front/') }}/assets/img/pen2.png">
+                                            </div>
+                                            <div class="mobile">
+                                                <img src="{{ asset('assets/front/') }}/assets/img/tablet.png">
+                                            </div>
+                                            </div>
+                                            <div class="col-lg-4 col-12 d-flex align-items-center">
+                                            <div class="content">
+                                                <h2 class="mb-2 title-management">@lang('site.project_mangement')</h2>
+                                                <p>@lang('site.content_mangement')</p>
+                                                <button class="main-btn bg-brown mb-3">
+                                                    <a href="#" class="text-white">@lang('site.read_more')</a>
+                                                </button>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
     <!-- product Section  -->
 
     <div class="project-area pt-5 pb-5">
@@ -265,7 +291,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="background-color: #bcbcbc; padding-top: 80px;">
+        <div class="container-fluid">
             <div class="product">
                 <div class="owl-carousel owl-theme">
                     @foreach ($data['products'] as $product)
@@ -295,7 +321,7 @@
         <div class="container">
             <div class="section-title">
                 <!-- <h6 class="">Certification</h6> -->
-                <h2>Our Certification</h2>
+                <h2>@lang('site.certification')</h2>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-12">

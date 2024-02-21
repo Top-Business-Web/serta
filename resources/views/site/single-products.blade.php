@@ -48,8 +48,17 @@
                 </div>
 
                 <div class="col-lg-6 col-12">
+                    <div class="d-flex mb-5">
+                        <div class="icon-client">
+                        <img src="{{ asset('assets/front') }}/assets/img/hand.png" style="width: 65px; height:65px;">
+                        </div>
+                        <div>
+                        <p style="margin-bottom: 0;">@lang('site.client')</p>
+                        <h6>{{ app()->getLocale() == 'ar' ? $data['product']->customer_ar  : $data['product']->customer_en  }}</h6>
+                        </div>
+                    </div>
                     <div class="title">
-                        <h2>{{ app()->getLocale() == 'ar' ? $data['product']->title_ar : $data['product']->title_en }}</h2>
+                        <h2 style="font-size: 30px;">{{ app()->getLocale() == 'ar' ? $data['product']->title_ar : $data['product']->title_en }}</h2>
                     </div>
                     <p class="mt-3">
                         {{ app()->getLocale() == 'ar' ? $data['product']->desc_ar : $data['product']->desc_en }}
@@ -76,42 +85,42 @@
                     <div class="d-flex justify-content-center mb-3">
                         <img src="{{ asset('assets/front') }}/assets/img/pin.png" style="width: 65px; height:65px;">
                     </div>
-                    <p class="text-center" style="margin-bottom: 0;">Location</p>
+                    <p class="text-center" style="margin-bottom: 0;">@lang('site.location')</p>
                     <h6 class="text-center fw-bold">{{ app()->getLocale() == 'ar' ? $data['product']->location_ar : $data['product']->location_en }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
                         <img src="{{ asset('assets/front') }}/assets/img/industry.png" style="width: 65px; height:65px;">
                     </div>
-                    <p class="text-center" style="margin-bottom: 0;">INDUSTRY</p>
+                    <p class="text-center" style="margin-bottom: 0;">@lang('site.industry')</p>
                     <h6 class="text-center">{{ $data['product']->sector->value }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
                         <img src="{{ asset('assets/front') }}/assets/img/sector.png" style="width: 65px; height:65px;">
                     </div>
-                    <p class="text-center" style="margin-bottom: 0;">SECTOR</p>
+                    <p class="text-center" style="margin-bottom: 0;">@lang('site.sector')</p>
                     <h6 class="text-center">{{ app()->getLocale() == 'ar' ? $data['product']->subCategory->category->title_ar : $data['product']->subCategory->category->title_en }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
                         <img src="{{ asset('assets/front') }}/assets/img/sub-sector.png" style="width: 65px; height:65px;">
                     </div>
-                    <p class="text-center" style="margin-bottom: 0;">SUB SECTOR</p>
+                    <p class="text-center" style="margin-bottom: 0;">@lang('site.sub_sector')</p>
                     <h6 class="text-center">{{ app()->getLocale() == 'ar' ? $data['product']->subCategory->title_ar : $data['product']->subCategory->title_en }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
                         <img src="{{ asset('assets/front') }}/assets/img/progress.png" style="width: 65px; height:65px;">
                     </div>
-                    <p class="text-center" style="margin-bottom: 0;">STATUS</p>
+                    <p class="text-center" style="margin-bottom: 0;">@lang('site.status')</p>
                     <h6 class="text-center">{{ $data['product']->status == 0 ? 'Complete' : 'On Going' }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
                         <img src="{{ asset('assets/front') }}/assets/img/year.png" style="width: 65px; height:65px;">
                     </div>
-                    <p class="text-center" style="margin-bottom: 0;">YEAR</p>
+                    <p class="text-center" style="margin-bottom: 0;">@lang('site.year')</p>
                     <h6 class="text-center">{{ $data['product']->year }}</h6>
                 </div>
             </div>

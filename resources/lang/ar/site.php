@@ -32,9 +32,9 @@ return [
     #### NavBar
     'home' => 'الرئيسية',
     'about_us' => 'معلومات عنا',
-    'services' => 'خدمات',
+    'services' => 'خدماتنا',
     'products' => 'منتجات',
-    'projects' => 'مشاريع',
+    'projects' => 'مشاريعنا',
     'jobs' => 'الوظائف',
     'career' => 'حياة مهنية',
     'news' => 'الاخبار',
@@ -86,7 +86,7 @@ return [
     'submit_request' => 'تقديم الطلب',
     'innovation_quality_and_continuous_improvement' => 'مشاريعنا',
     'latest_products' => 'أحدث المنتجات',
-    'latest_projects' => ' المشاريع',
+    'latest_projects' => ' مشاريعنا',
     'plastic_recycling_services' => 'خدمات إعادة تدوير البلاستيك',
     'our_core_values' => 'قيمنا الأساسية',
 
@@ -179,6 +179,19 @@ return [
     #### Partner Success
     'partner_success' => 'شركاء النجاح',
     'partner_head' => 'شركاء النجاح',
-    'our_partner' => 'شركائنا'
+    'our_partner' => 'شركائنا',
+
+
+
+    'project_mangement' => 'ادارة المشاريع',
+    'content_mangement' => 'ونحن نسعى جاهدين لتحقيق الكمال في كل ما نقوم به. نحن نأخذ أفضل ما هو موجود ونجعله أفضل. عندما لا يكون موجودًا، نقوم بتصميمه',
+    'client' => 'العميل',
+    'location' => 'الموقع',
+    'industry' => 'القطاع',
+    'sector' => 'الفئة الرئيسية',
+    'sub_sector' => 'الفئة الفرعية',
+    'status' => 'الحالة',
+    'year' => 'السنة',
+    'certification' => 'شهاداتنا'
 
 ];
