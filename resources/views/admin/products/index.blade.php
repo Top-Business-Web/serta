@@ -27,6 +27,7 @@
                                 <th>الصورة</th>
                                 <th>عنوان</th>
                                 <th>الموقع</th>
+                                <th>اسم العميل</th>
                                 <th>القطاع</th>
                                 <th>الحالة</th>
                                 <th>الفئة</th>
@@ -97,6 +98,7 @@
             {data: 'images', name: 'images'},
             {data: 'title_ar', name: 'title_ar'},
             {data: 'location_ar', name: 'location_ar'},
+            {data: 'customer_ar', name: 'customer_ar'},
             {data: 'sector', name: 'sector'},
             {data: 'status', name: 'status'},
             {data: 'sub_categories_id', name: 'sub_categories_id'},

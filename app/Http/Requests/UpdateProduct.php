@@ -26,6 +26,8 @@ class UpdateProduct extends FormRequest
         return [
             'title_ar' => 'required',
             'title_en' => 'required',
+            'customer_ar' => 'required',
+            'customer_en' => 'required',
             'desc_ar' => 'required',
             'desc_en' => 'required',
             'images' => 'image|nullable',
@@ -38,6 +40,8 @@ class UpdateProduct extends FormRequest
         return [
             'title_ar.required' => 'عنوان المنتج بالعربي مطلوب',
             'title_en.required' => 'عنوان المنتج بالانجليزي مطلوب',
+            'customer_ar.required' => 'اسم العميل بالعربي مطلوب',
+            'customer_en.required' => 'اسم العميل بالانجليزي مطلوب',
             'desc_ar.required' => 'الوصف بالعربي مطلوب',
             'desc_en.required' => 'الوصف بالانجليزي مطلوب',
             'images.image' => 'يجب ان تكون صورة',
