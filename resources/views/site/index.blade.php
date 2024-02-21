@@ -11,7 +11,7 @@
             </video>
             <div class="image-layer">
                 <!-- <div class="overlay"></div> -->
-                <div class="title-container wow bounceInUp" data-wow-duration="2s">
+                <div class="title-container wow bounceInDown" data-wow-duration="2s">
                     <h2 class="video-title text-white">
                         {{ app()->getLocale() == 'ar' ? $slider->title_ar : $slider->title_en }}</h2>
                 </div>
@@ -257,15 +257,15 @@
                                         <div class="container">
                                             <div class="row">
                                             <div class="col-lg-8 col-12">
-                                            <div class="pen">
+                                            <div class="pen wow bounceInDown" data-wow-duration="2s" data-wow-offset="100">
                                                 <img src="{{ asset('assets/front/') }}/assets/img/pen2.png">
                                             </div>
-                                            <div class="mobile">
+                                            <div class="mobile wow zoomIn" data-wow-duration="2s" data-wow-offset="100">
                                                 <img src="{{ asset('assets/front/') }}/assets/img/tablet.png">
                                             </div>
                                             </div>
                                             <div class="col-lg-4 col-12 d-flex align-items-center">
-                                            <div class="content">
+                                            <div class="content wow bounceInUp" data-wow-duration="2s" data-wow-offset="100">
                                                 <h2 class="mb-2 title-management">@lang('site.project_mangement')</h2>
                                                 <p>@lang('site.content_mangement')</p>
                                                 <button class="main-btn bg-brown mb-3">
