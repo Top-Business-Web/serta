@@ -179,6 +179,19 @@ return [
     #### Partner Success
     'partner_success' => 'Partner Success',
     'partner_head' => 'Partner Success',
-    'our_partner' => 'Our Partner'
+    'our_partner' => 'Our Partner',
+
+    // aya
+
+    'project_mangement' => 'Projects Mangement',
+    'content_mangement' => 'We strive perfection in everything we do . We take the best that exist and make it better . When it does not exist , we design it ',
+    'client' => 'Client',
+    'location' => 'LOCATION',
+    'industry' => 'INDUSTRY',
+    'sector' => 'SECTOR',
+    'sub_sector' => 'SUB SECTOR',
+    'status' => 'STATUS',
+    'year' => 'YEAR',
+    'certification' => 'Certificates'
 
 ];

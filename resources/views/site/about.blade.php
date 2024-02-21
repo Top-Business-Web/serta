@@ -86,7 +86,7 @@
                 <div class="col-xl-6">
                     <div class="why-choose-two_right">
                         <div class="section-title text-left">
-                            <h6>{{ trans('site.our_pontential_benefits') }}</h6>
+                            <!-- <h6>{{ trans('site.our_pontential_benefits') }}</h6> -->
                             <h2>{{ app()->getLocale() == 'ar' ? $about->title_ar : $about->title_en }}</h2>
                         </div>
                         <p class="highlight">

@@ -26,7 +26,7 @@
     <div class="service-area section-padding serv-bg">
         <div class="container">
             <div class="section-title">
-                <h2>{{ app()->getLocale() == 'ar' ? 'تخطيط وانشاء مشاريع انشائية مصصمة بدقة وجودة عالية' : 'Planning and creating construction projects designed with precision and high quality' }}</h2>
+                <h2>{{ app()->getLocale() == 'ar' ? 'خدماتنا' : 'Services' }}</h2>
             </div>
             <div class="row">
                 @foreach ($data['services'] as $service)

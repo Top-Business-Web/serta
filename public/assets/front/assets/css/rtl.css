@@ -6290,7 +6290,7 @@ ul.contact-list li svg{
   }
   .main-slider .product-img img{
     /* border-radius: 10px; */
-    height: 400px;
+    height: 470px;
   }
   .small-slider img{
     /* border-radius: 10px; */
@@ -6817,3 +6817,29 @@ body{
     padding-left: 0px;
 }
 
+
+.mangement{
+    background-image: url("../img/banerr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.mobile img{
+    /* width: 700px; */
+    height: 520px;
+}
+.pen img{
+    height: 230px;
+    transform: rotate(100deg);
+}
+.pen{
+    position: absolute;
+    top: 27%;
+}
+.title-management{
+    font-size: 30px;
+    font-weight: bold;
+}
+.icon-client{
+    margin-left: 20px;
+}
