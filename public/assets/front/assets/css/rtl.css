@@ -6826,7 +6826,7 @@ body{
 }
 .mobile img{
     /* width: 700px; */
-    height: 520px;
+    height: 566px;
 }
 .pen img{
     height: 230px;
@@ -6835,6 +6835,7 @@ body{
 .pen{
     position: absolute;
     top: 27%;
+    z-index: 9;
 }
 .title-management{
     font-size: 30px;
