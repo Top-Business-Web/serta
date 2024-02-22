@@ -73,7 +73,7 @@
 
     <!-- Choose Us Area  -->
 
-    <div class="why-choose-two section-padding pb-0 mb-5 pb-5">
+    <div class="why-choose-two pb-0 mb-5 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">

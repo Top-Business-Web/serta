@@ -69,13 +69,16 @@
 		top: 16px;
 		left: 0;
 		width: 100%;
-		background-color: #C03627;
+		background-color: gainsboro;
 		z-index: 999;
 		padding: 10px 16px;
 		-webkit-box-shadow: 0 26px 48px 0 rgba(0, 0, 0, 0.15);
 		box-shadow: 0 26px 48px 0 rgba(0, 0, 0, 0.15);
 		margin-top: 0;
 	}
+    .main-menu .navbar-nav .nav-link{
+        color: black !important;
+    }
 
 
 	.navigation .navbar .navbar-nav .nav-item .sub-nav-toggler {
@@ -140,7 +143,7 @@
 	}
 
 	.header-area .main-menu .navbar-nav .nav-link:hover {
-		color: orange;
+		color: #C03627;
 	}
 
 	.header-area.absolute-header .main-menu .navbar-nav .nav-link.active {
@@ -186,7 +189,7 @@
 		display: block;
 		width: 30px;
 		height: 2px;
-		background-color: white;
+		background-color: #C03627;
 		margin: 6px 0;
 		-webkit-transition: all 0.3s ease-out 0s;
 		transition: all 0.3s ease-out 0s;
@@ -215,13 +218,16 @@
 		top: 16px;
 		left: 0;
 		width: 100%;
-		background-color: #C03627;
+		background-color: gainsboro;
 		z-index: 999;
 		padding: 10px 16px;
 		-webkit-box-shadow: 0 26px 48px 0 rgba(0, 0, 0, 0.15);
 		box-shadow: 0 26px 48px 0 rgba(0, 0, 0, 0.15);
 		margin-top: 0;
 	}
+    .main-menu .navbar-nav .nav-link{
+        color: black !important;
+    }
 
 
 	.navigation .navbar .navbar-nav .nav-item .sub-nav-toggler {
@@ -286,7 +292,7 @@
 	}
 
 	.header-area .main-menu .navbar-nav .nav-link:hover {
-		color: orange;
+		color: #C03627;
 	}
 
 	.header-area.absolute-header .main-menu .navbar-nav .nav-link.active {
@@ -304,7 +310,6 @@
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     /*	responsive menu start */
-
 
 	.navbar-toggler {
 		border: none;
@@ -348,14 +353,16 @@
 		top: 16px;
 		left: 0;
 		width: 100%;
-		background-color: #C03627;
+		background-color: gainsboro;
 		z-index: 999;
 		padding: 10px 16px;
 		-webkit-box-shadow: 0 26px 48px 0 rgba(0, 0, 0, 0.15);
 		box-shadow: 0 26px 48px 0 rgba(0, 0, 0, 0.15);
 		margin-top: 0;
 	}
-
+    .main-menu .navbar-nav .nav-link{
+        color: black !important;
+    }
 
 	.navigation .navbar .navbar-nav .nav-item .sub-nav-toggler {
 		display: inline-block;
@@ -419,7 +426,7 @@
 	}
 
 	.header-area .main-menu .navbar-nav .nav-link:hover {
-		color: orange;
+		color: #C03627;
 	}
 
 	.header-area.absolute-header .main-menu .navbar-nav .nav-link.active {
