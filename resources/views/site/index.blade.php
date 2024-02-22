@@ -332,7 +332,7 @@
                 <div class="card-certificate">
                     @foreach ($data['certificates'] as $key => $certificate)
                     <div class="DemoBS2">
-                        <button type="button" class="btn btn-certificate d-flex justify-content-between hover-certificate" data-toggle="collapse" data-target="#toggle-example{{ $key }}">
+                        <button type="button" class="btn btn-certificate d-flex justify-content-between hover-certificate fs-3" data-toggle="collapse" data-target="#toggle-example{{ $key }}">
                             {{ app()->getLocale() == 'ar' ? $certificate->question_ar : $certificate->question_en }}
                             <div class="add-certificate">
                                 <p class="plus">+</p>
@@ -397,9 +397,13 @@
 
 <script>
     $(document).ready(function() {
-        $('.minus').on('click',function(e){
+        // $('.minus').on('click',function(e){
+        //     e.preventDefault();
+        //     $(this).toggleClass('active');
+        // })
+        $('.btn-certificate').on('click',function(e){
             e.preventDefault();
-            $(this).toggleClass('active');
+            $(this).find('.minus').toggleClass('active');
         })
     })
 
