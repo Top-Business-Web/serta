@@ -6728,7 +6728,6 @@ body{
 .image-value{
     padding: 0px;
 }
-
 .certificate-image{
     position: relative;
     overflow: hidden;
@@ -6740,13 +6739,14 @@ body{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: gainsboro;
+    background-color: #C03627;
     transform: translateX(-101%);
     animation-name: movingImage;
-    animation-duration: 1.5s;
+    animation-duration: 1.2s;
     animation-timing-function: linear;
-    animation-delay: 1s;
+    /* animation-delay: 0.02s; */
     animation-fill-mode: forwards;
+    z-index: 3;
 }
 @keyframes movingImage{
     0% {
@@ -6759,6 +6759,41 @@ body{
         transform: translateX(101%);
          }
 }
+.certificate-hidden {
+    display: none;
+}
+.certificate-image::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: gainsboro;
+    transform: translateX(-101%);
+    animation-name: movingImage;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-delay: 0.56s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+@keyframes movingImage1{
+    0% {
+        transform: translateX(-101%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.certificate-image img{
+    transform: translateX(-101%);
+    animation-name: movingImage1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    /* animation-delay: 0.2s; */
+    animation-fill-mode: forwards;
+}
 
 .slick-dots li.slick-active button:before{
     color: #C03627;
@@ -6770,7 +6805,7 @@ body{
 
 .btn-certificate {
     width: 100%;
-    text-align: left;
+    text-align: right;
     background-color: transparent;
     border: none;
     color: #C03627;
@@ -6844,3 +6879,25 @@ body{
 .icon-client{
     margin-left: 20px;
 }
+.splide__slide img{
+    height: 500px !important;
+}
+
+@media (max-width: 575px) {
+    .mobile img{
+      height: 258px;
+  }
+  .pen img {
+      height: 168px;
+  }
+  .pen{
+      top: 17%;
+  }
+  .main-slider .product-img img{
+    height: 275px !important;
+  }
+  .splide__slide img{
+    height: 315px !important;
+  }
+
+  }

@@ -24,7 +24,7 @@
     <div class="project-area section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-12">
+                <div class="col-lg-6 col-12 mb-4">
                     <div class="main-slider">
                         @foreach($data['product']->images as $img)
                             <div class="product-img">
@@ -79,7 +79,7 @@
 
         <!-- description -->
 
-        <div class="container pt-5 mt-5">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">

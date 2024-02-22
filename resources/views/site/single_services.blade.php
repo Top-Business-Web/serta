@@ -59,7 +59,7 @@
                                 <ul class="splide__list">
                                     @foreach($data['single_service']->images as $image)
                                         <li class="splide__slide">
-                                            <img src="{{ asset($image) }}" alt="no-image" style="height: 500px;">
+                                            <img src="{{ asset($image) }}" alt="no-image">
                                         </li>
                                     @endforeach
                                 </ul>
