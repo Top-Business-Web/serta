@@ -37,7 +37,6 @@ return [
     'projects' => 'مشاريعنا',
     'jobs' => 'الوظائف',
     'career' => 'حياة مهنية',
-    'news' => 'الاخبار',
     'contact' => 'تواصل',
     'faqs' => 'الاسئلة الشائعة',
     'get_a_quote' => 'تقديم طلب',
@@ -192,6 +191,8 @@ return [
     'sub_sector' => 'الفئة الفرعية',
     'status' => 'الحالة',
     'year' => 'السنة',
-    'certification' => 'شهاداتنا'
+    'certification' => 'شهاداتنا',
+    'architecture' => 'التصميم المعمارى',
+    'news' => 'الاخبار'
 
 ];
