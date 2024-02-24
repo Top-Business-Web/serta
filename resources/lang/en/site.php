@@ -37,7 +37,6 @@ return [
     'projects' => 'Projects',
     'jobs' => 'Jobs',
     'career' => 'Career',
-    'news' => 'News',
     'contact' => 'Contact',
     'faqs' => 'Faqs',
     'get_a_quote' => 'Get a Quote',
@@ -192,6 +191,6 @@ return [
     'sub_sector' => 'SUB SECTOR',
     'status' => 'STATUS',
     'year' => 'YEAR',
-    'certification' => 'Certificates'
-
+    'architecture' => 'Architectural Design',
+    'news' => 'News'
 ];

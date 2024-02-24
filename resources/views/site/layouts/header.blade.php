@@ -96,6 +96,25 @@
                                             @endforeach
                                         </div>
                                     </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle {{ Route::currentRouteName() == 'architectureIndex' ? 'active' : '' }}"
+                                            href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            {{ trans('site.architecture') }}
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item"
+                                                    href="{{ route('architectureIndex') }}">اقسام</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link {{ $name_url == 'newsIndex' ? 'active' : '' }}"
+                                            href="{{ route('newsIndex') }}">{{ trans('site.news') }}</a>
+                                    </li>
+
+
                                     <!-- <li class="nav-item">
                                         <a class="nav-link {{ $name_url == 'team-work' ? 'active' : '' }}" href="{{ route('teamWork') }}">{{ trans('site.team_work') }}</a>
                                     </li> -->

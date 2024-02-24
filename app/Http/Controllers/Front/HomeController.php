@@ -60,4 +60,15 @@ class HomeController extends Controller
 
         return view('site.products', compact('sub_categories', 'products', 'category'));
     }
+
+    public function architecture()
+    {
+        return view('site.architecture');
+    }
+    public function news()
+    {
+        return view('site.news');
+    }
+
+
 }

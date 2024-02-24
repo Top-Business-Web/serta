@@ -78,5 +78,9 @@ Route::group(
 
         ### Partner Success ####
         Route::get('/partner-success', [PartnerSuccessController::class, 'index'])->name('partnerSuccess');
+        ### Partner Success ####
+        Route::get('/architecture', [HomeController::class, 'architecture'])->name('architectureIndex');
+        ### Partner Success ####
+        Route::get('/news', [HomeController::class, 'news'])->name('newsIndex');
     }
 );
