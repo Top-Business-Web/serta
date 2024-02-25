@@ -6904,3 +6904,48 @@ body{
   }
 
   }
+
+  .card-news .services-two_bottom{
+    border-top: none;
+  }
+  .card-news:hover .services-two_img img{
+    transform: scale(1);
+  }
+  .card-news .services-two_title a{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .services-one_btn{
+    color: gray !important;
+    font-weight: normal;
+  }
+  .services-one_btn:hover{
+    color: gray !important;
+  }
+  .card-news .services-two_content{
+    box-shadow: none;
+    height: 240px;
+    border-bottom: 4px solid #C03627;
+    border-right: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+  }
+  .card-news:hover .minus{
+    background-color: #C03627;
+    box-shadow: 0 3px 9px -2px #C03627;
+    color: white;
+  }
+  .card-news .minus{
+    background-color: transparent;
+    box-shadow: none;
+    color: gray;
+    padding: 5px 17px;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    transition: all 0.5s ease;
+}
