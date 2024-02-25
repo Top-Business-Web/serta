@@ -67,70 +67,10 @@
                         @endforeach
                     </div>
                 </div>
-                <!-- <div class="col-12 col-lg-4">
-                            <div class="sidebar">
-                                <div class="sidebar_single sidebar_search">
-                                    <form action="#" class="sidebar_search-form">
-                                        <input type="search" class="searchInput" placeholder="{{ trans('site.search here') }}" name="search">
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="widget widget-categories" style="padding: 30px;">
-                                <div class="widget-title">
-                                    <h5>{{ trans('site.categories') }}</h5>
-                                </div>
-                                <div class="widget-content">
-                                    <ul class="list-unstyled">
-                                        <li class="CategorySort">
-                                            <a class="CategorySort" data-id="all" href="#">{{ trans('site.all') }}</a>
-                                        </li>
-                                        @foreach ($categories as $category)
-    <li data-bs-toggle="collapse" href="#collapseExample{{ $category->id }}"
-                                                role="button"
-                                                aria-expanded="false" aria-controls="collapseExample">
-                                                <div>
-                                                    <a href="#">{{ trans_model($category, 'title') }}</a>
-                                                    <span>{{ $category->sub_category_count }}</span>
-                                                </div>
-                                            </li>
-                                            <div class="widget-content">
-                                                <ul class="list-unstyled collapse category-sort" data-id="{{ $category->id }}"
-                                                    id="collapseExample{{ $category->id }}">
-                                                    @foreach ($category->subCategory as $subcategory)
-    <li>
-                                    <a class="CategorySort" data-id="{{ $subcategory->id }}" href="#">{{ trans_model($subcategory, 'title') }}</a>
-        {{--                                                    <span></span> --}}
-                                </li>
-    @endforeach
-                            </ul>
-                        </div>
-    @endforeach
-                        </ul>
-                    </div>
-
-                </div>
-
-                <hr>
-                <div class="sidebar_single sidebar_post" style="padding: 30px; margin-bottom: 30px;">
-                    <h3 class="sidebar_title mb-3" style="margin-left: 0;">{{ trans('site.latest_projects') }}</h3>
-                                <ul class="sidebar_post-list list-unstyled">
                                     <?php $products = \App\Models\Product::latest()
                                         ->take(4)
                                         ->get(); ?>
-                        @foreach ($products as $product)
-    <li style="padding: 0; margin-bottom: 15px;">
-                                <div class="sidebar_post-image">
-                                    <img src="{{ asset($product->images[0]) }}" alt="">
-                                            </div>
-                                            <div class="sidebar_post-content">
-                                                <h3>
-                                                    <a href="{{ route('singleProduct', $product->id) }}">{{ $product->title_ar }}</a>
-                                                </h3>
-                                            </div>
-                                        </li>
-    @endforeach
-                        </ul>
-                    </div> -->
+
 
             </div>
         </div>

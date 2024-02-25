@@ -29,7 +29,6 @@
                 <div class="col-12 col-lg-6">
                     <div class="about-content-wrap">
                         <div class="section-title">
-                            <!-- <p>Complete Commercial And Residential Recycling Services!</p> -->
                             <h2>{{ app()->getLocale() == 'ar' ? $about->top_title_ar : $about->top_title_en }}</h2>
                         </div>
                         <div class="about-content">
@@ -38,11 +37,6 @@
                                     <div class="about-content-left">
                                         <p class="highlight mb-5">{{ app()->getLocale() == 'ar' ? $about->top_desc_ar : $about->top_desc_en }}
                                         </p>
-
-{{--                                        <p>--}}
-{{--                                            {{ trans('site.enviro_group_aims') }}--}}
-{{--                                        </p>--}}
-
                                         <button class="main-btn bg-brown mb-3" onclick="profDownload()">
                                             {{ trans('site.Profile_company') }}
                                         </button>
@@ -55,15 +49,6 @@
                 <div class="col-12 col-lg-6">
                     <div class="about-img">
                         <img src="{{ asset($about->image) }}" alt="">
-                        <!-- <div class="about-counter">
-                            <div class="counter-icon">
-                                <img src="{{ asset('assets/front') }}/assets/img/icon/customer-service.png" alt="" style="width: 60px;">
-                            </div>
-                            <div class="counter-number">
-                                <span class="counting" data-counterup-nums="">{{ $aboutUs->happy_clients }}</span>
-                            </div>
-                            <h6>{{ trans('site.Happy_customers') }}</h6>
-                        </div> -->
                     </div>
                 </div>
 
