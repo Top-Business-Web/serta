@@ -192,5 +192,6 @@ return [
     'status' => 'STATUS',
     'year' => 'YEAR',
     'architecture' => 'Architectural Design',
-    'news' => 'News'
+    'news' => 'News',
+    'all-news' => 'All News'
 ];

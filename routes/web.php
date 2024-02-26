@@ -6,10 +6,12 @@ use App\Http\Controllers\Front\{
     TeamWorkController,
     PartnerSuccessController,
     AboutController,
+    ArchController,
     BlogController,
     CareerController,
     ContactController,
     FaqsController,
+    NewController,
     ProductController,
     QuoteController,
     ServiceController
@@ -78,9 +80,13 @@ Route::group(
 
         ### Partner Success ####
         Route::get('/partner-success', [PartnerSuccessController::class, 'index'])->name('partnerSuccess');
-        ### Partner Success ####
-        Route::get('/architecture', [HomeController::class, 'architecture'])->name('architectureIndex');
-        ### Partner Success ####
-        Route::get('/news', [HomeController::class, 'news'])->name('newsIndex');
+
+        ### News Routes ####
+        Route::get('/news', [NewController::class, 'news'])->name('newsIndex');
+        Route::get('/news-details/{id}', [NewController::class, 'details'])->name('newsDetails');
+
+        ### Architecture Routes ####
+        Route::get('/architecture', [ArchController::class, 'architecture'])->name('architectureIndex');
+        Route::get('/arch-details/{id}', [ArchController::class, 'details'])->name('archDetails');
     }
 );

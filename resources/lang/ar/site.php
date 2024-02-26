@@ -193,6 +193,7 @@ return [
     'year' => 'السنة',
     'certification' => 'شهاداتنا',
     'architecture' => 'التصميم المعمارى',
-    'news' => 'الاخبار'
+    'news' => 'الاخبار',
+    'all-news' => 'كل الأخبار'
 
 ];
