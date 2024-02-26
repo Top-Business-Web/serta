@@ -202,6 +202,81 @@
     </div>
 </div>
 
+<!-- news -->
+
+<div class="service-area serv-bg mb-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>{{ app()->getLocale() == 'ar' ? ' الاخبار' : ' News' }}</h2>
+            </div>
+            <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms"
+                         style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <div class="services-two_single card-news">
+                            <div class="services-two_img-box">
+                                <div class="services-two_img">
+                                    <a href="#single-news" class="w-100">
+                                        <img src="{{ asset('assets/front') }}/assets/img/Untitled-2.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="services-two_content">
+                            <span style="color: gray; margin-bottom: 8px; font-size: 13px;">26,october 2023</span>
+                                <h3 class="services-two_title">
+                                    <a href="#single-news">
+                                        NEWS TITLE NEWS TITLE NEWS TITLE NEWS TITLE NEWS TITLE
+                                    </a>
+                                </h3>
+                                <div class="services-two_bottom">
+                                    <a href="#single-news" class="services-one_btn d-flex">
+                                        {{ trans('site.read_more') }}
+                                        <div class="add">
+                                            <p class="minus">+</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms"
+                         style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <div class="services-two_single card-news">
+                            <div class="services-two_img-box">
+                                <div class="services-two_img">
+                                    <a href="#single-news" class="w-100">
+                                        <img src="{{ asset('assets/front') }}/assets/img/Untitled-2.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="services-two_content">
+                            <span style="color: gray; margin-bottom: 8px; font-size: 13px;">26,october 2023</span>
+                                <h3 class="services-two_title">
+                                    <a href="#single-news">
+                                        NEWS TITLE
+                                    </a>
+                                </h3>
+                                <div class="services-two_bottom">
+                                    <a href="#single-news" class="services-one_btn d-flex">
+                                        {{ trans('site.read_more') }}
+                                        <div class="add">
+                                            <p class="minus">+</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+            <div class="d-flex justify-content-center mt-5" style="margin-bottom: 100px;">
+                <a href="#" class="main-btn bg-brown mb-3">{{ trans('site.all-news') }}</a>
+            </div>
+
+        </div>
+    </div>
+
 {{-- aya modal --}}
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

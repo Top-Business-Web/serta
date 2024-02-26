@@ -6510,6 +6510,7 @@ label.form-label {
     border-bottom: 4px solid #C03627;
     border-right: 1px solid gainsboro;
     border-left: 1px solid gainsboro;
+    padding: 20px 50px 17px;
   }
   .card-news:hover .minus{
     background-color: #C03627;

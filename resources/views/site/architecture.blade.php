@@ -86,13 +86,13 @@
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="project-single">
                                     <div class="project-img">
-                                        <a href="#architecture-single" class="w-100">
+                                        <a href="{{  route('archDetails',1) }}" class="w-100">
                                             <img src="{{ asset('assets/front') }}/assets/img/photo_2024-01-28_10-22-15.jpg" alt="">
                                         </a>
                                     </div>
                                     <div class="project-content">
                                         <div class="project-title text-center">
-                                            <a href="#architecture-single" class="fs-5">archtitecture title</a>
+                                            <a href="{{  route('archDetails',1) }}" class="fs-5">archtitecture title</a>
                                         </div>
                                     </div>
                                 </div>
@@ -100,13 +100,13 @@
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="project-single">
                                     <div class="project-img">
-                                        <a href="#architecture-single" class="w-100">
+                                        <a href="{{  route('archDetails',1) }}" class="w-100">
                                             <img src="{{ asset('assets/front') }}/assets/img/photo_2024-01-28_10-22-15.jpg" alt="">
                                         </a>
                                     </div>
                                     <div class="project-content">
                                         <div class="project-title text-center">
-                                            <a href="#architecture-single" class="fs-5">archtitecture title</a>
+                                            <a href="{{  route('archDetails',1) }}" class="fs-5">archtitecture title</a>
                                         </div>
                                     </div>
                                 </div>
@@ -114,13 +114,13 @@
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="project-single">
                                     <div class="project-img">
-                                        <a href="#architecture-single" class="w-100">
+                                        <a href="{{  route('archDetails',1) }}" class="w-100">
                                             <img src="{{ asset('assets/front') }}/assets/img/photo_2024-01-28_10-22-15.jpg" alt="">
                                         </a>
                                     </div>
                                     <div class="project-content">
                                         <div class="project-title text-center">
-                                            <a href="#architecture-single" class="fs-5">archtitecture title</a>
+                                            <a href="{{  route('archDetails',1) }}" class="fs-5">archtitecture title</a>
                                         </div>
                                     </div>
                                 </div>

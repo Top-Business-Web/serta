@@ -6930,6 +6930,7 @@ body{
     border-bottom: 4px solid #C03627;
     border-right: 1px solid gainsboro;
     border-left: 1px solid gainsboro;
+    padding: 20px 50px 17px;
   }
   .card-news:hover .minus{
     background-color: #C03627;
@@ -6946,6 +6947,6 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-right: 20px;
     transition: all 0.5s ease;
 }
