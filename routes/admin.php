@@ -26,12 +26,18 @@ Route::group(['prefix'=>'admin','middleware'=>'auth:admin'],function (){
 
     #### Product ####
     Route::resource('product','ProductController');
+    
+    #### Architecture ####
+    Route::resource('architecture','ArchitectureController');
 
     #### Career ####
     Route::resource('careers','CareerController');
 
     #### Category ####
     Route::resource('categories','CategoryController');
+
+    #### Category Arch ####
+    Route::resource('categories_arch','CategoryArchController');
 
     #### SubCategory ####
     Route::resource('subcategories','SubCategoryController');
