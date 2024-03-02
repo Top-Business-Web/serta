@@ -179,6 +179,7 @@ return [
     'partner_success' => 'شركاء النجاح',
     'partner_head' => 'شركاء النجاح',
     'our_partner' => 'شركائنا',
+    'architectural' => 'معمارى',
 
 
 
