@@ -193,5 +193,10 @@ return [
     'year' => 'YEAR',
     'architecture' => 'Architectural Design',
     'news' => 'News',
-    'all-news' => 'All News'
+    'all-news' => 'All News',
+    'adjective' => 'Adjective / job',
+    'loca' => 'Location',
+    'cate' => 'Category',
+    'space' => 'Space',
+    'dimensions' => 'Dimensions'
 ];
