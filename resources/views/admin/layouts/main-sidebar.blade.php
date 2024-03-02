@@ -72,6 +72,13 @@
             </a>
         </li>
 
+        <li class="slide">
+            <a class="side-menu__item" href="{{route('about_archs.index')}}">
+                <i class="fe fe-codepen side-menu__icon"></i>
+                <span class="side-menu__label">ماذا عن الأبنية</span>
+            </a>
+        </li>
+
 
         <li class="slide">
             <a class="side-menu__item" href="{{route('services.index')}}">
