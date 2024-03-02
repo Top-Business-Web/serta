@@ -112,24 +112,13 @@
                             <span class="text-white">{{ trans('site.visit_office') }}</span>
                             <p class="text-white">{{ trans('site.egypt') }}</p>
                         </div>
-                        <!-- <ul class="list-unstyled contact-page-details_list">
-                            <li>
-                                <span>{{ trans('site.call_anytime') }}</span>
-                                <p><a href="tel:13077760608">{{ $setting->phone }}</a></p>
-                            </li>
-                            <li>
-                                <span>{{ trans('site.send_email') }}</span>
-                                <p><a href="mailto:{{ $setting->email }}">{{ $setting->email }}</a></p>
-                            </li>
-                            <li>
-                                <span>{{ trans('site.visit_office') }}</span>
-                                <p>{{ trans('site.egypt') }}</p>
-                            </li>
-                        </ul> -->
                         <div class="contact-page-details_social">
                             <a href="{{ $setting->twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
                             <a href="{{ $setting->instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
                             <a href="{{ $setting->linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div>
+                        <img src="{{ asset('assets/front') }}/assets/img/qr-code.png"  alt="" style="width: 171px; height: 200px; margin-top: 30px;">
                         </div>
                     </div>
                 </div>

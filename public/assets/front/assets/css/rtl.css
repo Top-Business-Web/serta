@@ -663,7 +663,7 @@ input.form-control {
   width: 100%;
   height: 100%;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.2;
   top: 0;
   left: 0;
   z-index: 999;
@@ -5105,9 +5105,6 @@ p.privacy a:not(:last-of-type)::after {
     margin-top: 50px;
   }
 }
-.sidebar_single + .sidebar_single {
-  margin-top: 30px;
-}
 
 .sidebar_title {
   font-size: 22px;
@@ -5193,7 +5190,7 @@ p.privacy a:not(:last-of-type)::after {
   position: relative;
   display: block;
   padding: 45px 30px 30px;
-  background-color: #edf3f6;
+  background-color: gainsboro;
 }
 
 .sidebar_post .sidebar_title {
@@ -6214,10 +6211,6 @@ ul.contact-list li svg{
   .thumbnail img {
     width: 100%;
     height: auto;
-  }
-
-  .blog-details_content{
-    border-bottom: 1px solid #c9d5db;
   }
 
   .widget-categories {

@@ -102,19 +102,13 @@
                                         <a class="nav-link {{ $name_url == 'architectureIndex' ? 'active' : '' }}"
                                             href="{{ route('architectureIndex') }}">{{ trans('site.architecture') }}</a>
                                     </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link {{ $name_url == 'newsIndex' ? 'active' : '' }}"
-                                            href="{{ route('newsIndex') }}">{{ trans('site.news') }}</a>
-                                    </li>
-
-
-                                    <!-- <li class="nav-item">
-                                        <a class="nav-link {{ $name_url == 'team-work' ? 'active' : '' }}" href="{{ route('teamWork') }}">{{ trans('site.team_work') }}</a>
-                                    </li> -->
                                     <li class="nav-item">
                                         <a class="nav-link {{ $name_url == 'partner-success' ? 'active' : '' }}"
                                             href="{{ route('partnerSuccess') }}">{{ trans('site.partner_success') }}</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link {{ $name_url == 'newsIndex' ? 'active' : '' }}"
+                                            href="{{ route('newsIndex') }}">{{ trans('site.news') }}</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link {{ $name_url == 'blog' ? 'active' : '' }}"

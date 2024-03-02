@@ -10,7 +10,7 @@
         <source src="{{ asset('assets/admin/sliders/images/' . $slider->image) }}" type="video/mp4">
     </video>
     <div class="image-layer">
-        <!-- <div class="overlay"></div> -->
+        <div class="overlay"></div>
         <div class="title-container wow bounceInDown" data-wow-duration="2s">
             <h2 class="video-title text-white">
                 {{ app()->getLocale() == 'ar' ? $slider->title_ar : $slider->title_en }}
@@ -297,10 +297,6 @@
 
 <script>
     $(document).ready(function() {
-        // $('.minus').on('click',function(e){
-        //     e.preventDefault();
-        //     $(this).toggleClass('active');
-        // })
         $('.btn-certificate').on('click',function(e){
             e.preventDefault();
             $(this).find('.minus').toggleClass('active');
