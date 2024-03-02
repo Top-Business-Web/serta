@@ -47,7 +47,8 @@
             <div class="container-fluid">
                 <div class="header-inner-box">
                     <div class="logo">
-                        <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset($setting->logo) }}"alt="" /></a>
+                        <a class="navbar-brand" href="{{ route('home') }}"><img
+                                src="{{ asset($setting->logo) }}"alt="" /></a>
                     </div>
                     <!-- hi -->
                     <div class="main-menu">
@@ -97,16 +98,9 @@
                                         </div>
                                     </li>
 
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle {{ Route::currentRouteName() == 'architectureIndex' ? 'active' : '' }}"
-                                            href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            {{ trans('site.architecture') }}
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item"
-                                                    href="{{ route('architectureIndex') }}">اقسام</a>
-                                        </div>
+                                    <li class="nav-item">
+                                        <a class="nav-link {{ $name_url == 'architectureIndex' ? 'active' : '' }}"
+                                            href="{{ route('architectureIndex') }}">{{ trans('site.architecture') }}</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link {{ $name_url == 'partner-success' ? 'active' : '' }}"

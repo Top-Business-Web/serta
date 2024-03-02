@@ -199,4 +199,5 @@ return [
     'cate' => 'Category',
     'space' => 'Space',
     'dimensions' => 'Dimensions'
+
 ];

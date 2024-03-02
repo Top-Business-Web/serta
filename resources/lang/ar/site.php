@@ -201,4 +201,5 @@ return [
     'space' => 'المساحة',
     'dimensions' => 'الأبعاد'
 
+
 ];
