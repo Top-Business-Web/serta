@@ -78,27 +78,6 @@
     </div>
 
     <script type="text/javascript">
-        {{-- $('.searchInput').on('keyup', function () { --}}
-        {{--    var value = $(this).val(); --}}
-
-        {{--    $.ajax({ --}}
-        {{--        type: 'get', --}}
-        {{--        url: '{{ route('product-search') }}', --}}
-        {{--        data: { --}}
-        {{--            'search': value --}}
-        {{--        }, --}}
-        {{--        beforeSend: function (data) { --}}
-        {{--            $('.productSearch').html('loading...'); --}}
-        {{--        }, --}}
-        {{--        success: function (data) { --}}
-        {{--            $('.productSearch').html(data); --}}
-        {{--        }, --}}
-        {{--        error: function (data) { --}}
-        {{--            $('.productSearch').html('<h2 class="error">{{ app()->getLocale() == 'ar' ? 'لا يوجد منتجات' : 'NO PRODUCT FOUND' }}</h2>'); --}}
-        {{--        } --}}
-        {{--    }); --}}
-        {{-- }); --}}
-
 
         $('.CategorySort').on('click', function() {
             var value = $(this).data('id');

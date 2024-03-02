@@ -21,6 +21,9 @@ Route::group(['prefix'=>'admin','middleware'=>'auth:admin'],function (){
     #### About Us ####
     Route::resource('about_us','AboutUsController');
 
+    #### About Arch ####
+    Route::resource('about_archs','AboutArchController');
+
     #### Post ####
     Route::resource('post','PostController');
 

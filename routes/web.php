@@ -86,7 +86,8 @@ Route::group(
         Route::get('/news-details/{id}', [NewController::class, 'details'])->name('newsDetails');
 
         ### Architecture Routes ####
-        Route::get('/architecture', [ArchController::class, 'architecture'])->name('architectureIndex');
-        Route::get('/arch-details/{id}', [ArchController::class, 'details'])->name('archDetails');
+        Route::get('/architecture', [ArchController::class, 'index'])->name('architecture.index.front');
+        Route::get('/arch-details/{id}', [ArchController::class, 'details'])->name('architecture.details');
+        Route::get('/architectureSearch/', [ArchController::class, 'architectureSearch'])->name('architecture-search');
     }
 );
