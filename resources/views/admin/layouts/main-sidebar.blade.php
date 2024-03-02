@@ -58,6 +58,20 @@
             </a>
         </li>
 
+        <li class="slide">
+            <a class="side-menu__item" href="{{route('architecture.index')}}">
+                <i class="fe fe-codepen side-menu__icon"></i>
+                <span class="side-menu__label">الأبنية</span>
+            </a>
+        </li>
+
+        <li class="slide">
+            <a class="side-menu__item" href="{{route('categories_arch.index')}}">
+                <i class="fe fe-codepen side-menu__icon"></i>
+                <span class="side-menu__label">فئة الأبنية</span>
+            </a>
+        </li>
+
 
         <li class="slide">
             <a class="side-menu__item" href="{{route('services.index')}}">
