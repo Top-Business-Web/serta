@@ -210,25 +210,26 @@
                 <h2>{{ app()->getLocale() == 'ar' ? ' الاخبار' : ' News' }}</h2>
             </div>
             <div class="row">
+                @foreach ($data['news'] as $new)
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms"
-                         style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                        style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
                         <div class="services-two_single card-news">
                             <div class="services-two_img-box">
                                 <div class="services-two_img">
-                                    <a href="#single-news" class="w-100">
-                                        <img src="{{ asset('assets/front') }}/assets/img/Untitled-2.jpg" alt="">
+                                    <a href="{{ route('news.details', $new->id) }}" class="w-100">
+                                        <img src="{{ asset('assets/admin/sliders/images/'.$new->image) }}" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="services-two_content">
-                            <span style="color: gray; margin-bottom: 8px; font-size: 13px;">26,october 2023</span>
+                                <span style="color: gray; margin-bottom: 8px; font-size: 13px;">{{ $new->created_at->format('d, F Y') }}</span>
                                 <h3 class="services-two_title">
-                                    <a href="#single-news">
-                                        NEWS TITLE NEWS TITLE NEWS TITLE NEWS TITLE NEWS TITLE
+                                    <a href="{{ route('news.details', $new->id) }}">
+                                        {{ app()->getLocale() == 'ar' ? $new->title_ar : $new->title_en }}
                                     </a>
                                 </h3>
                                 <div class="services-two_bottom">
-                                    <a href="#single-news" class="services-one_btn d-flex">
+                                    <a href="{{ route('news.details', $new->id) }}" class="services-one_btn d-flex">
                                         {{ trans('site.read_more') }}
                                         <div class="add">
                                             <p class="minus">+</p>
@@ -238,40 +239,11 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms"
-                         style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
-                        <div class="services-two_single card-news">
-                            <div class="services-two_img-box">
-                                <div class="services-two_img">
-                                    <a href="#single-news" class="w-100">
-                                        <img src="{{ asset('assets/front') }}/assets/img/Untitled-2.jpg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="services-two_content">
-                            <span style="color: gray; margin-bottom: 8px; font-size: 13px;">26,october 2023</span>
-                                <h3 class="services-two_title">
-                                    <a href="#single-news">
-                                        NEWS TITLE
-                                    </a>
-                                </h3>
-                                <div class="services-two_bottom">
-                                    <a href="#single-news" class="services-one_btn d-flex">
-                                        {{ trans('site.read_more') }}
-                                        <div class="add">
-                                            <p class="minus">+</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                @endforeach
             </div>
 
             <div class="d-flex justify-content-center mt-5" style="margin-bottom: 100px;">
-                <a href="#" class="main-btn bg-brown mb-3">{{ trans('site.all-news') }}</a>
+                <a href="{{ route('news.index.front') }}" class="main-btn bg-brown mb-3">{{ trans('site.all-news') }}</a>
             </div>
 
         </div>

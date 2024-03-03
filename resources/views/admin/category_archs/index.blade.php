@@ -1,14 +1,14 @@
 @extends('admin/layouts/master')
 @section('title')
-    الفئات الرئيسية للأبنية
+    الفئات التصميم المعماري
 @endsection
-@section('page_name')  الفئات الرئيسية للأبنية @endsection
+@section('page_name')  الفئات التصميم المعماري @endsection
 @section('content')
     <div class="row">
         <div class="col-md-12 col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">قائمة الأبنية</h3>
+                    <h3 class="card-title">قائمة فئات التصميم المعماري</h3>
                     <div class="">
                         <button class="btn btn-secondary btn-icon text-white addBtn">
 									<span>
@@ -68,7 +68,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="example-Modal3">الفئات</h5>
+                        <h5 class="modal-title" id="example-Modal3">فئات التصميم المعماري</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
