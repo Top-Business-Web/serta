@@ -16,7 +16,7 @@
                 {{ app()->getLocale() == 'ar' ? $slider->title_ar : $slider->title_en }}
             </h2>
         </div>
-    </div>
+</div>
     <!-- <div class="hero-area-content">
                                                             <div class="container">
                                                                 <div class="row">
