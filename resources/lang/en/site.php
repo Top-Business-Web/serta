@@ -180,6 +180,7 @@ return [
     'partner_head' => 'Partner Success',
     'our_partner' => 'Our Partner',
     'architectural' => 'Architectural',
+    'certification' => 'Certification',
 
     // aya
 
