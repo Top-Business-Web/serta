@@ -22,6 +22,21 @@ class NewsService
             return null;
         }
     }
+
+    /**
+     * Get all news latest
+     * 
+     * @return \Illuminate\Database\Eloquent\Collection|array
+     */
+    public function getAllNewsLatest()
+    {
+        try {
+            return News::latest()->get();
+        } catch (\Exception $e) {
+            Log::error('Error retrieving latest News: ' . $e->getMessage());
+            return null;
+        }
+    }
     /**
      * Get details of specific news
      * 

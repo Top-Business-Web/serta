@@ -32,8 +32,9 @@ class NewsController extends Controller
     {
         try {
             $news = $this->newsService->getNewsDetails($id);
+            $latestNews = $this->newsService->getAllNewsLatest();
 
-            return view('site.new-details', compact('news'));
+            return view('site.new-details', compact('news', 'latestNews'));
         } catch (\Exception $e) {
             Log::error('Error retrieving News: ' . $e->getMessage());
             return null;
