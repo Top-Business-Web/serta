@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreArchRequest;
 use App\Models\Architecture;
+use App\Models\ArchitectureRequest;
 use App\Services\ArchService;
 use Illuminate\Http\Request;
 
@@ -32,6 +34,20 @@ class ArchController extends Controller
         $relatedArchitectures = $this->archService->getAllRelatedArchitecturesExceptSelf($architecture->categoryArch_id, $id);
 
         return view('site.arch-details', compact('architecture', 'relatedArchitectures'));
+    }
+
+    public function storeArchitecture(StoreArchRequest $request)
+    {
+        $inputs = $request->all();
+
+        if(ArchitectureRequest::create($inputs))
+        {
+            return response()->json(['status' => 200]);
+        }
+        else
+        {
+            return response()->json(['status' => 405]);
+        }
     }
 
     public function architectureSearch(Request $request)

@@ -87,6 +87,7 @@ Route::group(
         Route::get('/architecture', [ArchController::class, 'index'])->name('architecture.index.front');
         Route::get('/arch-details/{id}', [ArchController::class, 'details'])->name('architecture.details');
         Route::get('/architectureSearch/', [ArchController::class, 'architectureSearch'])->name('architecture-search');
+        Route::post('/architecture/store', [ArchController::class, 'storeArchitecture'])->name('architecture.store.request');
 
         ### News Routes ####
         Route::get('/news', [NewsController::class, 'index'])->name('news.index.front');
