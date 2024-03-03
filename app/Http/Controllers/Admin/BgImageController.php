@@ -22,7 +22,7 @@ class BgImageController extends Controller
 
         $inputs = $request->all();
 
-        $imageFields = ['about_img', 'service_img', 'product_img', 'career_img', 'news_img', 'contact_img', 'faqs_img', 'qoute_img', 'architecture_img'];
+        $imageFields = ['about_img', 'service_img', 'product_img', 'career_img', 'news_img', 'contact_img', 'faqs_img', 'qoute_img', 'architecture_img', 'news_img'];
         foreach ($imageFields as $field) {
             if ($request->has($field)) {
                 $inputs[$field] = $request->$field != null ? $this->saveImage($request->$field, 'assets/uploads/admins/background', 'photo') : $inputs[$field];
