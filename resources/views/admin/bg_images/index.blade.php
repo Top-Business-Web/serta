@@ -102,11 +102,21 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name" class="form-control-label">التصاميم المعمارية</label>
                                     <input type="file" class="dropify" name="architecture_img"
                                         data-default-file="{{ asset($image->architecture_img) }}"
+                                        accept="image/png,image/webp , image/gif, image/jpeg,image/jpg" />
+                                    <span class="form-text text-danger text-center">مسموح فقط بالصيغ التالية : png, gif,
+                                        jpeg, jpg,webp</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name" class="form-control-label">الأخبارية</label>
+                                    <input type="file" class="dropify" name="news_img"
+                                        data-default-file="{{ asset($image->news_img) }}"
                                         accept="image/png,image/webp , image/gif, image/jpeg,image/jpg" />
                                     <span class="form-text text-danger text-center">مسموح فقط بالصيغ التالية : png, gif,
                                         jpeg, jpg,webp</span>

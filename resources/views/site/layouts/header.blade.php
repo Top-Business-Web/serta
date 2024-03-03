@@ -99,7 +99,7 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link {{ $name_url == 'architecture.index.front' ? 'active' : '' }}"
+                                        <a class="nav-link {{ $name_url == 'architecture' ? 'active' : '' }}"
                                             href="{{ route('architecture.index.front') }}">{{ trans('site.architecture') }}</a>
                                     </li>
 
@@ -112,7 +112,7 @@
                                             href="{{ route('partnerSuccess') }}">{{ trans('site.partner_success') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link {{ $name_url == 'news.index.front' ? 'active' : '' }}"
+                                        <a class="nav-link {{ $name_url == 'news' ? 'active' : '' }}"
                                             href="{{ route('news.index.front') }}">{{ trans('site.news') }}</a>
                                     </li>
                                     <li class="nav-item">
