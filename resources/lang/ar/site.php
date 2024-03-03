@@ -195,6 +195,12 @@ return [
     'certification' => 'شهاداتنا',
     'architecture' => 'التصميم المعمارى',
     'news' => 'الاخبار',
-    'all-news' => 'كل الأخبار'
+    'all-news' => 'كل الأخبار',
+    'adjective' => 'الصفة / الوظيفة',
+    'loca' => 'الموقع',
+    'cate' => 'الفئة',
+    'space' => 'المساحة',
+    'dimensions' => 'الأبعاد'
+
 
 ];

@@ -95,10 +95,65 @@
                         @endforeach
                     </div>
                 </div>
-            </div>
         </div>
-    </div>
+            <div class="section-career mb-5 pb-5">
+        <form class="careerForm">
+            <div class="container">
+            <div class="section-title">
+                <h2 class="fs-2">{{ app()->getLocale() == 'ar' ? 'بيانات فورم التصميم المعمارى' : 'Architectural model data' }}</h2>
+            </div>
+                <div class="d-flex justify-content-center align-items-center mt-5">
+                    <div class="information-cv d-flex justify-content-center align-items-center flex-column">
+                        <section class="uploaded-area"></section>
+                        <div class="row form-contact mt-5">
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="text" class="w-100 p-3" placeholder=" {{ trans('site.name') }}"
+                                       required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="email" class="w-100 p-3"
+                                       placeholder=" {{ trans('site.adjective') }}" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="email" class="w-100 p-3"
+                                       placeholder=" {{ trans('site.email') }}" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="text" class="w-100 p-3"
+                                       placeholder=" {{ trans('site.phone') }}" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="email" class="w-100 p-3"
+                                       placeholder=" {{ trans('site.loca') }}" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="email" class="w-100 p-3"
+                                       placeholder=" {{ trans('site.cate') }}" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="email" class="w-100 p-3"
+                                       placeholder=" {{ trans('site.space') }}" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="number" class="w-100 p-3"
+                                       placeholder=" {{ trans('site.dimensions') }}" required>
+                            </div>
+                            <div class="col-12 mt-2 d-flex justify-content-center">
+                                <button type="submit" class="main-btn primary mt-2" id="career-btn"
+                                        style="border-radius: 10px;">{{ trans('site.send') }}
+                                </button>
+                            </div>
+                            <div class="col-12">
+                                <div class="contact-result load-contact">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </form>
+    </div>
     <!--content -->
 
     <script type="text/javascript">
