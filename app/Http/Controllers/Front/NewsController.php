@@ -32,7 +32,7 @@ class NewsController extends Controller
     {
         try {
             $news = $this->newsService->getNewsDetails($id);
-            $latestNews = $this->newsService->getAllNewsLatest();
+            $latestNews = $this->newsService->getAllNewsLatest($id);
 
             return view('site.new-details', compact('news', 'latestNews'));
         } catch (\Exception $e) {

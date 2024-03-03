@@ -28,10 +28,10 @@ class NewsService
      * 
      * @return \Illuminate\Database\Eloquent\Collection|array
      */
-    public function getAllNewsLatest()
+    public function getAllNewsLatest($id)
     {
         try {
-            return News::latest()->get();
+            return News::latest()->where('id', '!=', $id)->get();
         } catch (\Exception $e) {
             Log::error('Error retrieving latest News: ' . $e->getMessage());
             return null;

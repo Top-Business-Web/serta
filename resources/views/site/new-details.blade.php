@@ -54,7 +54,7 @@
                                         </div>
                                         <div class="sidebar_post-content">
                                             <h3>
-                                                <a href="#">{{ app()->getLocale() == 'ar' ? $latestNew->title_ar : $latestNew->title_en }}</a>
+                                                <a href="{{ route('news.details', $latestNew->id) }}">{{ app()->getLocale() == 'ar' ? $latestNew->title_ar : $latestNew->title_en }}</a>
                                             </h3>
                                         </div>
                                     </li>
