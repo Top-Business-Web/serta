@@ -61,21 +61,21 @@
         <li class="slide">
             <a class="side-menu__item" href="{{route('architecture.index')}}">
                 <i class="fe fe-codepen side-menu__icon"></i>
-                <span class="side-menu__label">الأبنية</span>
+                <span class="side-menu__label">التصميم المعماري</span>
             </a>
         </li>
 
         <li class="slide">
             <a class="side-menu__item" href="{{route('categories_arch.index')}}">
                 <i class="fe fe-codepen side-menu__icon"></i>
-                <span class="side-menu__label">فئة الأبنية</span>
+                <span class="side-menu__label">فئات التصميم المعماري</span>
             </a>
         </li>
 
         <li class="slide">
             <a class="side-menu__item" href="{{route('about_archs.index')}}">
                 <i class="fe fe-codepen side-menu__icon"></i>
-                <span class="side-menu__label">ماذا عن الأبنية</span>
+                <span class="side-menu__label">معلومات عن التصميم المعماري</span>
             </a>
         </li>
 

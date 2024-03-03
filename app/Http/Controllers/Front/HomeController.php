@@ -9,12 +9,15 @@ use App\Models\Benefits;
 use App\Models\Category;
 use App\Models\Certificate;
 use App\Models\Faqs;
+use App\Models\News;
 use App\Models\NewsLetter;
 use App\Models\PartnerSuccess;
 use App\Models\Product;
 use App\Models\Slider;
 use App\Models\Service;
 use App\Models\SubCategory;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class HomeController extends Controller
 {
@@ -27,7 +30,18 @@ class HomeController extends Controller
         $data['certificates'] = Certificate::all();
         $data['partners_success'] = PartnerSuccess::all();
         $data['setting'] = About::first();
+        $data['news'] = $this->getAllNewsLatest();
         return view('site.index', compact('data'));
+    }
+
+    private function getAllNewsLatest()
+    {
+        try {
+            return News::latest()->get();
+        } catch (\Exception $e) {
+            Log::error('Error retrieving latest News: ' . $e->getMessage());
+            return null;
+        }
     }
 
     public function storeNews(NewsStore $request)

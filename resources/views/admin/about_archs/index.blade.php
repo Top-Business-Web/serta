@@ -1,10 +1,10 @@
 @extends('admin/layouts/master')
 
 @section('title')
-    | معلومات الأبنية
+    | معلومات التصميم المعماري
 @endsection
 @section('page_name')
-    معلومات الأبنية
+    معلومات التصميم المعماري
 @endsection
 @section('content')
 
@@ -16,7 +16,7 @@
             <div class="col-12">
                 <div class="card" style="padding: 13px">
                     <div class="card-header">
-                        <h3 class="card-title">قائمة معلومات عنا </h3>
+                        <h3 class="card-title">قائمة التصميم المعماري </h3>
                     </div>
                     <!-- Start Row -->
                     <div class="row">
