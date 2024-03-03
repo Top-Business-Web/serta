@@ -33,9 +33,10 @@
                                         <p class="highlight mb-5">
                                             {{ app()->getLocale() == 'ar' ? $aboutArch->description_ar : $aboutArch->description_en }}
                                         </p>
-                                        <button class="main-btn bg-brown mb-3">
-                                            Design Profile
-                                        </button>
+                                        {{-- <button class="main-btn bg-brown mb-3">
+                                            <a href="{{ route('pdf') }}">Design Profile</a>
+                                        </button> --}}
+                                        <button class="main-btn bg-brown mb-3" onclick="profDownload('{{ asset($aboutArch->pdf) }}', 'Design Profile')">Design Profile</button>
                                     </div>
                                 </div>
                             </div>
@@ -185,5 +186,11 @@
                 });
             });
         });
+
+    function profDownload() {
+        var link = window.open('{{ asset($aboutArch->pdf) }}', '_blank');
+        link.download = 'profile Company.pdf'
+    }
+
     </script>
 @endsection

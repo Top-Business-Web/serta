@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AboutArchController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Front\{
     HomeController,
@@ -81,10 +82,6 @@ Route::group(
 
         ### Partner Success ####
         Route::get('/partner-success', [PartnerSuccessController::class, 'index'])->name('partnerSuccess');
-
-        ### News Routes ####
-        Route::get('/news', [NewController::class, 'news'])->name('newsIndex');
-        Route::get('/news-details/{id}', [NewController::class, 'details'])->name('newsDetails');
 
         ### Architecture Routes ####
         Route::get('/architecture', [ArchController::class, 'index'])->name('architecture.index.front');

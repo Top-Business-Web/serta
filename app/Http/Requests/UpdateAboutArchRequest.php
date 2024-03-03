@@ -26,8 +26,8 @@ class UpdateAboutArchRequest extends FormRequest
         return [
             'title_ar' => 'required',
             'title_en' => 'required',
-            'image' => 'required|image',
-            'pdf' => 'required|file',
+            'image' => 'sometimes|image',
+            'pdf' => 'sometimes|file',
         ];
     }
 
