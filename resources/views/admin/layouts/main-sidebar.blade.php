@@ -80,6 +80,13 @@
         </li>
 
         <li class="slide">
+            <a class="side-menu__item" href="{{route('arch_requests.index')}}">
+                <i class="fe fe-codepen side-menu__icon"></i>
+                <span class="side-menu__label"> رسائل التصميم المعماري</span>
+            </a>
+        </li>
+
+        <li class="slide">
             <a class="side-menu__item" href="{{route('news.index')}}">
                 <i class="fe fe-codepen side-menu__icon"></i>
                 <span class="side-menu__label">الأخبار</span>

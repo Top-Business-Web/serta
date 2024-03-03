@@ -36,7 +36,9 @@
                                         {{-- <button class="main-btn bg-brown mb-3">
                                             <a href="{{ route('pdf') }}">Design Profile</a>
                                         </button> --}}
-                                        <button class="main-btn bg-brown mb-3" onclick="profDownload('{{ asset($aboutArch->pdf) }}', 'Design Profile')">Design Profile</button>
+                                        <button class="main-btn bg-brown mb-3"
+                                            onclick="profDownload('{{ asset($aboutArch->pdf) }}', 'Design Profile')">Design
+                                            Profile</button>
                                     </div>
                                 </div>
                             </div>
@@ -96,101 +98,158 @@
                         @endforeach
                     </div>
                 </div>
-        </div>
-            <div class="section-career mb-5 pb-5">
-        <form class="careerForm">
-            <div class="container">
-            <div class="section-title">
-                <h2 class="fs-2">{{ app()->getLocale() == 'ar' ? 'بيانات فورم التصميم المعمارى' : 'Architectural model data' }}</h2>
             </div>
-                <div class="d-flex justify-content-center align-items-center mt-5">
-                    <div class="information-cv d-flex justify-content-center align-items-center flex-column">
-                        <section class="uploaded-area"></section>
-                        <div class="row form-contact mt-5">
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <input type="text" class="w-100 p-3" placeholder=" {{ trans('site.name') }}"
-                                       required>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <input type="email" class="w-100 p-3"
-                                       placeholder=" {{ trans('site.adjective') }}" required>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <input type="email" class="w-100 p-3"
-                                       placeholder=" {{ trans('site.email') }}" required>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <input type="text" class="w-100 p-3"
-                                       placeholder=" {{ trans('site.phone') }}" required>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <input type="email" class="w-100 p-3"
-                                       placeholder=" {{ trans('site.loca') }}" required>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <input type="email" class="w-100 p-3"
-                                       placeholder=" {{ trans('site.cate') }}" required>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <input type="email" class="w-100 p-3"
-                                       placeholder=" {{ trans('site.space') }}" required>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <input type="number" class="w-100 p-3"
-                                       placeholder=" {{ trans('site.dimensions') }}" required>
-                            </div>
-                            <div class="col-12 mt-2 d-flex justify-content-center">
-                                <button type="submit" class="main-btn primary mt-2" id="career-btn"
-                                        style="border-radius: 10px;">{{ trans('site.send') }}
-                                </button>
-                            </div>
-                            <div class="col-12">
-                                <div class="contact-result load-contact">
+            <div class="section-career mb-5 pb-5">
+                <form class="careerForm" id="careerForm">
+                    @csrf
+                    <div class="container">
+                        <div class="section-title">
+                            <h2 class="fs-2">
+                                {{ app()->getLocale() == 'ar' ? 'بيانات فورم التصميم المعمارى' : 'Architectural model data' }}
+                            </h2>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-5">
+                            <div class="information-cv d-flex justify-content-center align-items-center flex-column">
+                                <section class="uploaded-area"></section>
+                                <div class="row form-contact mt-5">
+                                    <div class="col-md-6 col-sm-12 mb-4">
+                                        <input type="text" class="w-100 p-3" placeholder=" {{ trans('site.name') }}"
+                                            required name="name">
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 mb-4">
+                                        <input type="text" class="w-100 p-3"
+                                            placeholder=" {{ trans('site.adjective') }}" name="adjective" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 mb-4">
+                                        <input type="email" class="w-100 p-3" placeholder="{{ trans('site.email') }}"
+                                            name="email" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 mb-4">
+                                        <input type="text" class="w-100 p-3" placeholder="{{ trans('site.phone') }}"
+                                            name="phone" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 mb-4">
+                                        <input type="text" class="w-100 p-3" name="location"
+                                            placeholder=" {{ trans('site.loca') }}" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 mb-4">
+                                        <input type="text" class="w-100 p-3" name="category"
+                                            placeholder=" {{ trans('site.cate') }}" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 mb-4">
+                                        <input type="text" class="w-100 p-3" name="space"
+                                            placeholder=" {{ trans('site.space') }}" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 mb-4">
+                                        <input type="text" class="w-100 p-3" name="dimensions"
+                                            placeholder=" {{ trans('site.dimensions') }}" required>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <input type="text" class="w-100 p-3" name="subject"
+                                            placeholder=" {{ trans('site.subject') }}" required>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <textarea name="message" placeholder="{{ trans('site.write_a_message') }}"></textarea>
+                                    </div>
+
+                                    <div class="col-12 mt-2 d-flex justify-content-center">
+                                        <button type="submit" class="main-btn primary mt-2" id="career-btn"
+                                            style="border-radius: 10px;">{{ trans('site.send') }}
+                                        </button>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="contact-result load-contact">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                </div>
-
+                </form>
             </div>
-        </form>
-    </div>
-    <!--content -->
+            <!--content -->
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.filter-a').on('click', function(event) {
-                event.preventDefault();
-                $('.filter-a').removeClass('active-filter');
-                $(this).addClass('active-filter');
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('.filter-a').on('click', function(event) {
+                        event.preventDefault();
+                        $('.filter-a').removeClass('active-filter');
+                        $(this).addClass('active-filter');
 
-                var categoryId = $(this).data('filter');
+                        var categoryId = $(this).data('filter');
 
-                $.ajax({
-                    url: '{{ route('architecture-search') }}',
-                    method: 'GET',
-                    data: {
-                        categoryId: categoryId
-                    },
-                    beforeSend: function(data) {
-                        $('.productSearch').html('loading...');
-                    },
-                    success: function(data) {
-                        $('.productSearch').html(data);
-                    },
-                    error: function(data) {
-                        $('.productSearch').html(
-                            '<h2 class="error">{{ app()->getLocale() == 'ar' ? 'لا يوجد مشاريع' : 'NO PROJECTS FOUND' }}</h2>'
-                        );
-                    }
+                        $.ajax({
+                            url: '{{ route('architecture-search') }}',
+                            method: 'GET',
+                            data: {
+                                categoryId: categoryId
+                            },
+                            beforeSend: function(data) {
+                                $('.productSearch').html('loading...');
+                            },
+                            success: function(data) {
+                                $('.productSearch').html(data);
+                            },
+                            error: function(data) {
+                                $('.productSearch').html(
+                                    '<h2 class="error">{{ app()->getLocale() == 'ar' ? 'لا يوجد مشاريع' : 'NO PROJECTS FOUND' }}</h2>'
+                                );
+                            }
+                        });
+                    });
                 });
-            });
-        });
 
-    function profDownload() {
-        var link = window.open('{{ asset($aboutArch->pdf) }}', '_blank');
-        link.download = 'profile Company.pdf'
-    }
+                function profDownload() {
+                    var link = window.open('{{ asset($aboutArch->pdf) }}', '_blank');
+                    link.download = 'profile Company.pdf'
+                }
 
-    </script>
-@endsection
+                $('#career-btn').on('click', function(e) {
+                    e.preventDefault();
+                    var formData = new FormData(document.getElementById("careerForm"));
+                    $.ajax({
+                        'method': 'post',
+                        'type': 'POST',
+                        'data': formData,
+                        '_token': "{{ csrf_token() }}",
+                        'url': "{{ route('architecture.store.request') }}",
+                        beforeSend: function(formData) {
+                            $('#career-btn').html('Loading ... ');
+                        },
+                        success: function(data) {
+                            if (data.status === 200) {
+                                toastr.success('سنتواصل معك في اقرب وقت');
+                                $('#quoteForm input').val('');
+                                $('#career-btn').html('سنتواصل معك في اقرب وقت');
+                                $('.divSuccess').removeClass('d-none').html('سنتواصل معك في اقرب وقت')
+                                $('#career-btn').prop('disabled', true);
+                                setTimeout(function() {
+                                    window.location.href = '{{ route('architecture.index.front') }}';
+                                }, 3000)
+                            }
+                        },
+                        error: function(data) {
+                            if (data.status === 500) {
+                                toastr.error('error sending message !!');
+                            } else if (data.status === 422) {
+                                var errors = $.parseJSON(data.responseText);
+                                $.each(errors, function(key, value) {
+                                    // alert(value);
+                                    if ($.isPlainObject(value)) {
+                                        $.each(value, function(key, value) {
+                                            toastr.error('' + value);
+                                            // alert(value);
+                                        });
+                                    }
+                                });
+                                $('#career-btn').html('error');
+                            }
+                        },
+                        cache: false,
+                        processData: false,
+                        contentType: false
+                    })
+                })
+            </script>
+        @endsection

@@ -39,6 +39,9 @@ Route::group(['prefix'=>'admin','middleware'=>'auth:admin'],function (){
     #### Career ####
     Route::resource('careers','CareerController');
 
+    #### Arch Request ####
+    Route::resource('arch_requests','ArchController');
+
     #### Category ####
     Route::resource('categories','CategoryController');
 
