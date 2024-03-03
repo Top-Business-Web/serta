@@ -145,7 +145,7 @@
     <div class="container">
         <div class="section-title">
             <!-- <h6 class="">Certification</h6> -->
-            <h2>@lang('site.certification')</h2>
+            <h2>{{ trans(('site.certification')) }}</h2>
         </div>
         <div class="row">
             <div class="col-lg-6 col-12">
