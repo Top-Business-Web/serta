@@ -102,6 +102,17 @@
                                         <a class="nav-link {{ $name_url == 'architecture.index.front' ? 'active' : '' }}"
                                             href="{{ route('architecture.index.front') }}">{{ trans('site.architecture') }}</a>
                                     </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link {{ $name_url == 'news.index.front' ? 'active' : '' }}"
+                                            href="{{ route('news.index.front') }}">{{ trans('site.news') }}</a>
+                                    </li>
+
+
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link {{ $name_url == 'team-work' ? 'active' : '' }}" href="{{ route('teamWork') }}">{{ trans('site.team_work') }}</a>
+                                    </li> -->
+
                                     <li class="nav-item">
                                         <a class="nav-link {{ $name_url == 'partner-success' ? 'active' : '' }}"
                                             href="{{ route('partnerSuccess') }}">{{ trans('site.partner_success') }}</a>

@@ -27,6 +27,9 @@ Route::group(['prefix'=>'admin','middleware'=>'auth:admin'],function (){
     #### Post ####
     Route::resource('post','PostController');
 
+    #### Post ####
+    Route::resource('news','NewsController');
+
     #### Product ####
     Route::resource('product','ProductController');
     
