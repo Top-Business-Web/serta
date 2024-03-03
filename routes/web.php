@@ -12,6 +12,7 @@ use App\Http\Controllers\Front\{
     ContactController,
     FaqsController,
     NewController,
+    NewsController,
     ProductController,
     QuoteController,
     ServiceController
@@ -89,5 +90,9 @@ Route::group(
         Route::get('/architecture', [ArchController::class, 'index'])->name('architecture.index.front');
         Route::get('/arch-details/{id}', [ArchController::class, 'details'])->name('architecture.details');
         Route::get('/architectureSearch/', [ArchController::class, 'architectureSearch'])->name('architecture-search');
+
+        ### News Routes ####
+        Route::get('/news', [NewsController::class, 'index'])->name('news.index.front');
+        Route::get('/news-details/{id}', [NewsController::class, 'details'])->name('news.details');
     }
 );
