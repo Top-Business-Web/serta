@@ -8,6 +8,7 @@
         "php": "^7.3|^8.2",
         "ext-fileinfo": "*",
         "a6digital/laravel-default-profile-image": "^2.0",
+        "barryvdh/laravel-dompdf": "^2.0",
         "beyondcode/laravel-websockets": "^1.13",
         "buglinjo/laravel-webp": "^2.3",
         "convertio/convertio-php": "^0.4.0",
