@@ -78,7 +78,7 @@
                         <img src="{{ asset('assets/front') }}/assets/img/sector.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">@lang('site.sector')</p>
-                    <h6 class="text-center">{{ trans('site.architectural') }}</h6>
+                    <h6 class="text-center">{{ trans('site.design') }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
