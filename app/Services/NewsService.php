@@ -31,7 +31,7 @@ class NewsService
     public function getAllNewsLatest($id)
     {
         try {
-            return News::latest()->where('id', '!=', $id)->get();
+            return News::where('id', '!=', $id)->latest()->limit(3)->get();
         } catch (\Exception $e) {
             Log::error('Error retrieving latest News: ' . $e->getMessage());
             return null;
