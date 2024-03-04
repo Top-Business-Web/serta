@@ -44,7 +44,7 @@
                         <div class="sidebar_single sidebar_search">
                         </div>
                         <div class="sidebar_single sidebar_post">
-                            <h3 class="sidebar_title">Latest News</h3>
+                            <h3 class="sidebar_title">{{ trans('site.latest_news') }}</h3>
                             <ul class="sidebar_post-list list-unstyled">
                                 @foreach ($latestNews as $latestNew)
                                     <li>

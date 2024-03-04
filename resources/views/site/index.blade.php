@@ -207,7 +207,7 @@
 <div class="service-area serv-bg mb-5">
         <div class="container">
             <div class="section-title">
-                <h2>{{ app()->getLocale() == 'ar' ? ' الاخبار' : ' News' }}</h2>
+                <h2>{{ app()->getLocale() == 'ar' ? ' أحدث الأخبار' : ' Latest News' }}</h2>
             </div>
             <div class="row">
                 @foreach ($data['news'] as $new)

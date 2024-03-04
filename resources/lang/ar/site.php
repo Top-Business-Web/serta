@@ -200,7 +200,9 @@ return [
     'loca' => 'الموقع',
     'cate' => 'الفئة',
     'space' => 'المساحة',
-    'dimensions' => 'الأبعاد'
+    'dimensions' => 'الأبعاد',
+    'latest_news' => 'أحدث الأخبار',
+    'design_profile' => 'ملف التصميم'
 
 
 ];
