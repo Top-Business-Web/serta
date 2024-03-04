@@ -201,6 +201,8 @@ return [
     'loca' => 'Location',
     'cate' => 'Category',
     'space' => 'Space',
-    'dimensions' => 'Dimensions'
+    'dimensions' => 'Dimensions',
+    'latest_news' => 'Latest News',
+    'design_profile' => 'Design profile'
 
 ];
