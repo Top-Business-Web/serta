@@ -16,6 +16,7 @@ return [
     'required' => 'Field Required',
     'error' => 'sorry invalid',
     'serta_united' => 'Serta United',
+    'design' => 'Design',
 
     #### Home
     'learn_more' => 'learn more',

@@ -200,7 +200,8 @@ return [
     'loca' => 'الموقع',
     'cate' => 'الفئة',
     'space' => 'المساحة',
-    'dimensions' => 'الأبعاد'
+    'dimensions' => 'الأبعاد',
+    'design' => 'تصميم',
 
 
 ];

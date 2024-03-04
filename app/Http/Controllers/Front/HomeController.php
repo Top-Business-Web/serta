@@ -30,14 +30,14 @@ class HomeController extends Controller
         $data['certificates'] = Certificate::all();
         $data['partners_success'] = PartnerSuccess::all();
         $data['setting'] = About::first();
-        $data['news'] = $this->getAllNewsLatest();
+        $data['news'] = $this->getNewsLatest();
         return view('site.index', compact('data'));
     }
 
-    private function getAllNewsLatest()
+    private function getNewsLatest()
     {
         try {
-            return News::latest()->get();
+            return News::latest()->limit(3)->get();
         } catch (\Exception $e) {
             Log::error('Error retrieving latest News: ' . $e->getMessage());
             return null;
