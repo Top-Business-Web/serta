@@ -102,10 +102,21 @@
                 <form class="careerForm" id="careerForm">
                     @csrf
                     <div class="container">
-                        <div class="section-title">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                            <div class="section-title d-flex justify-content-between">
                             <h2 class="fs-2">
                                 {{ app()->getLocale() == 'ar' ? 'بيانات فورم التصميم المعمارى' : 'Architectural model data' }}
                             </h2>
+                        </div>
+                            </div>
+                            <div class="col-md-6 col-12 d-flex justify-content-end align-items-center">
+                            <div>
+                            <button type="button" class="main-btn bg-brown" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            {{ trans('site.guide') }}
+                            </button>
+                            </div>
+                            </div>
                         </div>
                         <div class="d-flex justify-content-center align-items-center mt-5">
                             <div class="information-cv d-flex justify-content-center align-items-center flex-column">
@@ -167,6 +178,22 @@
                     </div>
                 </form>
             </div>
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{{ trans('site.guide_title') }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <img src="{{ asset('assets/front/') }}/assets/img/1.png">
+      </div>
+    </div>
+  </div>
+</div>
+
             <!--content -->
 
             <script type="text/javascript">

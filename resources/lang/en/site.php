@@ -203,6 +203,8 @@ return [
     'space' => 'Space',
     'dimensions' => 'Dimensions',
     'latest_news' => 'Latest News',
-    'design_profile' => 'Design profile'
+    'design_profile' => 'Design profile',
+    'guide' => 'Guide',
+    'guide_title' => 'Real estate guide'
 
 ];
