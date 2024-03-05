@@ -26,7 +26,7 @@ class UpdateNewsRequest extends FormRequest
         return [
             'title_ar' => 'required',
             'title_en' => 'required',
-            'image' => 'sometimes|image'
+            'files' => 'sometimes|array'
         ];
     }
 
@@ -35,7 +35,6 @@ class UpdateNewsRequest extends FormRequest
         return [
             'title_ar.required' => 'العنوان بالعربي مطلوب',
             'title_en.required' => 'العنوان بالانكليزي مطلوب',
-            'image.image' => 'يجب ان تكون صورة',
         ];
     }
 }

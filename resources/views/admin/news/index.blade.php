@@ -91,7 +91,7 @@
     <script>
         var columns = [
             {data: 'id', name: 'id'},
-            {data: 'image', name: 'image'},
+            {data: 'images', name: 'images'},
             {data: 'title_ar', name: 'title_ar'},
             {data: 'desc_ar', name: 'desc_ar'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
