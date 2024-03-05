@@ -202,8 +202,8 @@ return [
     'space' => 'المساحة',
     'dimensions' => 'الأبعاد',
     'latest_news' => 'أحدث الأخبار',
-    'design_profile' => 'ملف التصميم'
-    'design' => 'تصميم',
+    'design_profile' => 'ملف التصميم',
+    'design' => 'تصميم'
 
 
 ];
