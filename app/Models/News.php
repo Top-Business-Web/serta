@@ -14,8 +14,13 @@ class News extends Model
     protected $fillable = [
         'title_ar',
         'title_en',
-        'image',
+        'images',
         'desc_ar',
         'desc_en',
+    ];
+
+
+    protected $casts = [
+        'images' => 'array',
     ];
 }

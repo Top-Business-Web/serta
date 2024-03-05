@@ -22,23 +22,25 @@
             <div class="row">
                 <div class="col-xl-8 col-lg-7">
                     <div class="blog-details_left">
-                    <div class="main-slider">
-                    <div class="blog-details_img">
+                        <div class="main-slider">
+                            @foreach ($news->images as $image)
+                                <div class="blog-details_img">
+                                    <img src="{{ asset($image) }}" alt=""
+                                        style="height: 500px;">
+                                </div>
+                            @endforeach
+                            {{-- <div class="blog-details_img">
                             <img src="{{ asset('assets/admin/sliders/images/' . $news->image) }}" alt=""
                                 style="height: 500px;">
                         </div>
                         <div class="blog-details_img">
                             <img src="{{ asset('assets/admin/sliders/images/' . $news->image) }}" alt=""
                                 style="height: 500px;">
+                        </div> --}}
                         </div>
-                        <div class="blog-details_img">
-                            <img src="{{ asset('assets/admin/sliders/images/' . $news->image) }}" alt=""
-                                style="height: 500px;">
-                        </div>
-                    </div>
                         <div class="blog-details_date-box">
-                                <p>{{ $news->created_at->format('d, F') }}</p>
-                            </div>
+                            <p>{{ $news->created_at->format('d, F') }}</p>
+                        </div>
                         <div class="blog-details_content">
                             <h3 class="blog-details_title">
                                 {{ app()->getLocale() == 'ar' ? $news->title_ar : $news->title_en }}</h3>
@@ -64,7 +66,8 @@
                                         </div>
                                         <div class="sidebar_post-content">
                                             <h3>
-                                                <a href="{{ route('news.details', $latestNew->id) }}">{{ app()->getLocale() == 'ar' ? $latestNew->title_ar : $latestNew->title_en }}</a>
+                                                <a
+                                                    href="{{ route('news.details', $latestNew->id) }}">{{ app()->getLocale() == 'ar' ? $latestNew->title_ar : $latestNew->title_en }}</a>
                                             </h3>
                                         </div>
                                     </li>

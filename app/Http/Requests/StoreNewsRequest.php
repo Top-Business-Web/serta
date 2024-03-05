@@ -26,7 +26,7 @@ class StoreNewsRequest extends FormRequest
         return [
             'title_ar' => 'required',
             'title_en' => 'required',
-            'image' => 'required|image'
+            'files' => 'required|array'
         ];
     }
 
@@ -35,8 +35,7 @@ class StoreNewsRequest extends FormRequest
         return [
             'title_ar.required' => 'العنوان بالعربي مطلوب',
             'title_en.required' => 'العنوان بالانكليزي مطلوب',
-            'image.required' => 'الصورة مطلوبة',
-            'image.image' => 'يجب ان تكون صورة',
+            'files.required' => 'الصورة مطلوبة',
         ];
     }
 }
