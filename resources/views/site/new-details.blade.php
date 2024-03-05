@@ -22,13 +22,23 @@
             <div class="row">
                 <div class="col-xl-8 col-lg-7">
                     <div class="blog-details_left">
+                    <div class="main-slider">
+                    <div class="blog-details_img">
+                            <img src="{{ asset('assets/admin/sliders/images/' . $news->image) }}" alt=""
+                                style="height: 500px;">
+                        </div>
                         <div class="blog-details_img">
                             <img src="{{ asset('assets/admin/sliders/images/' . $news->image) }}" alt=""
                                 style="height: 500px;">
-                            <div class="blog-details_date-box">
+                        </div>
+                        <div class="blog-details_img">
+                            <img src="{{ asset('assets/admin/sliders/images/' . $news->image) }}" alt=""
+                                style="height: 500px;">
+                        </div>
+                    </div>
+                        <div class="blog-details_date-box">
                                 <p>{{ $news->created_at->format('d, F') }}</p>
                             </div>
-                        </div>
                         <div class="blog-details_content">
                             <h3 class="blog-details_title">
                                 {{ app()->getLocale() == 'ar' ? $news->title_ar : $news->title_en }}</h3>

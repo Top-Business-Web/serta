@@ -4760,16 +4760,16 @@ p.privacy a:not(:last-of-type)::after {
 }
 
 .blog-details_date-box {
-  position: absolute;
+  /* position: absolute;
   left: 50px;
-  bottom: 0;
-  background-color: #C03627;
-  padding: 0 20px;
+  bottom: 0; */
+  /* background-color: #C03627; */
+  padding: 20px 0;
 }
 
 .blog-details_date-box p {
   font-size: 14px;
-  color: #fff;
+  /* color: #fff; */
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -4779,7 +4779,7 @@ p.privacy a:not(:last-of-type)::after {
 .blog-details_content {
   position: relative;
   display: block;
-  margin-top: 19px;
+  /* margin-top: 19px; */
 }
 
 .blog-details_meta {
@@ -5226,6 +5226,10 @@ p.privacy a:not(:last-of-type)::after {
 
 .sidebar_post-content {
   position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .sidebar_post-content h3 {

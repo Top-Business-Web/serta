@@ -203,7 +203,9 @@ return [
     'dimensions' => 'الأبعاد',
     'latest_news' => 'أحدث الأخبار',
     'design_profile' => 'ملف التصميم',
-    'design' => 'تصميم'
+    'design' => 'تصميم',
+    'guide' => 'دليل',
+    'guide_title' => 'دليل عقارى'
 
 
 ];
