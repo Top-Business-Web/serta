@@ -22,22 +22,16 @@
             <div class="row">
                 <div class="col-12 col-lg">
                     <div class="blog-details_left">
-                        <div class="main-slider">
+                       <div class="d-flex justify-content-center">
+                       <div class="main-slider" style="width: 800px;">
                             @foreach ($news->images as $image)
                                 <div class="blog-details_img">
                                     <img src="{{ asset($image) }}" alt=""
-                                        style="height: 500px;">
+                                        style="height: 500px; width: 800px;">
                                 </div>
                             @endforeach
-                            {{-- <div class="blog-details_img">
-                            <img src="{{ asset('assets/admin/sliders/images/' . $news->image) }}" alt=""
-                                style="height: 500px;">
                         </div>
-                        <div class="blog-details_img">
-                            <img src="{{ asset('assets/admin/sliders/images/' . $news->image) }}" alt=""
-                                style="height: 500px;">
-                        </div> --}}
-                        </div>
+                       </div>
                         <div class="blog-details_date-box">
                             <p>{{ $news->created_at->format('d, F') }}</p>
                         </div>
