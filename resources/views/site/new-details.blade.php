@@ -57,7 +57,7 @@
                             <div class="services-two_img-box">
                                 <div class="services-two_img">
                                     <a href="{{ route('news.details', $latestNew->id) }}" class="w-100">
-                                        <img src="{{ asset('assets/admin/sliders/images/'.$latestNew->image) }}" alt="">
+                                        <img src="{{ asset($latestNew->images[0]) }}" alt="">
                                     </a>
                                 </div>
                             </div>
