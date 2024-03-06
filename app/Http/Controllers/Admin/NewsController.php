@@ -6,12 +6,15 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreNewsRequest;
 use App\Http\Requests\UpdateNewsRequest;
 use App\Models\News;
+use App\Traits\PhotoTrait;
 use Exception;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
 
 class NewsController extends Controller
 {
+    use PhotoTrait;
+
     public function index(request $request)
     {
         if ($request->ajax()) {
@@ -26,9 +29,9 @@ class NewsController extends Controller
                                 </button>
                            ';
                 })
-                ->editColumn('image', function ($news) {
+                ->editColumn('images', function ($news) {
                     return '
-                    <img alt="image" onclick="window.open(this.src)" class="avatar avatar-md rounded-circle" src="' . asset('assets/admin/sliders/images/' . $news->image) . '">
+                    <img alt="images" onclick="window.open(this.src)" class="avatar avatar-md rounded-circle" src="' . asset($news->images[0]) . '">
                     ';
                 })
                 ->escapeColumns([])
@@ -48,12 +51,10 @@ class NewsController extends Controller
         try {
             $inputs = $request->all();
 
-            if ($request->hasFile('image')) {
-                $file = $request->file('image');
-                $filename = $file->getClientOriginalName();
-
-                $file->move('assets/admin/sliders/images', $filename);
-                $inputs['image'] = $filename;
+            if ($request->has('files')) {
+                foreach ($request->file('files') as $file) {
+                    $inputs['images'][] = $this->saveImage($file, 'assets/uploads/news', 'photo');
+                }
             }
 
             if (News::create($inputs)) {
@@ -77,12 +78,10 @@ class NewsController extends Controller
             $news = News::findOrFail($id);
             $inputs = $request->all();
 
-            if ($request->hasFile('image')) {
-                $file = $request->file('image');
-                $filename = $file->getClientOriginalName();
-
-                $file->move('assets/admin/sliders/images', $filename);
-                $inputs['image'] = $filename;
+            if ($request->has('files')) {
+                foreach ($request->file('files') as $file) {
+                    $inputs['images'][] = $this->saveImage($file, 'assets/uploads/news', 'photo');
+                }
             }
 
             if ($news->update($inputs)) {

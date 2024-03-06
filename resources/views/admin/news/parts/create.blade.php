@@ -5,7 +5,7 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label for="name" class="form-control-label">الصورة</label>
-                    <input type="file" class="dropify" name="image" multiple="multiple"
+                    <input type="file" class="dropify" name="files[]" multiple="multiple"
                         data-default-file="{{ asset('assets/uploads/post.png') }}"
                         accept="image/png,image/webp , image/gif, image/jpeg,image/jpg" />
                     <span class="form-text text-danger text-center">مسموح فقط بالصيغ التالية : png, gif, jpeg,
