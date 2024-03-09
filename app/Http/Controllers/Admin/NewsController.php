@@ -57,6 +57,10 @@ class NewsController extends Controller
                 }
             }
 
+            if($request->has('main_image')){
+                $inputs['main_image'] = $this->saveImage($request->main_image,'assets/uploads/main_image', 'photo');
+            }
+
             if (News::create($inputs)) {
                 return response()->json(['status' => 200]);
             } else {
@@ -82,6 +86,10 @@ class NewsController extends Controller
                 foreach ($request->file('files') as $file) {
                     $inputs['images'][] = $this->saveImage($file, 'assets/uploads/news', 'photo');
                 }
+            }
+
+            if($request->has('main_image')){
+                $inputs['main_image'] = $this->saveImage($request->main_image,'assets/uploads/main_image', 'photo');
             }
 
             if ($news->update($inputs)) {

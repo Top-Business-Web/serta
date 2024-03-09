@@ -24,6 +24,10 @@
                     <div class="blog-details_left">
                        <div class="d-flex justify-content-center">
                        <div class="main-slider" style="width: 800px;">
+                       <div class="blog-details_img">
+                                    <img src="{{ asset($news->main_image) }}" alt=""
+                                        style="height: 500px; width: 800px;">
+                                </div>
                             @foreach ($news->images as $image)
                                 <div class="blog-details_img">
                                     <img src="{{ asset($image) }}" alt=""
