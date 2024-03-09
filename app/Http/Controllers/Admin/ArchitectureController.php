@@ -37,9 +37,9 @@ class ArchitectureController extends Controller
                     return $architectures->categoryArch->title_ar;
                 })
                 ->editColumn('sector', function ($architectures) {
-                    if ($architectures->sector->value == 'public')
+                    if ($architectures->sector == 'public')
                         return 'عام';
-                    elseif($architectures->sector->value == 'private')
+                    elseif($architectures->sector == 'private')
                         return 'خاص';
                 })
                 ->editColumn('status', function ($architectures) {

@@ -186,7 +186,7 @@ return [
     // aya
 
     'project_mangement' => 'Projects Mangement',
-    'content_mangement' => 'We strive perfection in everything we do . We take the best that exist and make it better . When it does not exist , we design it ',
+    'content_mangement' => 'Suratah United Contracting translates the dream into reality. We strive to achieve perfection in everything we do',
     'client' => 'Client',
     'location' => 'LOCATION',
     'industry' => 'INDUSTRY',
@@ -204,7 +204,8 @@ return [
     'dimensions' => 'Dimensions',
     'latest_news' => 'Latest News',
     'design_profile' => 'Design profile',
-    'guide' => 'Guide',
-    'guide_title' => 'Real estate guide'
+    'guide_design' => 'Guide Design',
+    'guide_title' => 'Real estate guide',
+    'sertah_group' => 'Sertah Group',
 
 ];

@@ -74,7 +74,7 @@
                         <img src="{{ asset('assets/front') }}/assets/img/industry.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">@lang('site.industry')</p>
-                    <h6 class="text-center">{{ $data['product']->sector->value }}</h6>
+                    <h6 class="text-center">{{ $data['product']->sector == 'public' ? (app()->getLocale() == 'ar' ? 'عام' : 'Public') : (app()->getLocale() == 'ar' ? 'خاص' : 'Private') }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">
@@ -95,7 +95,7 @@
                         <img src="{{ asset('assets/front') }}/assets/img/progress.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">@lang('site.status')</p>
-                    <h6 class="text-center">{{ $data['product']->status == 0 ? 'Complete' : 'On Going' }}</h6>
+                    <h6 class="text-center"> {{ $data['product']->status == 0 ? (app()->getLocale() == 'ar' ? 'مكتمل' : 'Complete') : (app()->getLocale() == 'ar' ? 'قيد التنفيذ' : 'On Going') }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">

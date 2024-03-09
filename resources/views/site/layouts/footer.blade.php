@@ -8,7 +8,7 @@
                     <!-- <div class="logo">
                         <img src="{{ asset('assets/front') }}/assets/img/white png logo.png" alt="no-logo"/>
                     </div> -->
-                    <h6>Sertah Group</h6>
+                    <h6>{{ trans('site.sertah_group') }}</h6>
                     <div class="contact-info">
                         <p><b>{{ trans('site.location') }}
                                 :</b> {{ app()->getLocale() == 'ar' ? $setting->address_ar : $setting->address_en }}</p>
