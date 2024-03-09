@@ -31,7 +31,7 @@
                                 <div class="col-12 col-lg-12">
                                     <div class="about-content-left">
                                         <p class="highlight mb-5">
-                                            {{ app()->getLocale() == 'ar' ? $aboutArch->description_ar : $aboutArch->description_en }}
+                                            {{ app()->getLocale() == 'ar' ? $aboutArch->description_ar   : $aboutArch->description_en }}
                                         </p>
                                         {{-- <button class="main-btn bg-brown mb-3">
                                             <a href="{{ route('pdf') }}">{{ trans('site.design_profile') }}</a>

@@ -23,7 +23,7 @@ class ArchController extends Controller
     {
         $architectures = $this->archService->getAllArchitectures();
         $categoryArchs = $this->archService->getAllCategoryArch();
-        $aboutArch = $this->archService->getAboutArch();
+        $aboutArch = $this->archService->getAboutArch();    
 
         return view('site.architecture', compact('architectures', 'categoryArchs', 'aboutArch'));
     }
