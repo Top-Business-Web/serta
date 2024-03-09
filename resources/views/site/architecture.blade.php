@@ -106,14 +106,14 @@
                             <div class="col-md-6 col-12">
                             <div class="section-title d-flex justify-content-between">
                             <h2 class="fs-2">
-                                {{ app()->getLocale() == 'ar' ? 'بيانات فورم التصميم المعمارى' : 'Architectural model data' }}
+                                {{ app()->getLocale() == 'ar' ? 'بيانات التصميم المعمارى' : 'Architectural model data' }}
                             </h2>
                         </div>
                             </div>
                             <div class="col-md-6 col-12 d-flex justify-content-end align-items-center">
                             <div>
                             <button type="button" class="main-btn bg-brown" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            {{ trans('site.guide') }}
+                            {{ trans('site.guide_design') }}
                             </button>
                             </div>
                             </div>

@@ -215,7 +215,7 @@
                         style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
                         <div class="services-two_single card-news">
                             <div class="services-two_img-box">
-                                @foreac
+                                {{-- @foreach --}}
                                 <div class="services-two_img">
                                     <a href="{{ route('news.details', $new->id) }}" class="w-100">
                                         <img src="{{ asset($new->images[0]) }}" alt="">
