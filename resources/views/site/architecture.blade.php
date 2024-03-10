@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="about-img">
+                    <div class="about-img" style="margin-top: 80px;">
                         <img src="{{ asset($aboutArch->image) }}" alt="">
                     </div>
                 </div>
