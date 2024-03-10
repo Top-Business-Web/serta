@@ -40,7 +40,6 @@
                         </div>
                         <div>
                             <p style="margin-bottom: 0;">{{ app()->getLocale() == 'ar' ? 'العميل' : 'CLIENT' }}</p>
-                            <h6>{{ $architecture->title_en }}</h6>
                             <h6>{{ app()->getLocale() == 'ar' ? $architecture->customer_ar: $architecture->customer_en }}</h6>
                         </div>
                     </div>
