@@ -44,7 +44,7 @@
                         <img src="{{ asset('assets/front') }}/assets/img/hand.png" style="width: 65px; height:65px;">
                         </div>
                         <div>
-                        <p style="margin-bottom: 0;">@lang('site.client')</p>
+                        <p style="margin-bottom: 0;">{{ app()->getLocale() == 'ar' ? 'العميل' : 'CLIENT' }}</p>
                         <h6>{{ app()->getLocale() == 'ar' ? $data['product']->customer_ar  : $data['product']->customer_en  }}</h6>
                         </div>
                     </div>

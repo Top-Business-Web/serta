@@ -39,8 +39,9 @@
                             <img src="{{ asset('assets/front') }}/assets/img/hand.png" style="width: 65px; height:65px;">
                         </div>
                         <div>
-                            <p style="margin-bottom: 0;">{{ $architecture->title_ar }}</p>
+                            <p style="margin-bottom: 0;">{{ app()->getLocale() == 'ar' ? 'العميل' : 'CLIENT' }}</p>
                             <h6>{{ $architecture->title_en }}</h6>
+                            <h6>{{ app()->getLocale() == 'ar' ? $architecture->customer_ar: $architecture->customer_en }}</h6>
                         </div>
                     </div>
                     <div class="title">
