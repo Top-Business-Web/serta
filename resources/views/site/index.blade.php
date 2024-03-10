@@ -83,7 +83,11 @@
         <div class="row">
             <div class="col-lg-8 col-12">
                 <div class="pen wow bounceInDown" data-wow-duration="2s" data-wow-offset="100">
+                    @if(app()->getLocale() == 'ar')
                     <img src="{{ asset('assets/front/') }}/assets/img/pen2.png">
+                    @else
+                    <img src="{{ asset('assets/front/') }}/assets/img/serta5.jpg">
+                    @endif
                 </div>
                 <div class="mobile wow zoomIn" data-wow-duration="2s" data-wow-offset="100">
                     <img src="{{ asset('assets/front/') }}/assets/img/tablet.png">
