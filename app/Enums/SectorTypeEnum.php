@@ -1,10 +1,6 @@
 <?php
-
-namespace App\Enums;
-
-enum SectorTypeEnum: string
-{
-    case PUBLIC = 'public';
-
-    case PRIVATE = 'private';
+class SectorTypeEnum {
+    const PRIVATE = 'private';
+    const PUBLIC = 'public';
 }
+?>

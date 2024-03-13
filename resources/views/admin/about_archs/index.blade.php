@@ -60,13 +60,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="desc_ar">الوصف بالعربي :</label>
-                                <textarea name="desc_ar" rows="8" class="form-control">{{ $about_arch->description_ar }}</textarea>
+                                <textarea name="description_ar" rows="8" class="form-control">{{ $about_arch->description_ar }}</textarea>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="desc_en">الوصف بالانجليزي :</label>
-                                <textarea name="desc_en" rows="8" class="form-control">{{ $about_arch->description_ar }}</textarea>
+                                <textarea name="description_en" rows="8" class="form-control">{{ $about_arch->description_en }}</textarea>
                             </div>
                         </div>
                     </div>
