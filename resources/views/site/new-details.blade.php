@@ -37,7 +37,7 @@
                                         style="height: 500px;">
                                 </div>
                             @endforeach
-                        </div>
+                        </div><!--- Aya -->
                        </div>
                         <div class="blog-details_date-box">
                             <p>{{ $news->created_at->format('d, F') }}</p>
