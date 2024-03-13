@@ -78,7 +78,7 @@
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-6 col-12">
-            <img src="{{ asset('assets/front') }}/assets/img/logo-footer.jpg" alt="no-logo" style="width: 300px; height: 76px;"/>
+            <img src="{{ asset('assets/front') }}/assets/img/logo-footer.jpg" alt="no-logo" style="max-width: 300px; height: 76px;"/>
             </div>
 
             <div class="col-lg-6 col-12 d-flex justify-content-center">

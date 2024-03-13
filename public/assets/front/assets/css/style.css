@@ -3829,7 +3829,7 @@ p.privacy a:not(:last-of-type)::after {
 }
 @media (max-width: 767px) {
   .breadcroumb-area .breadcroumb-title h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 
@@ -6530,4 +6530,43 @@ label.form-label {
     margin-top: 10px;
     margin-left: 20px;
     transition: all 0.5s ease;
+}
+.main-slider{
+    width: 800px;
+}
+.blog-details_img img{
+    width: 800px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .main-slider{
+        width: 700px;
+    }
+    .blog-details_img img{
+        width: 700px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .main-slider{
+        width: 500px;
+    }
+    .blog-details_img img{
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .main-slider{
+        width: 400px;
+    }
+    .blog-details_img img{
+        width: 400px;
+    }
+}
+@media (max-width: 575px) {
+    .main-slider{
+        width: 200px;
+    }
+    .blog-details_img img{
+        width: 200px;
+    }
 }
