@@ -76,17 +76,11 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                @php
-                    use App\Enums\SectorTypeEnum;
-                    $publicValue = SectorTypeEnum::PUBLIC;
-                    $privateValue = SectorTypeEnum::PRIVATE;
-                @endphp
-
                 <div class="form-group">
                     <label for="sector" class="form-control-label">القطاع</label>
                     <select class="form-control" name="sector">
-                        <option value="{{ $publicValue->value }}">عام</option>
-                        <option value="{{ $privateValue->value }}">خاص</option>
+                        <option value="public">عام</option>
+                        <option value="private">خاص</option>
                     </select>
                 </div>
 

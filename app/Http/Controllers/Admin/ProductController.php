@@ -37,9 +37,9 @@ class ProductController extends Controller
                     return $products->subCategory->title_ar;
                 })
                 ->editColumn('sector', function ($products) {
-                    if ($products->sector->value == 'public')
+                    if ($products->sector == 'public')
                         return 'عام';
-                    elseif($products->sector->value == 'private')
+                    elseif($products->sector == 'private')
                         return 'خاص';
                 })
                 ->editColumn('status', function ($products) {

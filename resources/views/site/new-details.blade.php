@@ -23,7 +23,14 @@
                 <div class="col-12">
                     <div class="blog-details_left">
                        <div class="d-flex justify-content-center">
+
                        <div class="main-slider">
+
+                       <div class="main-slider">
+                       <div class="blog-details_img">
+                                    <img src="{{ asset($news->main_image) }}" alt=""
+                                        style="height: 500px;">
+                                </div>
                             @foreach ($news->images as $image)
                                 <div class="blog-details_img">
                                     <img src="{{ asset($image) }}" alt=""
@@ -57,7 +64,7 @@
                             <div class="services-two_img-box">
                                 <div class="services-two_img">
                                     <a href="{{ route('news.details', $latestNew->id) }}" class="w-100">
-                                        <img src="{{ asset('assets/admin/sliders/images/'.$latestNew->image) }}" alt="">
+                                        <img src="{{ asset($latestNew->main_image) }}" alt="">
                                     </a>
                                 </div>
                             </div>

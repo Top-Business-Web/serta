@@ -39,8 +39,8 @@
                             <img src="{{ asset('assets/front') }}/assets/img/hand.png" style="width: 65px; height:65px;">
                         </div>
                         <div>
-                            <p style="margin-bottom: 0;">@lang('site.client')</p>
-                            <h6>client</h6>
+                            <p style="margin-bottom: 0;">{{ app()->getLocale() == 'ar' ? 'العميل' : 'CLIENT' }}</p>
+                            <h6>{{ app()->getLocale() == 'ar' ? $architecture->customer_ar: $architecture->customer_en }}</h6>
                         </div>
                     </div>
                     <div class="title">
@@ -71,7 +71,7 @@
                         <img src="{{ asset('assets/front') }}/assets/img/industry.png" style="width: 65px; height:65px;">
                     </div>
                     <p class="text-center" style="margin-bottom: 0;">@lang('site.industry')</p>
-                    <h6 class="text-center">{{ $architecture->sector->value == 'public' ? (app()->getLocale() == 'ar' ? 'عام' : 'Public') : (app()->getLocale() == 'ar' ? 'خاص' : 'Private') }}</h6>
+                    <h6 class="text-center">{{ $architecture->sector == 'public' ? (app()->getLocale() == 'ar' ? 'عام' : 'Public') : (app()->getLocale() == 'ar' ? 'خاص' : 'Private') }}</h6>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                     <div class="d-flex justify-content-center mb-3">

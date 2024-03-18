@@ -17,6 +17,7 @@ class CreateNewsTable extends Migration
             $table->id();
             $table->string('title_ar', 255);
             $table->string('title_en', 255);
+            $table->string('main_image', 255);
             $table->string('image', 255);
             $table->longText('desc_ar')->nullable();
             $table->longText('desc_en')->nullable();
