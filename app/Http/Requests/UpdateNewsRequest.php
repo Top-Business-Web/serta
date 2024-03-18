@@ -26,7 +26,8 @@ class UpdateNewsRequest extends FormRequest
         return [
             'title_ar' => 'required',
             'title_en' => 'required',
-            'files' => 'sometimes|array'
+            'files' => 'sometimes|array',
+            'main_image' => 'sometimes|image'
         ];
     }
 

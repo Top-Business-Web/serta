@@ -168,9 +168,13 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="process-single three image-value">
-                        <div class="process-icon">
-                            <img src="{{ asset($setting->logo_values) }}" alt="no-image" style="height: 580px;">
-                        </div>
+                    <div class="process-icon">
+                    @if(app()->getLocale() == 'ar')
+                        <img src="{{ asset($setting->logo_values) }}" alt="no-image" style="height: 580px;">
+                        @else
+                        <img src="{{ asset('assets/front') }}/assets/img/serta6.png" alt="no-image" style="height: 580px;">
+                        @endif
+                    </div>
                     </div>
                 </div>
 

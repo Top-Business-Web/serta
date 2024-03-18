@@ -33,7 +33,7 @@ class Product extends Model
     protected $casts = [
         'images' => 'array',
         'details' => 'array',
-        'sector' => SectorTypeEnum::class,
+        'sector' => 'string',
     ];
 
     public function subCategory()

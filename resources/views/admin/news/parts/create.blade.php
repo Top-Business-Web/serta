@@ -2,7 +2,17 @@
     <form id="addForm" class="addForm" method="POST" action="{{ route('news.store') }}">
         @csrf
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name" class="form-control-label">الصورة الرئيسية</label>
+                    <input type="file" class="dropify" name="main_image"
+                        data-default-file="{{ asset('assets/uploads/post.png') }}"
+                        accept="image/png,image/webp , image/gif, image/jpeg,image/jpg" />
+                    <span class="form-text text-danger text-center">مسموح فقط بالصيغ التالية : png, gif, jpeg,
+                        jpg,webp</span>
+                </div>
+            </div>
+            <div class="col-md-6">
                 <div class="form-group">
                     <label for="name" class="form-control-label">الصورة</label>
                     <input type="file" class="dropify" name="files[]" multiple="multiple"

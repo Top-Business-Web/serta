@@ -83,8 +83,9 @@
         <div class="row">
             <div class="col-lg-8 col-12">
                 <div class="pen wow bounceInDown" data-wow-duration="2s" data-wow-offset="100">
-                    <img src="{{ asset('assets/front/') }}/assets/img/pen2.png">
+                    <img src="{{ asset('assets/front/') }}/assets/img/{{ app()->getLocale() == 'ar' ? 'pen2' : 'pen3' }}.png">
                 </div>
+                
                 <div class="mobile wow zoomIn" data-wow-duration="2s" data-wow-offset="100">
                     <img src="{{ asset('assets/front/') }}/assets/img/tablet.png">
                 </div>
@@ -215,9 +216,10 @@
                         style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
                         <div class="services-two_single card-news">
                             <div class="services-two_img-box">
+                                {{-- @foreach --}}
                                 <div class="services-two_img">
                                     <a href="{{ route('news.details', $new->id) }}" class="w-100">
-                                        <img src="{{ asset('assets/admin/sliders/images/'.$new->image) }}" alt="">
+                                        <img src="{{ asset($new->main_image) }}" alt="">
                                     </a>
                                 </div>
                             </div>

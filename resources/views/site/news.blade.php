@@ -30,7 +30,7 @@
                             <div class="services-two_img-box">
                                 <div class="services-two_img">
                                     <a href="{{ route('news.details', $new->id) }}" class="w-100">
-                                        <img src="{{ asset($new->images[0]) }}" alt="">
+                                        <img src="{{ asset($new->main_image) }}" alt="">
                                     </a>
                                 </div>
                             </div>
