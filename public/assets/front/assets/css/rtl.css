@@ -3224,7 +3224,8 @@ i.las.la-comments {
 .blog-content {
   padding: 10px 20px 0;
 }
-.blog-content p {
+.blog-content p a {
+    color: #777;
   line-height: 28px;
   display: -webkit-box;
     -webkit-line-clamp: 2;

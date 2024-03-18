@@ -54,7 +54,7 @@
     </div>
 
     <div class="project-area mb-5 mt-5">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="projects-filter">
@@ -178,9 +178,12 @@
                     </div>
                 </form>
             </div>
+        </div>
+    </div>
+    
 
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">

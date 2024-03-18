@@ -53,7 +53,8 @@
                             <h3 class="blog-details_title">
                                 {{ app()->getLocale() == 'ar' ? $news->title_ar : $news->title_en }}</h3>
                             <p class="blog-details_text-1 mb-4">
-                                {{ app()->getLocale() == 'ar' ? $news->desc_ar : $news->desc_en }}</p>
+                                {{ app()->getLocale() == 'ar' ? $news->desc_ar : $news->desc_en }}
+                            </p>
                         </div>
 
 
