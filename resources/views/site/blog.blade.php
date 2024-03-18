@@ -42,7 +42,7 @@
                         <h5><a href="{{ route('career') }}">{{ app()->getLocale() == 'ar' ? $blog->title_ar : $blog->title_en }}</a></h5>
                         <p>
                             <a class="collapseBtn" data-toggle="collapse" data-target="#collapseExample-{{ $blog->id }}" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                اعرف المزيد
+                            {{ trans('site.read_more') }}
                             </a>
                         </p>
                         <div class="collapse" id="collapseExample-{{ $blog->id }}">
