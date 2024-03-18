@@ -116,7 +116,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="product">
             <div class="owl-carousel owl-theme">
                 @foreach ($data['products'] as $product)
