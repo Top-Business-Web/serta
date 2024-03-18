@@ -85,7 +85,7 @@
                 <div class="pen wow bounceInDown" data-wow-duration="2s" data-wow-offset="100">
                     <img src="{{ asset('assets/front/') }}/assets/img/{{ app()->getLocale() == 'ar' ? 'pen2' : 'pen3' }}.png">
                 </div>
-                
+
                 <div class="mobile wow zoomIn" data-wow-duration="2s" data-wow-offset="100">
                     <img src="{{ asset('assets/front/') }}/assets/img/tablet.png">
                 </div>
@@ -124,7 +124,7 @@
                 <div class="project-single ms-2 me-2" style="margin-bottom: 0px;">
                     <div class="project-img">
                         <a href="{{ route('singleProduct', $product->id) }}" class="w-100">
-                            <img src="{{ asset($product->images[0]) }}" alt="" style=" height: 250px;">
+                            <img src="{{ asset($product->images[0]) }}" alt="" style=" height: 290px;">
                         </a>
                     </div>
                     <div class="project-content">

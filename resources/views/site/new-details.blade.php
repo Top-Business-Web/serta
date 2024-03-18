@@ -35,11 +35,11 @@
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <li class="splide__slide">
-                                            <img src="{{ asset($news->main_image) }}" alt="no-image">
+                                            <img src="{{ asset($news->main_image) }}" style="height:600px !important;" alt="no-image">
                                         </li>
                                         @foreach($news->images as $image)
                                             <li class="splide__slide">
-                                                <img src="{{ asset($image) }}" alt="no-image">
+                                                <img src="{{ asset($image) }}" style="height:600px !important;" alt="no-image">
                                             </li>
                                         @endforeach
                                     </ul>
@@ -106,6 +106,8 @@
     <script>
         var splide = new Splide('#main-carousel', {
             pagination: false,
+            autoplay:true,
+            type   : 'loop',
         });
 
 
