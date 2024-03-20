@@ -37,7 +37,7 @@ $('.tabs-list li').on('click', function (){
 // animation certification
 
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 2300) {
+    if ($(window).scrollTop() >= 2000) {
         $('.certificate-hidden').fadeIn(400);
     }
 });
