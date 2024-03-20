@@ -6537,12 +6537,6 @@ label.form-label {
 .blog-details_img img{
     width: 800px;
 }
-.img-news{
-    height:600px;
-}
-.news .splide__slide{
-    height:600px;
-}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .main-slider{
@@ -6574,11 +6568,5 @@ label.form-label {
     }
     .blog-details_img img{
         width: 200px;
-    }
-    .img-news{
-        height:500px;
-    }
-    .news .splide__slide{
-        height:500px;
     }
 }
