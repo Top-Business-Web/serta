@@ -21,15 +21,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="blog-details_left">
+                    <div class="blog-details_left news">
                         <div class="d-flex justify-content-center">
-                            {{-- <div class="main-slider">
-                                @foreach ($news->images as $image)
-                                    <div class="blog-details_img">
-                                        <img src="{{ asset($image) }}" alt="" style="height: 500px;">
-                                    </div>
-                                @endforeach
-                            </div> --}}
 
                             <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
                                 <div class="splide__track">
@@ -39,7 +32,7 @@
                                         </li>
                                         @foreach($news->images as $image)
                                             <li class="splide__slide">
-                                                <img src="{{ asset($image) }}" style="height:600px !important;" alt="no-image">
+                                                <img src="{{ asset($image) }}" class="img-news" alt="no-image">
                                             </li>
                                         @endforeach
                                     </ul>
