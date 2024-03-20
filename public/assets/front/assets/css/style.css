@@ -6541,7 +6541,7 @@ label.form-label {
     height:600px;
 }
 .news .splide__slide{
-    height:500px;
+    height:600px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -6579,6 +6579,6 @@ label.form-label {
         height:500px;
     }
     .news .splide__slide{
-        height:300px;
+        height:500px;
     }
 }
