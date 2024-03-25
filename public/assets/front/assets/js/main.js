@@ -139,7 +139,7 @@
 		items: 3,
 		nav: false,
 		loop: false,
-		dots: false,
+		dots: true,
 		responsive: {
 			0 : {
 				items: 1
